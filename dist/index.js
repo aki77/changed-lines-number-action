@@ -84,10 +84,14 @@ function run() {
                 pull_number: github.context.issue.number,
                 per_page: 100
             });
+            core.debug(`Found ${files.length} files: ${files.map(f => f.filename).join(', ')}`);
             const gitattributes = yield readGitAttributes('.gitattributes');
             const filteredFiles = gitattributes
                 ? filterFiles(files, gitattributes)
                 : files;
+            core.debug(`Filtered ${filteredFiles.length} files: ${filteredFiles
+                .map(f => f.filename)
+                .join(', ')}`);
             const additions = (0, utils_1.sumOf)(filteredFiles, f => f.additions).toLocaleString('en-US');
             const deletions = (0, utils_1.sumOf)(filteredFiles, f => f.deletions).toLocaleString('en-US');
             const origBody = body
