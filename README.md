@@ -1,6 +1,6 @@
 # changed-lines-number-action
 
-Displays the number of changed lines considering `.gitattributes`.
+Add the number of changed lines to the PR body, considering `.gitattributes`.
 
 ![Demo](https://i.gyazo.com/71499e1dc4eaef7b9a84b8bdf958eae2.png)
 

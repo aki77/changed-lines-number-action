@@ -77,8 +77,7 @@ function run() {
                 repo: github.context.repo.repo,
                 pull_number: github.context.issue.number
             });
-            // TODO: 100 files over the limit
-            const { data: files } = yield octokit.rest.pulls.listFiles({
+            const files = yield octokit.paginate('GET /repos/{owner}/{repo}/pulls/{pull_number}/files', {
                 owner: github.context.repo.owner,
                 repo: github.context.repo.repo,
                 pull_number: github.context.issue.number,

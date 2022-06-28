@@ -1,8 +1,8 @@
 {
   "name": "changed-lines-number-action",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
-  "description": "Displays the number of changed lines considering `.gitattributes`.",
+  "description": "Add the number of changed lines to the PR body, considering `.gitattributes`.",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",

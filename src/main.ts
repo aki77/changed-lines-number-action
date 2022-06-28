@@ -48,13 +48,15 @@ async function run(): Promise<void> {
       pull_number: github.context.issue.number
     })
 
-    // TODO: 100 files over the limit
-    const {data: files} = await octokit.rest.pulls.listFiles({
-      owner: github.context.repo.owner,
-      repo: github.context.repo.repo,
-      pull_number: github.context.issue.number,
-      per_page: 100
-    })
+    const files = await octokit.paginate(
+      'GET /repos/{owner}/{repo}/pulls/{pull_number}/files',
+      {
+        owner: github.context.repo.owner,
+        repo: github.context.repo.repo,
+        pull_number: github.context.issue.number,
+        per_page: 100
+      }
+    )
 
     core.debug(
       `Found ${files.length} files: ${files.map(f => f.filename).join(', ')}`
