@@ -8,11 +8,9 @@ Add the number of changed lines to the PR body, considering `.gitattributes`.
 
 Files with the following attributes are excluded from the count.
 
- | Git attribute                                  | Defined in            |
- |:-----------------------------------------------|:----------------------|
-  | `linguist-documentation`                       | [`documentation.yml`] |
- | `linguist-generated`                           | [`generated.rb`]      |
-  | `linguist-vendored`                            | [`vendor.yml`]        |
+- `linguist-documentation`
+- `linguist-generated`
+- `linguist-vendored`
 
 `.gitattributes` example
 ```
