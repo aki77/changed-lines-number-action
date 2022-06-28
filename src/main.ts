@@ -9,7 +9,7 @@ type GithubFile = {
 }
 
 const IGNORE_PATTERN =
-  /(linguist-generated=true|linguist-vendored|linguist-documentation)$/
+  /(linguist-vendored|linguist-documentation|linguist-generated)(=true)?$/
 
 const readGitAttributes = async (path: string): Promise<string | undefined> => {
   try {

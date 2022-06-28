@@ -45,7 +45,7 @@ const core = __importStar(__nccwpck_require__(6914));
 const github = __importStar(__nccwpck_require__(540));
 const picomatch_1 = __nccwpck_require__(3242);
 const utils_1 = __nccwpck_require__(4780);
-const IGNORE_PATTERN = /(linguist-generated=true|linguist-vendored|linguist-documentation)$/;
+const IGNORE_PATTERN = /(linguist-vendored|linguist-documentation|linguist-generated)(=true)?$/;
 const readGitAttributes = (path) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         return fs_1.promises.readFile(path, 'utf8');
