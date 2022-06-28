@@ -1,8 +1,8 @@
 {
-  "name": "typescript-action",
-  "version": "0.0.0",
+  "name": "changed-lines-number-action",
+  "version": "1.0.0",
   "private": true,
-  "description": "TypeScript template action",
+  "description": "Displays the number of changed lines considering `.gitattributes`.",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/aki77/changed-lines-number-action.git"
   },
   "keywords": [
     "actions",
@@ -25,10 +25,14 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.6.0"
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.3",
+    "picomatch": "^2.3.1"
   },
   "devDependencies": {
+    "@jest/globals": "^28.1.1",
     "@types/node": "^16.10.5",
+    "@types/picomatch": "^2.3.0",
     "@typescript-eslint/parser": "^5.8.1",
     "@vercel/ncc": "^0.31.1",
     "eslint": "^8.18.0",
