@@ -46,6 +46,7 @@ const github = __importStar(__nccwpck_require__(540));
 const picomatch_1 = __nccwpck_require__(3242);
 const utils_1 = __nccwpck_require__(4780);
 const IGNORE_PATTERN = /(linguist-vendored|linguist-documentation|linguist-generated)(=true)?$/;
+const REPLACE_PATTERN = /_\+[\d,]+ additions, -[\d,]+ deletions by \[github actions\]\(https:\/\/github\.com\/aki77\/changed-lines-number-action\)_$/m;
 const readGitAttributes = (path) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         return fs_1.promises.readFile(path, 'utf8');
@@ -93,12 +94,13 @@ function run() {
                 .join(', ')}`);
             const additions = (0, utils_1.sumOf)(filteredFiles, f => f.additions).toLocaleString('en-US');
             const deletions = (0, utils_1.sumOf)(filteredFiles, f => f.deletions).toLocaleString('en-US');
-            const origBody = body
-                ? body.trim().replace(/_\+[\d,]+ additions, -[\d,]+ deletions_$/m, '')
-                : '';
+            const origBody = body ? body.trim().replace(REPLACE_PATTERN, '') : '';
+            const linkText = core.getInput('hideLink') === 'true'
+                ? ''
+                : ' by [github actions](https://github.com/aki77/changed-lines-number-action)';
             const newBody = [
                 origBody,
-                `_+${additions} additions, -${deletions} deletions_`
+                `_+${additions} additions, -${deletions} deletions${linkText}_`
             ]
                 .join('\n\n')
                 .trim();

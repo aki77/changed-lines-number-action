@@ -11,6 +11,9 @@ type GithubFile = {
 const IGNORE_PATTERN =
   /(linguist-vendored|linguist-documentation|linguist-generated)(=true)?$/
 
+const REPLACE_PATTERN =
+  /_\+[\d,]+ additions, -[\d,]+ deletions by \[github actions\]\(https:\/\/github\.com\/aki77\/changed-lines-number-action\)_$/m
+
 const readGitAttributes = async (path: string): Promise<string | undefined> => {
   try {
     return fs.readFile(path, 'utf8')
@@ -79,13 +82,15 @@ async function run(): Promise<void> {
       'en-US'
     )
 
-    const origBody = body
-      ? body.trim().replace(/_\+[\d,]+ additions, -[\d,]+ deletions_$/m, '')
-      : ''
+    const origBody = body ? body.trim().replace(REPLACE_PATTERN, '') : ''
+    const linkText =
+      core.getInput('hideLink') === 'true'
+        ? ''
+        : ' by [github actions](https://github.com/aki77/changed-lines-number-action)'
 
     const newBody = [
       origBody,
-      `_+${additions} additions, -${deletions} deletions_`
+      `_+${additions} additions, -${deletions} deletions${linkText}_`
     ]
       .join('\n\n')
       .trim()
