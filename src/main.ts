@@ -48,10 +48,12 @@ async function run(): Promise<void> {
       pull_number: github.context.issue.number
     })
 
+    // TODO: 100 files over the limit
     const {data: files} = await octokit.rest.pulls.listFiles({
       owner: github.context.repo.owner,
       repo: github.context.repo.repo,
-      pull_number: github.context.issue.number
+      pull_number: github.context.issue.number,
+      per_page: 100
     })
 
     const gitattributes = await readGitAttributes('.gitattributes')
