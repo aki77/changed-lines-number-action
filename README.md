@@ -38,6 +38,7 @@ ano-dir/** linguist-vendored
 ## Inputs
 
 - `token` - The GITHUB_TOKEN secret.
+- `hideLink` - Hide the link. (default: `false`)
 
 ## Example
 

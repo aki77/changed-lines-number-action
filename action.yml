@@ -5,6 +5,10 @@ inputs:
   token:
     description: "Github token"
     required: true
+  hideLink:
+    description: "Hide the link"
+    default: "false"
+    required: false
 runs:
   using: "node16"
   main: "dist/index.js"
