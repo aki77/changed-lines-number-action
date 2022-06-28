@@ -56,10 +56,20 @@ async function run(): Promise<void> {
       per_page: 100
     })
 
+    core.debug(
+      `Found ${files.length} files: ${files.map(f => f.filename).join(', ')}`
+    )
+
     const gitattributes = await readGitAttributes('.gitattributes')
     const filteredFiles = gitattributes
       ? filterFiles(files, gitattributes)
       : files
+
+    core.debug(
+      `Filtered ${filteredFiles.length} files: ${filteredFiles
+        .map(f => f.filename)
+        .join(', ')}`
+    )
     const additions = sumOf(filteredFiles, f => f.additions).toLocaleString(
       'en-US'
     )
