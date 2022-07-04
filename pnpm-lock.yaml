@@ -4,6 +4,7 @@ specifiers:
   '@actions/core': ^1.9.0
   '@actions/github': ^5.0.3
   '@jest/globals': ^28.1.2
+  '@types/markdown-table': ^3.0.0
   '@types/node': ^16.11.41
   '@types/picomatch': ^2.3.0
   '@typescript-eslint/parser': ^5.30.0
@@ -13,6 +14,7 @@ specifiers:
   eslint-plugin-jest: ^26.5.3
   jest: ^28.1.2
   js-yaml: ^4.1.0
+  markdown-table: ^3.0.2
   picomatch: ^2.3.1
   prettier: 2.7.1
   ts-jest: ^28.0.5
@@ -21,10 +23,12 @@ specifiers:
 dependencies:
   '@actions/core': 1.9.0
   '@actions/github': 5.0.3
+  markdown-table: 3.0.2
   picomatch: 2.3.1
 
 devDependencies:
   '@jest/globals': 28.1.2
+  '@types/markdown-table': 3.0.0
   '@types/node': 16.11.41
   '@types/picomatch': 2.3.0
   '@typescript-eslint/parser': 5.30.0_b5e7v2qnwxfo6hmiq56u52mz3e
@@ -868,6 +872,13 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/markdown-table/3.0.0:
+    resolution: {integrity: sha512-vX5zya26rnLLHdAKA3E9ZOT07CJslYp2gZfAZiXKUY5vd2RRiJyOQKrSlmUjyJ+eNoDAPkHflebG3PsfqC32aA==}
+    deprecated: This is a stub types definition. markdown-table provides its own type definitions, so you do not need this installed.
+    dependencies:
+      markdown-table: 3.0.2
     dev: true
 
   /@types/node/16.11.41:
@@ -2885,6 +2896,9 @@ packages:
     dependencies:
       tmpl: 1.0.5
     dev: true
+
+  /markdown-table/3.0.2:
+    resolution: {integrity: sha512-y8j3a5/DkJCmS5x4dMCQL+OR0+2EAq3DOtio1COSHsmW2BGXnNCK3v12hJt1LrUz5iZH5g0LmuYOjDdI+czghA==}
 
   /merge-stream/2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}

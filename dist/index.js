@@ -1,6 +1,134 @@
 require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 966:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.filterFiles = exports.readGitAttributes = void 0;
+const fs_1 = __nccwpck_require__(7147);
+const core = __importStar(__nccwpck_require__(6953));
+const picomatch_1 = __nccwpck_require__(5018);
+const IGNORE_PATTERN = /(linguist-vendored|linguist-documentation|linguist-generated)(=true)?$/;
+const readGitAttributes = (path) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        return fs_1.promises.readFile(path, 'utf8');
+    }
+    catch (error) {
+        return undefined;
+    }
+});
+exports.readGitAttributes = readGitAttributes;
+function filterFiles(files, gitattributes) {
+    const patterns = gitattributes
+        .split('\n')
+        .filter(line => line.trim().match(IGNORE_PATTERN))
+        .map(line => line.split(' ')[0]);
+    core.debug(`Found ${patterns.length} patterns: ${patterns.join(', ')}`);
+    return files.filter(f => !(0, picomatch_1.isMatch)(f.filename, patterns));
+}
+exports.filterFiles = filterFiles;
+
+
+/***/ }),
+
+/***/ 4904:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.analyzeLanguage = exports.detectLanguage = exports.installEnry = void 0;
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+const child_process_1 = __nccwpck_require__(2081);
+const util_1 = __nccwpck_require__(3837);
+const utils_1 = __nccwpck_require__(1270);
+const execAsync = (0, util_1.promisify)(child_process_1.exec);
+function installEnry(os) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const prefix = os.toLowerCase().replace('macos', 'darwin');
+        const url = `https://github.com/go-enry/enry/releases/download/v1.1.0/enry-v1.1.0-${prefix}-amd64.tar.gz`;
+        yield execAsync(`curl -L ${url} | tar -xz -C /tmp/`);
+    });
+}
+exports.installEnry = installEnry;
+function detectLanguage(filename) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const { stdout } = yield execAsync(`/tmp/enry -json ${filename}`);
+        const json = JSON.parse(stdout.toString());
+        return json.language;
+    });
+}
+exports.detectLanguage = detectLanguage;
+function analyzeLanguage(files) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const promises = files.map((file) => __awaiter(this, void 0, void 0, function* () {
+            return (Object.assign(Object.assign({}, file), { language: yield detectLanguage(file.filename) }));
+        }));
+        const results = yield Promise.all(promises);
+        const totalLines = (0, utils_1.sumOf)(files, ({ additions, deletions }) => additions + deletions);
+        return Object.entries((0, utils_1.groupBy)(results, ({ language }) => language))
+            .map(([language, groupedFiles]) => {
+            const lines = (0, utils_1.sumOf)(groupedFiles, ({ additions, deletions }) => additions + deletions);
+            return {
+                language,
+                lineRatio: Math.round((lines / totalLines) * 1000) / 10,
+                files: groupedFiles.length,
+                additions: (0, utils_1.sumOf)(groupedFiles, ({ additions }) => additions),
+                deletions: (0, utils_1.sumOf)(groupedFiles, ({ deletions }) => deletions)
+            };
+        })
+            .sort((a, b) => b.lineRatio - a.lineRatio);
+    });
+}
+exports.analyzeLanguage = analyzeLanguage;
+
+
+/***/ }),
+
 /***/ 9970:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
@@ -39,31 +167,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.filterFiles = void 0;
-const fs_1 = __nccwpck_require__(7147);
 const core = __importStar(__nccwpck_require__(6953));
 const github = __importStar(__nccwpck_require__(1340));
-const picomatch_1 = __nccwpck_require__(5018);
-const utils_1 = __nccwpck_require__(1270);
-const IGNORE_PATTERN = /(linguist-vendored|linguist-documentation|linguist-generated)(=true)?$/;
-const REPLACE_PATTERN = /_\+[\d,]+ additions, -[\d,]+ deletions by \[github actions\]\(https:\/\/github\.com\/aki77\/changed-lines-number-action\)_$/m;
-const readGitAttributes = (path) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        return fs_1.promises.readFile(path, 'utf8');
-    }
-    catch (error) {
-        return undefined;
-    }
-});
-function filterFiles(files, gitattributes) {
-    const patterns = gitattributes
-        .split('\n')
-        .filter(line => line.trim().match(IGNORE_PATTERN))
-        .map(line => line.split(' ')[0]);
-    core.debug(`Found ${patterns.length} patterns: ${patterns.join(', ')}`);
-    return files.filter(f => !(0, picomatch_1.isMatch)(f.filename, patterns));
-}
-exports.filterFiles = filterFiles;
+const filter_1 = __nccwpck_require__(966);
+const language_1 = __nccwpck_require__(4904);
+const report_1 = __nccwpck_require__(5991);
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -73,11 +181,6 @@ function run() {
             }
             const token = core.getInput('token', { required: true });
             const octokit = github.getOctokit(token);
-            const { data: { body } } = yield octokit.rest.pulls.get({
-                owner: github.context.repo.owner,
-                repo: github.context.repo.repo,
-                pull_number: github.context.issue.number
-            });
             const files = yield octokit.paginate('GET /repos/{owner}/{repo}/pulls/{pull_number}/files', {
                 owner: github.context.repo.owner,
                 repo: github.context.repo.repo,
@@ -85,31 +188,16 @@ function run() {
                 per_page: 100
             });
             core.debug(`Found ${files.length} files: ${files.map(f => f.filename).join(', ')}`);
-            const gitattributes = yield readGitAttributes('.gitattributes');
+            const gitattributes = yield (0, filter_1.readGitAttributes)('.gitattributes');
             const filteredFiles = gitattributes
-                ? filterFiles(files, gitattributes)
+                ? (0, filter_1.filterFiles)(files, gitattributes)
                 : files;
             core.debug(`Filtered ${filteredFiles.length} files: ${filteredFiles
                 .map(f => f.filename)
                 .join(', ')}`);
-            const additions = (0, utils_1.sumOf)(filteredFiles, f => f.additions).toLocaleString('en-US');
-            const deletions = (0, utils_1.sumOf)(filteredFiles, f => f.deletions).toLocaleString('en-US');
-            const origBody = body ? body.trim().replace(REPLACE_PATTERN, '') : '';
-            const linkText = core.getInput('hideLink') === 'true'
-                ? ''
-                : ' by [github actions](https://github.com/aki77/changed-lines-number-action)';
-            const newBody = [
-                origBody,
-                `_+${additions} additions, -${deletions} deletions${linkText}_`
-            ]
-                .join('\n\n')
-                .trim();
-            yield octokit.rest.pulls.update({
-                owner: github.context.repo.owner,
-                repo: github.context.repo.repo,
-                pull_number: github.context.issue.number,
-                body: newBody
-            });
+            yield (0, language_1.installEnry)(process.env.RUNNER_OS || 'linux');
+            const languages = yield (0, language_1.analyzeLanguage)(filteredFiles);
+            yield (0, report_1.report)(languages);
         }
         catch (error) {
             if (error instanceof Error)
@@ -122,13 +210,104 @@ run();
 
 /***/ }),
 
+/***/ 5991:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.report = void 0;
+const core = __importStar(__nccwpck_require__(6953));
+const github = __importStar(__nccwpck_require__(1340));
+const markdown_table_1 = __nccwpck_require__(364);
+const utils_1 = __nccwpck_require__(1270);
+const REPLACE_PATTERN = /<!-- start changed-lines-number-action -->[\s\S]*?<!-- end changed-lines-number-action -->/m;
+const report = (languages) => __awaiter(void 0, void 0, void 0, function* () {
+    const token = core.getInput('token', { required: true });
+    const octokit = github.getOctokit(token);
+    const additions = (0, utils_1.sumOf)(languages, l => l.additions).toLocaleString('en-US');
+    const deletions = (0, utils_1.sumOf)(languages, l => l.deletions).toLocaleString('en-US');
+    const languageTable = (0, markdown_table_1.markdownTable)([
+        ['Language', 'Line Ratio', 'Files', 'Additions', 'Deletions'],
+        ...languages.map(l => [
+            l.language,
+            `${l.lineRatio}%`,
+            l.files.toLocaleString('en-US'),
+            `+${l.additions.toLocaleString('en-US')}`,
+            `-${l.deletions.toLocaleString('en-US')}`
+        ])
+    ], {
+        align: ['l', 'r', 'r', 'r', 'r']
+    });
+    const { data: { body } } = yield octokit.rest.pulls.get({
+        owner: github.context.repo.owner,
+        repo: github.context.repo.repo,
+        pull_number: github.context.issue.number
+    });
+    const header = core.getInput('hideLink') === 'true'
+        ? 'Changes Lines'
+        : '[Changes Lines](https://github.com/aki77/changed-lines-number-action)';
+    const content = `<!-- start changed-lines-number-action -->
+### ${header}
+_+${additions} additions, -${deletions} deletions_
+
+${languageTable}
+<!-- end changed-lines-number-action -->
+`;
+    const newBody = body && REPLACE_PATTERN.test(body)
+        ? body.replace(REPLACE_PATTERN, content)
+        : (body !== null && body !== void 0 ? body : '') + content;
+    yield octokit.rest.pulls.update({
+        owner: github.context.repo.owner,
+        repo: github.context.repo.repo,
+        pull_number: github.context.issue.number,
+        body: newBody.trim()
+    });
+});
+exports.report = report;
+
+
+/***/ }),
+
 /***/ 1270:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.sumOf = void 0;
+exports.groupBy = exports.sumOf = void 0;
 function sumOf(array, selector) {
     let sum = 0;
     for (const i of array) {
@@ -137,6 +316,17 @@ function sumOf(array, selector) {
     return sum;
 }
 exports.sumOf = sumOf;
+function groupBy(array, selector) {
+    var _a;
+    const ret = {};
+    for (const element of array) {
+        const key = selector(element);
+        const arr = ((_a = ret[key]) !== null && _a !== void 0 ? _a : (ret[key] = []));
+        arr.push(element);
+    }
+    return ret;
+}
+exports.groupBy = groupBy;
 
 
 /***/ }),
@@ -11104,6 +11294,14 @@ module.exports = require("assert");
 
 /***/ }),
 
+/***/ 2081:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("child_process");
+
+/***/ }),
+
 /***/ 2361:
 /***/ ((module) => {
 
@@ -11208,6 +11406,398 @@ module.exports = require("zlib");
 
 /***/ }),
 
+/***/ 364:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
+
+"use strict";
+__nccwpck_require__.r(__webpack_exports__);
+/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+/* harmony export */   "markdownTable": () => (/* binding */ markdownTable)
+/* harmony export */ });
+/**
+ * @typedef Options
+ *   Configuration (optional).
+ * @property {string|null|Array<string|null|undefined>} [align]
+ *   One style for all columns, or styles for their respective columns.
+ *   Each style is either `'l'` (left), `'r'` (right), or `'c'` (center).
+ *   Other values are treated as `''`, which doesn’t place the colon in the
+ *   alignment row but does align left.
+ *   *Only the lowercased first character is used, so `Right` is fine.*
+ * @property {boolean} [padding=true]
+ *   Whether to add a space of padding between delimiters and cells.
+ *
+ *   When `true`, there is padding:
+ *
+ *   ```markdown
+ *   | Alpha | B     |
+ *   | ----- | ----- |
+ *   | C     | Delta |
+ *   ```
+ *
+ *   When `false`, there is no padding:
+ *
+ *   ```markdown
+ *   |Alpha|B    |
+ *   |-----|-----|
+ *   |C    |Delta|
+ *   ```
+ * @property {boolean} [delimiterStart=true]
+ *   Whether to begin each row with the delimiter.
+ *
+ *   > 👉 **Note**: please don’t use this: it could create fragile structures
+ *   > that aren’t understandable to some markdown parsers.
+ *
+ *   When `true`, there are starting delimiters:
+ *
+ *   ```markdown
+ *   | Alpha | B     |
+ *   | ----- | ----- |
+ *   | C     | Delta |
+ *   ```
+ *
+ *   When `false`, there are no starting delimiters:
+ *
+ *   ```markdown
+ *   Alpha | B     |
+ *   ----- | ----- |
+ *   C     | Delta |
+ *   ```
+ * @property {boolean} [delimiterEnd=true]
+ *   Whether to end each row with the delimiter.
+ *
+ *   > 👉 **Note**: please don’t use this: it could create fragile structures
+ *   > that aren’t understandable to some markdown parsers.
+ *
+ *   When `true`, there are ending delimiters:
+ *
+ *   ```markdown
+ *   | Alpha | B     |
+ *   | ----- | ----- |
+ *   | C     | Delta |
+ *   ```
+ *
+ *   When `false`, there are no ending delimiters:
+ *
+ *   ```markdown
+ *   | Alpha | B
+ *   | ----- | -----
+ *   | C     | Delta
+ *   ```
+ * @property {boolean} [alignDelimiters=true]
+ *   Whether to align the delimiters.
+ *   By default, they are aligned:
+ *
+ *   ```markdown
+ *   | Alpha | B     |
+ *   | ----- | ----- |
+ *   | C     | Delta |
+ *   ```
+ *
+ *   Pass `false` to make them staggered:
+ *
+ *   ```markdown
+ *   | Alpha | B |
+ *   | - | - |
+ *   | C | Delta |
+ *   ```
+ * @property {(value: string) => number} [stringLength]
+ *   Function to detect the length of table cell content.
+ *   This is used when aligning the delimiters (`|`) between table cells.
+ *   Full-width characters and emoji mess up delimiter alignment when viewing
+ *   the markdown source.
+ *   To fix this, you can pass this function, which receives the cell content
+ *   and returns its “visible” size.
+ *   Note that what is and isn’t visible depends on where the text is displayed.
+ *
+ *   Without such a function, the following:
+ *
+ *   ```js
+ *   markdownTable([
+ *     ['Alpha', 'Bravo'],
+ *     ['中文', 'Charlie'],
+ *     ['👩‍❤️‍👩', 'Delta']
+ *   ])
+ *   ```
+ *
+ *   Yields:
+ *
+ *   ```markdown
+ *   | Alpha | Bravo |
+ *   | - | - |
+ *   | 中文 | Charlie |
+ *   | 👩‍❤️‍👩 | Delta |
+ *   ```
+ *
+ *   With [`string-width`](https://github.com/sindresorhus/string-width):
+ *
+ *   ```js
+ *   import stringWidth from 'string-width'
+ *
+ *   markdownTable(
+ *     [
+ *       ['Alpha', 'Bravo'],
+ *       ['中文', 'Charlie'],
+ *       ['👩‍❤️‍👩', 'Delta']
+ *     ],
+ *     {stringLength: stringWidth}
+ *   )
+ *   ```
+ *
+ *   Yields:
+ *
+ *   ```markdown
+ *   | Alpha | Bravo   |
+ *   | ----- | ------- |
+ *   | 中文  | Charlie |
+ *   | 👩‍❤️‍👩    | Delta   |
+ *   ```
+ */
+
+/**
+ * @typedef {Options} MarkdownTableOptions
+ * @todo
+ *   Remove next major.
+ */
+
+/**
+ * Generate a markdown ([GFM](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)) table..
+ *
+ * @param {Array<Array<string|null|undefined>>} table
+ *   Table data (matrix of strings).
+ * @param {Options} [options]
+ *   Configuration (optional).
+ * @returns {string}
+ */
+function markdownTable(table, options = {}) {
+  const align = (options.align || []).concat()
+  const stringLength = options.stringLength || defaultStringLength
+  /** @type {Array<number>} Character codes as symbols for alignment per column. */
+  const alignments = []
+  /** @type {Array<Array<string>>} Cells per row. */
+  const cellMatrix = []
+  /** @type {Array<Array<number>>} Sizes of each cell per row. */
+  const sizeMatrix = []
+  /** @type {Array<number>} */
+  const longestCellByColumn = []
+  let mostCellsPerRow = 0
+  let rowIndex = -1
+
+  // This is a superfluous loop if we don’t align delimiters, but otherwise we’d
+  // do superfluous work when aligning, so optimize for aligning.
+  while (++rowIndex < table.length) {
+    /** @type {Array<string>} */
+    const row = []
+    /** @type {Array<number>} */
+    const sizes = []
+    let columnIndex = -1
+
+    if (table[rowIndex].length > mostCellsPerRow) {
+      mostCellsPerRow = table[rowIndex].length
+    }
+
+    while (++columnIndex < table[rowIndex].length) {
+      const cell = serialize(table[rowIndex][columnIndex])
+
+      if (options.alignDelimiters !== false) {
+        const size = stringLength(cell)
+        sizes[columnIndex] = size
+
+        if (
+          longestCellByColumn[columnIndex] === undefined ||
+          size > longestCellByColumn[columnIndex]
+        ) {
+          longestCellByColumn[columnIndex] = size
+        }
+      }
+
+      row.push(cell)
+    }
+
+    cellMatrix[rowIndex] = row
+    sizeMatrix[rowIndex] = sizes
+  }
+
+  // Figure out which alignments to use.
+  let columnIndex = -1
+
+  if (typeof align === 'object' && 'length' in align) {
+    while (++columnIndex < mostCellsPerRow) {
+      alignments[columnIndex] = toAlignment(align[columnIndex])
+    }
+  } else {
+    const code = toAlignment(align)
+
+    while (++columnIndex < mostCellsPerRow) {
+      alignments[columnIndex] = code
+    }
+  }
+
+  // Inject the alignment row.
+  columnIndex = -1
+  /** @type {Array<string>} */
+  const row = []
+  /** @type {Array<number>} */
+  const sizes = []
+
+  while (++columnIndex < mostCellsPerRow) {
+    const code = alignments[columnIndex]
+    let before = ''
+    let after = ''
+
+    if (code === 99 /* `c` */) {
+      before = ':'
+      after = ':'
+    } else if (code === 108 /* `l` */) {
+      before = ':'
+    } else if (code === 114 /* `r` */) {
+      after = ':'
+    }
+
+    // There *must* be at least one hyphen-minus in each alignment cell.
+    let size =
+      options.alignDelimiters === false
+        ? 1
+        : Math.max(
+            1,
+            longestCellByColumn[columnIndex] - before.length - after.length
+          )
+
+    const cell = before + '-'.repeat(size) + after
+
+    if (options.alignDelimiters !== false) {
+      size = before.length + size + after.length
+
+      if (size > longestCellByColumn[columnIndex]) {
+        longestCellByColumn[columnIndex] = size
+      }
+
+      sizes[columnIndex] = size
+    }
+
+    row[columnIndex] = cell
+  }
+
+  // Inject the alignment row.
+  cellMatrix.splice(1, 0, row)
+  sizeMatrix.splice(1, 0, sizes)
+
+  rowIndex = -1
+  /** @type {Array<string>} */
+  const lines = []
+
+  while (++rowIndex < cellMatrix.length) {
+    const row = cellMatrix[rowIndex]
+    const sizes = sizeMatrix[rowIndex]
+    columnIndex = -1
+    /** @type {Array<string>} */
+    const line = []
+
+    while (++columnIndex < mostCellsPerRow) {
+      const cell = row[columnIndex] || ''
+      let before = ''
+      let after = ''
+
+      if (options.alignDelimiters !== false) {
+        const size =
+          longestCellByColumn[columnIndex] - (sizes[columnIndex] || 0)
+        const code = alignments[columnIndex]
+
+        if (code === 114 /* `r` */) {
+          before = ' '.repeat(size)
+        } else if (code === 99 /* `c` */) {
+          if (size % 2) {
+            before = ' '.repeat(size / 2 + 0.5)
+            after = ' '.repeat(size / 2 - 0.5)
+          } else {
+            before = ' '.repeat(size / 2)
+            after = before
+          }
+        } else {
+          after = ' '.repeat(size)
+        }
+      }
+
+      if (options.delimiterStart !== false && !columnIndex) {
+        line.push('|')
+      }
+
+      if (
+        options.padding !== false &&
+        // Don’t add the opening space if we’re not aligning and the cell is
+        // empty: there will be a closing space.
+        !(options.alignDelimiters === false && cell === '') &&
+        (options.delimiterStart !== false || columnIndex)
+      ) {
+        line.push(' ')
+      }
+
+      if (options.alignDelimiters !== false) {
+        line.push(before)
+      }
+
+      line.push(cell)
+
+      if (options.alignDelimiters !== false) {
+        line.push(after)
+      }
+
+      if (options.padding !== false) {
+        line.push(' ')
+      }
+
+      if (
+        options.delimiterEnd !== false ||
+        columnIndex !== mostCellsPerRow - 1
+      ) {
+        line.push('|')
+      }
+    }
+
+    lines.push(
+      options.delimiterEnd === false
+        ? line.join('').replace(/ +$/, '')
+        : line.join('')
+    )
+  }
+
+  return lines.join('\n')
+}
+
+/**
+ * @param {string|null|undefined} [value]
+ * @returns {string}
+ */
+function serialize(value) {
+  return value === null || value === undefined ? '' : String(value)
+}
+
+/**
+ * @param {string} value
+ * @returns {number}
+ */
+function defaultStringLength(value) {
+  return value.length
+}
+
+/**
+ * @param {string|null|undefined} value
+ * @returns {number}
+ */
+function toAlignment(value) {
+  const code = typeof value === 'string' ? value.codePointAt(0) : 0
+
+  return code === 67 /* `C` */ || code === 99 /* `c` */
+    ? 99 /* `c` */
+    : code === 76 /* `L` */ || code === 108 /* `l` */
+    ? 108 /* `l` */
+    : code === 82 /* `R` */ || code === 114 /* `r` */
+    ? 114 /* `r` */
+    : 0
+}
+
+
+/***/ }),
+
 /***/ 1229:
 /***/ ((module) => {
 
@@ -11249,6 +11839,34 @@ module.exports = JSON.parse('[[[0,44],"disallowed_STD3_valid"],[[45,46],"valid"]
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__nccwpck_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__nccwpck_require__.o(definition, key) && !__nccwpck_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__nccwpck_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__nccwpck_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/compat */
 /******/ 	
 /******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";
