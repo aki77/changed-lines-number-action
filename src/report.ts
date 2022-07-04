@@ -54,7 +54,7 @@ ${languageTable}
   const newBody =
     body && REPLACE_PATTERN.test(body)
       ? body.replace(REPLACE_PATTERN, content)
-      : (body ?? '') + content
+      : [body ?? '', content].join('\n')
 
   await octokit.rest.pulls.update({
     owner: github.context.repo.owner,
