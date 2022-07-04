@@ -319,7 +319,7 @@ ${languageTable}
 `;
     const newBody = body && REPLACE_PATTERN.test(body)
         ? body.replace(REPLACE_PATTERN, content)
-        : (body !== null && body !== void 0 ? body : '') + content;
+        : [body !== null && body !== void 0 ? body : '', content].join('\n');
     yield octokit.rest.pulls.update({
         owner: github.context.repo.owner,
         repo: github.context.repo.repo,
