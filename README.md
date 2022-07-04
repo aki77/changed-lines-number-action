@@ -2,7 +2,7 @@
 
 Add the number of changed lines to the PR body, considering `.gitattributes`.
 
-![Demo](https://i.gyazo.com/71499e1dc4eaef7b9a84b8bdf958eae2.png)
+![Demo](https://i.gyazo.com/ce3ac6b9c10507a08f6798f5ffa0e88d.png)
 
 ## Usage
 
@@ -52,7 +52,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: aki77/changed-lines-number-action@v1
+      - uses: aki77/changed-lines-number-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
