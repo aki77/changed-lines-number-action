@@ -71,6 +71,29 @@ exports.filterFiles = filterFiles;
 
 "use strict";
 
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -83,6 +106,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.analyzeLanguage = exports.detectLanguage = exports.installEnry = void 0;
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
+const core = __importStar(__nccwpck_require__(6953));
 const child_process_1 = __nccwpck_require__(2081);
 const util_1 = __nccwpck_require__(3837);
 const utils_1 = __nccwpck_require__(1270);
@@ -97,16 +121,23 @@ function installEnry(os) {
 exports.installEnry = installEnry;
 function detectLanguage(filename) {
     return __awaiter(this, void 0, void 0, function* () {
-        const { stdout } = yield execAsync(`/tmp/enry -json ${filename}`);
-        const json = JSON.parse(stdout.toString());
-        return json.language;
+        try {
+            const { stdout } = yield execAsync(`/tmp/enry -json ${filename}`);
+            const json = JSON.parse(stdout.toString());
+            return json.language;
+        }
+        catch (error) {
+            if (error instanceof Error)
+                core.debug(error.message);
+        }
     });
 }
 exports.detectLanguage = detectLanguage;
 function analyzeLanguage(files) {
     return __awaiter(this, void 0, void 0, function* () {
         const promises = files.map((file) => __awaiter(this, void 0, void 0, function* () {
-            return (Object.assign(Object.assign({}, file), { language: yield detectLanguage(file.filename) }));
+            const language = yield detectLanguage(file.filename);
+            return Object.assign(Object.assign({}, file), { language: language !== null && language !== void 0 ? language : 'Unknown (Deleted)' });
         }));
         const results = yield Promise.all(promises);
         const totalLines = (0, utils_1.sumOf)(files, ({ additions, deletions }) => additions + deletions);

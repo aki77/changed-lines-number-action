@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
+import * as core from '@actions/core'
 import {exec} from 'child_process'
 import {promisify} from 'util'
 import {GithubFile} from './types'
@@ -12,10 +13,16 @@ export async function installEnry(os: string): Promise<void> {
   await execAsync(`curl -L ${url} | tar -xz -C /tmp/`)
 }
 
-export async function detectLanguage(filename: string): Promise<string> {
-  const {stdout} = await execAsync(`/tmp/enry -json ${filename}`)
-  const json = JSON.parse(stdout.toString())
-  return json.language
+export async function detectLanguage(
+  filename: string
+): Promise<string | undefined> {
+  try {
+    const {stdout} = await execAsync(`/tmp/enry -json ${filename}`)
+    const json = JSON.parse(stdout.toString())
+    return json.language
+  } catch (error) {
+    if (error instanceof Error) core.debug(error.message)
+  }
 }
 
 export type Language = {
@@ -29,10 +36,13 @@ export type Language = {
 export async function analyzeLanguage(
   files: readonly GithubFile[]
 ): Promise<readonly Language[]> {
-  const promises = files.map(async file => ({
-    ...file,
-    language: await detectLanguage(file.filename)
-  }))
+  const promises = files.map(async file => {
+    const language = await detectLanguage(file.filename)
+    return {
+      ...file,
+      language: language ?? 'Unknown (Deleted)'
+    }
+  })
 
   const results = await Promise.all(promises)
   const totalLines = sumOf(
