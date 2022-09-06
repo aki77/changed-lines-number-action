@@ -1,6 +1,9 @@
-name: "Your name here"
-description: "Provide a description here"
-author: "Your name or organization here"
+name: "changed-lines-number-action"
+description: "Add the number of changed lines to the PR body, considering `.gitattributes`."
+author: "aki77"
+branding:
+  icon: eye
+  color: blue
 inputs:
   token:
     description: "Github token"
