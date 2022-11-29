@@ -1,6 +1,6 @@
 {
   "name": "changed-lines-number-action",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "private": true,
   "description": "Add the number of changed lines to the PR body, considering `.gitattributes`.",
   "main": "lib/main.js",
@@ -31,19 +31,19 @@
     "picomatch": "^2.3.1"
   },
   "devDependencies": {
-    "@jest/globals": "^29.1.2",
-    "@types/node": "^16.11.64",
+    "@jest/globals": "^29.3.1",
+    "@types/node": "^16.18.3",
     "@types/picomatch": "^2.3.0",
-    "@typescript-eslint/parser": "^5.39.0",
+    "@typescript-eslint/parser": "^5.45.0",
     "@vercel/ncc": "^0.34.0",
-    "eslint": "^8.24.0",
-    "eslint-plugin-github": "^4.3.7",
-    "eslint-plugin-jest": "^27.1.0",
-    "jest": "^29.1.2",
+    "eslint": "^8.28.0",
+    "eslint-plugin-github": "^4.4.1",
+    "eslint-plugin-jest": "^27.1.6",
+    "jest": "^29.3.1",
     "js-yaml": "^4.1.0",
     "prettier": "2.8.0",
     "ts-jest": "^29.0.3",
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.3"
   },
   "volta": {
     "node": "16.15.1"
