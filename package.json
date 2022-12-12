@@ -1,6 +1,6 @@
 {
   "name": "changed-lines-number-action",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "private": true,
   "description": "Add the number of changed lines to the PR body, considering `.gitattributes`.",
   "main": "lib/main.js",
