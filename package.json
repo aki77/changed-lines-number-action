@@ -34,7 +34,7 @@
     "@jest/globals": "^29.7.0",
     "@types/node": "^16.18.52",
     "@types/picomatch": "^2.3.0",
-    "@typescript-eslint/parser": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.3",
     "@vercel/ncc": "^0.36.1",
     "eslint": "^8.49.0",
     "eslint-plugin-github": "^4.10.0",
