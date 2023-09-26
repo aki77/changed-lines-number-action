@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@actions/core':
     specifier: ^1.10.1
@@ -22,8 +26,8 @@ devDependencies:
     specifier: ^16.18.52
     version: 16.18.52
   '@types/picomatch':
-    specifier: ^2.3.0
-    version: 2.3.0
+    specifier: ^2.3.1
+    version: 2.3.1
   '@typescript-eslint/parser':
     specifier: ^6.7.2
     version: 6.7.2(eslint@8.49.0)(typescript@5.2.2)
@@ -951,8 +955,8 @@ packages:
     resolution: {integrity: sha512-sm2aph6cRSsTMFYFgI+RpPLunXO9ClJkpizUVdT7KmGeyfQ14xnjTMT/f3MHcfKqevXqGT6BgVFzW8wcEoDUtA==}
     dev: true
 
-  /@types/picomatch@2.3.0:
-    resolution: {integrity: sha512-O397rnSS9iQI4OirieAtsDqvCj4+3eY1J+EPdNTKuHuRWIfUoGyzX294o8C4KJYaLqgSrd2o60c5EqCU8Zv02g==}
+  /@types/picomatch@2.3.1:
+    resolution: {integrity: sha512-Ejq9/KBsgfZZafGGdr9R7011EZhDzcAEMjoBl2W4eGNcZGhsUFMbUA0D+sHxjtAA1ldk3e6wapzXeyp0NSuM8Q==}
     dev: true
 
   /@types/semver@7.5.2:
@@ -4338,7 +4342,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
