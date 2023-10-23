@@ -9,7 +9,7 @@ const execAsync = promisify(exec)
 
 export async function installEnry(os: string): Promise<void> {
   const prefix = os.toLowerCase().replace('macos', 'darwin')
-  const url = `https://github.com/go-enry/enry/releases/download/v1.1.0/enry-v1.1.0-${prefix}-amd64.tar.gz`
+  const url = `https://github.com/go-enry/enry/releases/download/v1.2.0/enry-v1.2.0-${prefix}-amd64.tar.gz`
   await execAsync(`curl -L ${url} | tar -xz -C /tmp/`)
 }
 

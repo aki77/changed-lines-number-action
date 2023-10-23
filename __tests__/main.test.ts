@@ -34,4 +34,4 @@ test('analyze', async () => {
       lineRatio: 13
     }
   ])
-})
+}, 20000)
