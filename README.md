@@ -52,7 +52,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: aki77/changed-lines-number-action@v2
+      - uses: aki77/changed-lines-number-action@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
