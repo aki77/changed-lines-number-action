@@ -26,8 +26,8 @@ devDependencies:
     specifier: ~20.8.10
     version: 20.8.10
   '@types/picomatch':
-    specifier: ^2.3.2
-    version: 2.3.2
+    specifier: ^2.3.3
+    version: 2.3.3
   '@typescript-eslint/parser':
     specifier: ^6.9.1
     version: 6.9.1(eslint@8.54.0)(typescript@5.2.2)
@@ -959,8 +959,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/picomatch@2.3.2:
-    resolution: {integrity: sha512-I+BytjxOlNYA285zP/3dVCRcE+OAvgHQZQt26MP7T7JbZ9DM/3W2WfViU1XuLypCzAx8PTC+MlYO3WLqjTyZ3g==}
+  /@types/picomatch@2.3.3:
+    resolution: {integrity: sha512-Yll76ZHikRFCyz/pffKGjrCwe/le2CDwOP5F210KQo27kpRE46U2rDnzikNlVn6/ezH3Mhn46bJMTfeVTtcYMg==}
     dev: true
 
   /@types/semver@7.5.4:
