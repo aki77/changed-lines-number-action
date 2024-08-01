@@ -28,8 +28,8 @@ importers:
         specifier: ~20.14.9
         version: 20.14.9
       '@types/picomatch':
-        specifier: ^2.3.4
-        version: 2.3.4
+        specifier: ^3.0.0
+        version: 3.0.0
       '@typescript-eslint/parser':
         specifier: ^7.15.0
         version: 7.15.0(eslint@8.57.0)(typescript@5.5.3)
@@ -476,8 +476,8 @@ packages:
   '@types/node@20.14.9':
     resolution: {integrity: sha512-06OCtnTXtWOZBJlRApleWndH4JsRVs1pDCc8dLSQp+7PpUpX3ePdHyeNSFTeSe7FtKyQkrlPvHwJOW3SLd8Oyg==}
 
-  '@types/picomatch@2.3.4':
-    resolution: {integrity: sha512-0so8lU8O5zatZS/2Fi4zrwks+vZv7e0dygrgEZXljODXBig97l4cPQD+9LabXfGJOWwoRkTVz6Q4edZvD12UOA==}
+  '@types/picomatch@3.0.0':
+    resolution: {integrity: sha512-iX/Qwk9vU17N/5Q7QrV46wzciloTdCqTRt6z8A7uFFADM2+Sy5oQh9ldZhAiTXH+l0sM/EkXatEhJIs8FUyOBQ==}
 
   '@types/stack-utils@2.0.3':
     resolution: {integrity: sha512-9aEbYZ3TbYMznPdcdr3SmIrLXwC/AKZXQeCf9Pgao5CKb8CyHuEX5jzWPTkvregvhRJHcpRO6BFoGW9ycaOkYw==}
@@ -2798,7 +2798,7 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
-  '@types/picomatch@2.3.4': {}
+  '@types/picomatch@3.0.0': {}
 
   '@types/stack-utils@2.0.3': {}
 
