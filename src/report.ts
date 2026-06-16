@@ -1,8 +1,8 @@
 import * as core from '@actions/core'
 import * as github from '@actions/github'
 import {markdownTable} from 'markdown-table'
-import {Language} from './language'
-import {sumOf} from './utils'
+import type {Language} from './language.js'
+import {sumOf} from './utils.js'
 
 const REPLACE_PATTERN =
   /<!-- start changed-lines-number-action -->[\s\S]*?<!-- end changed-lines-number-action -->/m

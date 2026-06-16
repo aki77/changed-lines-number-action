@@ -1,10 +1,10 @@
 import * as core from '@actions/core'
 import * as github from '@actions/github'
-import {filterFiles, readGitAttributes} from './filter'
-import {analyzeLanguage, installEnry} from './language'
-import {report} from './report'
+import {filterFiles, readGitAttributes} from './filter.js'
+import {analyzeLanguage, installEnry} from './language.js'
+import {report} from './report.js'
 
-async function run(): Promise<void> {
+export async function run(): Promise<void> {
   try {
     if (!github.context.issue.number) {
       core.warning('Cannot find the PR id.')
@@ -46,5 +46,3 @@ async function run(): Promise<void> {
     if (error instanceof Error) core.setFailed(error.message)
   }
 }
-
-run()

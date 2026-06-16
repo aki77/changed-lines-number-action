@@ -1,6 +1,6 @@
 import {expect, test} from '@jest/globals'
-import {filterFiles} from '../src/filter'
-import {installEnry, analyzeLanguage} from '../src/language'
+import {filterFiles} from '../src/filter.js'
+import {analyzeLanguage, installEnry} from '../src/language.js'
 
 // shows how the runner will run a javascript action with env / stdout protocol
 test('test runs', async () => {

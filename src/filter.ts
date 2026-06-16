@@ -1,7 +1,7 @@
-import {promises as fs} from 'fs'
 import * as core from '@actions/core'
+import {promises as fs} from 'fs'
 import {isMatch} from 'picomatch'
-import {GithubFile} from './types'
+import type {GithubFile} from './types.js'
 
 const IGNORE_PATTERN =
   /(linguist-vendored|linguist-documentation|linguist-generated)(=true)?$/
@@ -11,7 +11,7 @@ export const readGitAttributes = async (
 ): Promise<string | undefined> => {
   try {
     return fs.readFile(path, 'utf8')
-  } catch (error) {
+  } catch {
     return undefined
   }
 }
