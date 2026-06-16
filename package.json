@@ -31,6 +31,7 @@
   "dependencies": {
     "@actions/core": "^3.0.1",
     "@actions/github": "^9.1.1",
+    "linguist-languages": "^9.4.0",
     "markdown-table": "^3.0.4",
     "picomatch": "^4.0.4"
   },

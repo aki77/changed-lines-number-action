@@ -1,7 +1,7 @@
 import * as core from '@actions/core'
 import * as github from '@actions/github'
 import {filterFiles, readGitAttributes} from './filter.js'
-import {analyzeLanguage, installEnry} from './language.js'
+import {analyzeLanguage} from './language.js'
 import {report} from './report.js'
 
 export async function run(): Promise<void> {
@@ -38,7 +38,6 @@ export async function run(): Promise<void> {
         .join(', ')}`
     )
 
-    await installEnry(process.env.RUNNER_OS || 'linux')
     const languages = await analyzeLanguage(filteredFiles)
 
     await report(languages)
