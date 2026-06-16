@@ -19,8 +19,9 @@ export function groupBy<T, K extends string>(
 
   for (const element of array) {
     const key = selector(element)
-    const arr = (ret[key] ??= [] as T[])
+    const arr = ret[key] ?? []
     arr.push(element)
+    ret[key] = arr
   }
 
   return ret

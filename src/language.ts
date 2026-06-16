@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import * as core from '@actions/core'
 import {exec} from 'child_process'
 import {promisify} from 'util'
-import {GithubFile} from './types'
-import {groupBy, sumOf} from './utils'
+import type {GithubFile} from './types.js'
+import {groupBy, sumOf} from './utils.js'
 
 const execAsync = promisify(exec)
 
@@ -51,18 +50,18 @@ export async function analyzeLanguage(
   )
 
   return Object.entries(groupBy(results, ({language}) => language))
-    .map(([language, groupedFiles]) => {
+    .map(([language, groupedFiles = []]) => {
       const lines = sumOf(
-        groupedFiles!,
+        groupedFiles,
         ({additions, deletions}) => additions + deletions
       )
 
       return {
         language,
         lineRatio: Math.round((lines / totalLines) * 1000) / 10,
-        files: groupedFiles!.length,
-        additions: sumOf(groupedFiles!, ({additions}) => additions),
-        deletions: sumOf(groupedFiles!, ({deletions}) => deletions)
+        files: groupedFiles.length,
+        additions: sumOf(groupedFiles, ({additions}) => additions),
+        deletions: sumOf(groupedFiles, ({deletions}) => deletions)
       }
     })
     .sort((a, b) => b.lineRatio - a.lineRatio)
