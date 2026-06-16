@@ -10,7 +10,7 @@ import 'net';
 import require$$1 from 'tls';
 import events$1 from 'events';
 import 'assert';
-import require$$6, { promisify } from 'util';
+import require$$6 from 'util';
 import require$$0$1 from 'node:assert';
 import require$$0$3 from 'node:net';
 import require$$2 from 'node:http';
@@ -30,7 +30,7 @@ import require$$5$2 from 'node:async_hooks';
 import require$$1$4 from 'node:console';
 import require$$1$5 from 'node:dns';
 import require$$5$3 from 'string_decoder';
-import { exec } from 'child_process';
+import 'child_process';
 import 'timers';
 
 // We use any as a valid input type
@@ -35588,6 +35588,10848 @@ function filterFiles(files, gitattributes) {
     return files.filter(f => !picomatchExports.isMatch(f.filename, patterns));
 }
 
+var _1C_20_Enterprise = {
+  name: '1C Enterprise',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bsl', '.os'],
+  languageId: 0,
+  tmScope: 'source.bsl',
+  color: '#814CCC',
+};
+
+var _2Dimensional_20_Array = {
+  name: '2-Dimensional Array',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.2da'],
+  languageId: 387204628,
+  tmScope: 'source.2da',
+  color: '#38761D',
+};
+
+var _4D = {
+  name: '4D',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.4dm'],
+  languageId: 577529595,
+  tmScope: 'source.4dm',
+  color: '#004289',
+};
+
+var ABAP = {
+  name: 'ABAP',
+  type: 'programming',
+  aceMode: 'abap',
+  extensions: ['.abap'],
+  languageId: 1,
+  tmScope: 'source.abap',
+  color: '#E8274B',
+};
+
+var ABAP_20_CDS = {
+  name: 'ABAP CDS',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.asddls'],
+  languageId: 452681853,
+  tmScope: 'source.abapcds',
+  color: '#555e25',
+};
+
+var ABNF = {
+  name: 'ABNF',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.abnf'],
+  languageId: 429,
+  tmScope: 'source.abnf',
+};
+
+var AGS_20_Script = {
+  name: 'AGS Script',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.asc', '.ash'],
+  languageId: 2,
+  tmScope: 'source.c++',
+  aliases: ['ags'],
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-c++src',
+  color: '#B9D9FF',
+};
+
+var AIDL = {
+  name: 'AIDL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.aidl'],
+  languageId: 451700185,
+  tmScope: 'source.aidl',
+  color: '#34EB6B',
+  interpreters: ['aidl'],
+};
+
+var AL = {
+  name: 'AL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.al'],
+  languageId: 658971832,
+  tmScope: 'source.al',
+  color: '#3AA2B5',
+};
+
+var ALGOL = {
+  name: 'ALGOL',
+  type: 'programming',
+  aceMode: 'pascal',
+  extensions: ['.alg'],
+  languageId: 79217948,
+  tmScope: 'source.algol60',
+  codemirrorMode: 'pascal',
+  codemirrorMimeType: 'text/x-pascal',
+  color: '#D1E0DB',
+};
+
+var AMPL = {
+  name: 'AMPL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ampl', '.mod'],
+  languageId: 3,
+  tmScope: 'source.ampl',
+  color: '#E6EFBB',
+};
+
+var ANTLR = {
+  name: 'ANTLR',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.g4'],
+  languageId: 4,
+  tmScope: 'source.antlr',
+  color: '#9DC3FF',
+};
+
+var API_20_Blueprint = {
+  name: 'API Blueprint',
+  type: 'markup',
+  aceMode: 'markdown',
+  extensions: ['.apib'],
+  languageId: 5,
+  tmScope: 'text.html.markdown.source.gfm.apib',
+  color: '#2ACCA8',
+};
+
+var APL = {
+  name: 'APL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.apl', '.dyalog'],
+  languageId: 6,
+  tmScope: 'source.apl',
+  codemirrorMode: 'apl',
+  codemirrorMimeType: 'text/apl',
+  color: '#5A8164',
+  interpreters: ['apl', 'aplx', 'dyalog'],
+};
+
+var ASL = {
+  name: 'ASL',
+  type: 'programming',
+  aceMode: 'asl',
+  extensions: ['.asl', '.dsl'],
+  languageId: 124996147,
+  tmScope: 'source.asl',
+};
+
+var ASN_1 = {
+  name: 'ASN.1',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.asn', '.asn1'],
+  languageId: 7,
+  tmScope: 'source.asn',
+  codemirrorMode: 'asn.1',
+  codemirrorMimeType: 'text/x-ttcn-asn',
+};
+
+var ASP_NET = {
+  name: 'ASP.NET',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.asax', '.ascx', '.ashx', '.asmx', '.aspx', '.axd'],
+  languageId: 564186416,
+  tmScope: 'text.html.asp',
+  aliases: ['aspx', 'aspx-vb'],
+  codemirrorMode: 'htmlembedded',
+  codemirrorMimeType: 'application/x-aspx',
+  color: '#9400ff',
+};
+
+var ATS = {
+  name: 'ATS',
+  type: 'programming',
+  aceMode: 'ocaml',
+  extensions: ['.dats', '.hats', '.sats'],
+  languageId: 9,
+  tmScope: 'source.ats',
+  aliases: ['ats2'],
+  color: '#1ac620',
+};
+
+var ActionScript = {
+  name: 'ActionScript',
+  type: 'programming',
+  aceMode: 'actionscript',
+  extensions: ['.as'],
+  languageId: 10,
+  tmScope: 'source.actionscript.3',
+  aliases: ['actionscript 3', 'actionscript3', 'as3'],
+  color: '#882B0F',
+};
+
+var Ada = {
+  name: 'Ada',
+  type: 'programming',
+  aceMode: 'ada',
+  extensions: ['.adb', '.ada', '.ads'],
+  languageId: 11,
+  tmScope: 'source.ada',
+  aliases: ['ada95', 'ada2005'],
+  color: '#02f88c',
+};
+
+var Adblock_20_Filter_20_List = {
+  name: 'Adblock Filter List',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.txt'],
+  languageId: 884614762,
+  tmScope: 'text.adblock',
+  aliases: ['ad block filters', 'ad block', 'adb', 'adblock'],
+  color: '#800000',
+};
+
+var Adobe_20_Font_20_Metrics = {
+  name: 'Adobe Font Metrics',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.afm'],
+  languageId: 147198098,
+  tmScope: 'source.afm',
+  aliases: [
+    'acfm',
+    'adobe composite font metrics',
+    'adobe multiple font metrics',
+    'amfm',
+  ],
+  color: '#fa0f00',
+};
+
+var Agda = {
+  name: 'Agda',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.agda'],
+  languageId: 12,
+  tmScope: 'source.agda',
+  color: '#315665',
+};
+
+var Aiken = {
+  name: 'Aiken',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ak'],
+  languageId: 899409497,
+  tmScope: 'source.aiken',
+  color: '#640ff8',
+};
+
+var Alloy = {
+  name: 'Alloy',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.als'],
+  languageId: 13,
+  tmScope: 'source.alloy',
+  color: '#64C800',
+};
+
+var Alpine_20_Abuild = {
+  name: 'Alpine Abuild',
+  type: 'programming',
+  aceMode: 'sh',
+  filenames: ['APKBUILD'],
+  languageId: 14,
+  tmScope: 'source.shell',
+  aliases: ['abuild', 'apkbuild'],
+  codemirrorMode: 'shell',
+  codemirrorMimeType: 'text/x-sh',
+  color: '#0D597F',
+  group: 'Shell',
+};
+
+var Altium_20_Designer = {
+  name: 'Altium Designer',
+  type: 'data',
+  aceMode: 'ini',
+  extensions: ['.OutJob', '.PcbDoc', '.PrjPCB', '.SchDoc'],
+  languageId: 187772328,
+  tmScope: 'source.ini',
+  aliases: ['altium'],
+  color: '#A89663',
+};
+
+var AngelScript = {
+  name: 'AngelScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.as', '.angelscript'],
+  languageId: 389477596,
+  tmScope: 'source.angelscript',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-c++src',
+  color: '#C7D7DC',
+};
+
+var Answer_20_Set_20_Programming = {
+  name: 'Answer Set Programming',
+  type: 'programming',
+  aceMode: 'prolog',
+  extensions: ['.lp'],
+  languageId: 433009171,
+  tmScope: 'source.answersetprogramming',
+  color: '#A9CC29',
+  interpreters: ['clingo'],
+};
+
+var Ant_20_Build_20_System = {
+  name: 'Ant Build System',
+  type: 'data',
+  aceMode: 'xml',
+  filenames: ['ant.xml', 'build.xml'],
+  languageId: 15,
+  tmScope: 'text.xml.ant',
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'application/xml',
+  color: '#A9157E',
+};
+
+var Antlers = {
+  name: 'Antlers',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.antlers.html', '.antlers.php', '.antlers.xml'],
+  languageId: 1067292663,
+  tmScope: 'text.html.statamic',
+  color: '#ff269e',
+};
+
+var ApacheConf = {
+  name: 'ApacheConf',
+  type: 'data',
+  aceMode: 'apache_conf',
+  extensions: ['.apacheconf', '.vhost'],
+  filenames: ['.htaccess', 'apache2.conf', 'httpd.conf'],
+  languageId: 16,
+  tmScope: 'source.apacheconf',
+  aliases: ['aconf', 'apache'],
+  color: '#d12127',
+};
+
+var Apex = {
+  name: 'Apex',
+  type: 'programming',
+  aceMode: 'apex',
+  extensions: ['.cls', '.apex', '.trigger'],
+  languageId: 17,
+  tmScope: 'source.apex',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-java',
+  color: '#1797c0',
+};
+
+var Apollo_20_Guidance_20_Computer = {
+  name: 'Apollo Guidance Computer',
+  type: 'programming',
+  aceMode: 'assembly_x86',
+  extensions: ['.agc'],
+  languageId: 18,
+  tmScope: 'source.agc',
+  color: '#0B3D91',
+  group: 'Assembly',
+};
+
+var AppleScript = {
+  name: 'AppleScript',
+  type: 'programming',
+  aceMode: 'applescript',
+  extensions: ['.applescript', '.scpt'],
+  languageId: 19,
+  tmScope: 'source.applescript',
+  aliases: ['apples', 'osascript'],
+  color: '#101F1F',
+  interpreters: ['osascript'],
+};
+
+var Arc = {
+  name: 'Arc',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.arc'],
+  languageId: 20,
+  tmScope: 'none',
+  color: '#aa2afe',
+};
+
+var AsciiDoc = {
+  name: 'AsciiDoc',
+  type: 'prose',
+  aceMode: 'asciidoc',
+  extensions: ['.asciidoc', '.adoc', '.asc'],
+  languageId: 22,
+  tmScope: 'text.html.asciidoc',
+  color: '#73a0c5',
+  wrap: true,
+};
+
+var AspectJ = {
+  name: 'AspectJ',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.aj'],
+  languageId: 23,
+  tmScope: 'source.aspectj',
+  color: '#a957b0',
+};
+
+var Assembly = {
+  name: 'Assembly',
+  type: 'programming',
+  aceMode: 'assembly_x86',
+  extensions: ['.asm', '.a51', '.i', '.inc', '.nas', '.nasm', '.s'],
+  languageId: 24,
+  tmScope: 'source.assembly',
+  aliases: ['asm', 'nasm'],
+  color: '#6E4C13',
+};
+
+var Astro = {
+  name: 'Astro',
+  type: 'markup',
+  aceMode: 'astro',
+  extensions: ['.astro'],
+  languageId: 578209015,
+  tmScope: 'source.astro',
+  codemirrorMode: 'jsx',
+  codemirrorMimeType: 'text/jsx',
+  color: '#ff5a03',
+};
+
+var Asymptote = {
+  name: 'Asymptote',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.asy'],
+  languageId: 591605007,
+  tmScope: 'source.c++',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-kotlin',
+  color: '#ff0000',
+  interpreters: ['asy'],
+};
+
+var Augeas = {
+  name: 'Augeas',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.aug'],
+  languageId: 25,
+  tmScope: 'none',
+  color: '#9CC134',
+};
+
+var AutoHotkey = {
+  name: 'AutoHotkey',
+  type: 'programming',
+  aceMode: 'autohotkey',
+  extensions: ['.ahk', '.ahkl'],
+  languageId: 26,
+  tmScope: 'source.ahk',
+  aliases: ['ahk'],
+  color: '#6594b9',
+};
+
+var AutoIt = {
+  name: 'AutoIt',
+  type: 'programming',
+  aceMode: 'autohotkey',
+  extensions: ['.au3'],
+  languageId: 27,
+  tmScope: 'source.autoit',
+  aliases: ['au3', 'AutoIt3', 'AutoItScript'],
+  color: '#1C3552',
+};
+
+var Avro_20_IDL = {
+  name: 'Avro IDL',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.avdl'],
+  languageId: 785497837,
+  tmScope: 'source.avro',
+  color: '#0040FF',
+};
+
+var Awk = {
+  name: 'Awk',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.awk', '.auk', '.gawk', '.mawk', '.nawk'],
+  languageId: 28,
+  tmScope: 'source.awk',
+  color: '#c30e9b',
+  interpreters: ['awk', 'gawk', 'mawk', 'nawk'],
+};
+
+var B_20__28_Formal_20_Method_29_ = {
+  name: 'B (Formal Method)',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mch'],
+  languageId: 700792152,
+  tmScope: 'source.b',
+  color: '#8aa8c5',
+};
+
+var B4X = {
+  name: 'B4X',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bas'],
+  languageId: 96642275,
+  tmScope: 'source.vba',
+  aliases: ['basic for android'],
+  codemirrorMode: 'vb',
+  codemirrorMimeType: 'text/x-vb',
+  color: '#00e4ff',
+};
+
+var BAML = {
+  name: 'BAML',
+  type: 'programming',
+  aceMode: 'io',
+  extensions: ['.baml'],
+  languageId: 502521509,
+  tmScope: 'source.baml',
+  codemirrorMode: 'stylus',
+  codemirrorMimeType: 'text/x-styl',
+  color: '#a855f7',
+};
+
+var BASIC = {
+  name: 'BASIC',
+  type: 'programming',
+  aceMode: 'basic',
+  extensions: ['.bas'],
+  languageId: 28923963,
+  tmScope: 'source.basic',
+  color: '#ff0000',
+};
+
+var BQN = {
+  name: 'BQN',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bqn'],
+  languageId: 330386870,
+  tmScope: 'source.bqn',
+  color: '#2b7067',
+};
+
+var Ballerina = {
+  name: 'Ballerina',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bal'],
+  languageId: 720859680,
+  tmScope: 'source.ballerina',
+  color: '#FF5000',
+};
+
+var Batchfile = {
+  name: 'Batchfile',
+  type: 'programming',
+  aceMode: 'batchfile',
+  extensions: ['.bat', '.cmd'],
+  filenames: ['gradlew.bat', 'mvnw.cmd'],
+  languageId: 29,
+  tmScope: 'source.batchfile',
+  aliases: ['bat', 'batch', 'dosbatch', 'winbatch'],
+  color: '#C1F12E',
+};
+
+var Beef = {
+  name: 'Beef',
+  type: 'programming',
+  aceMode: 'csharp',
+  extensions: ['.bf'],
+  languageId: 545626333,
+  tmScope: 'source.cs',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csharp',
+  color: '#a52f4e',
+};
+
+var Befunge = {
+  name: 'Befunge',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.befunge', '.bf'],
+  languageId: 30,
+  tmScope: 'source.befunge',
+};
+
+var Berry = {
+  name: 'Berry',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.be'],
+  languageId: 121855308,
+  tmScope: 'source.berry',
+  aliases: ['be'],
+  color: '#15A13C',
+};
+
+var BibTeX = {
+  name: 'BibTeX',
+  type: 'markup',
+  aceMode: 'bibtex',
+  extensions: ['.bib', '.bibtex'],
+  languageId: 982188347,
+  tmScope: 'text.bibtex',
+  codemirrorMode: 'stex',
+  codemirrorMimeType: 'text/x-stex',
+  color: '#778899',
+  group: 'TeX',
+};
+
+var BibTeX_20_Style = {
+  name: 'BibTeX Style',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bst'],
+  languageId: 909569041,
+  tmScope: 'source.bst',
+};
+
+var Bicep = {
+  name: 'Bicep',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bicep', '.bicepparam'],
+  languageId: 321200902,
+  tmScope: 'source.bicep',
+  color: '#519aba',
+};
+
+var Bikeshed = {
+  name: 'Bikeshed',
+  type: 'markup',
+  aceMode: 'html',
+  extensions: ['.bs'],
+  languageId: 1055528081,
+  tmScope: 'source.csswg',
+  codemirrorMode: 'htmlmixed',
+  codemirrorMimeType: 'text/html',
+  color: '#5562ac',
+};
+
+var Bison = {
+  name: 'Bison',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bison'],
+  languageId: 31,
+  tmScope: 'source.yacc',
+  color: '#6A463F',
+  group: 'Yacc',
+};
+
+var BitBake = {
+  name: 'BitBake',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bb', '.bbappend', '.bbclass', '.inc'],
+  languageId: 32,
+  tmScope: 'source.bb',
+  color: '#00bce4',
+};
+
+var Blade = {
+  name: 'Blade',
+  type: 'markup',
+  aceMode: 'php_laravel_blade',
+  extensions: ['.blade', '.blade.php'],
+  languageId: 33,
+  tmScope: 'text.html.php.blade',
+  color: '#f7523f',
+};
+
+var BlitzBasic = {
+  name: 'BlitzBasic',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bb', '.decls'],
+  languageId: 34,
+  tmScope: 'source.blitzmax',
+  aliases: ['b3d', 'blitz3d', 'blitzplus', 'bplus'],
+  color: '#00FFAE',
+};
+
+var BlitzMax = {
+  name: 'BlitzMax',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bmx'],
+  languageId: 35,
+  tmScope: 'source.blitzmax',
+  aliases: ['bmax'],
+  color: '#cd6400',
+};
+
+var Bluespec = {
+  name: 'Bluespec',
+  type: 'programming',
+  aceMode: 'verilog',
+  extensions: ['.bsv'],
+  languageId: 36,
+  tmScope: 'source.bsv',
+  aliases: ['bluespec bsv', 'bsv'],
+  codemirrorMode: 'verilog',
+  codemirrorMimeType: 'text/x-systemverilog',
+  color: '#12223c',
+};
+
+var Bluespec_20_BH = {
+  name: 'Bluespec BH',
+  type: 'programming',
+  aceMode: 'haskell',
+  extensions: ['.bs'],
+  languageId: 641580358,
+  tmScope: 'source.bh',
+  aliases: ['bh', 'bluespec classic'],
+  codemirrorMode: 'haskell',
+  codemirrorMimeType: 'text/x-haskell',
+  color: '#12223c',
+  group: 'Bluespec',
+};
+
+var Boo = {
+  name: 'Boo',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.boo'],
+  languageId: 37,
+  tmScope: 'source.boo',
+  color: '#d4bec1',
+};
+
+var Boogie = {
+  name: 'Boogie',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bpl'],
+  languageId: 955017407,
+  tmScope: 'source.boogie',
+  color: '#c80fa0',
+  interpreters: ['boogie'],
+};
+
+var Brainfuck = {
+  name: 'Brainfuck',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.b', '.bf'],
+  languageId: 38,
+  tmScope: 'source.bf',
+  codemirrorMode: 'brainfuck',
+  codemirrorMimeType: 'text/x-brainfuck',
+  color: '#2F2530',
+};
+
+var BrighterScript = {
+  name: 'BrighterScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bs'],
+  languageId: 943571030,
+  tmScope: 'source.brs',
+  color: '#66AABB',
+};
+
+var Brightscript = {
+  name: 'Brightscript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.brs'],
+  languageId: 39,
+  tmScope: 'source.brs',
+  color: '#662D91',
+};
+
+var Browserslist = {
+  name: 'Browserslist',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['.browserslistrc', 'browserslist'],
+  languageId: 153503348,
+  tmScope: 'text.browserslist',
+  color: '#ffd539',
+};
+
+var Bru = {
+  name: 'Bru',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.bru'],
+  languageId: 906627898,
+  tmScope: 'source.bru',
+  color: '#F4AA41',
+};
+
+var BuildStream = {
+  name: 'BuildStream',
+  type: 'data',
+  aceMode: 'yaml',
+  extensions: ['.bst'],
+  languageId: 84359046,
+  tmScope: 'source.yaml',
+  color: '#006bff',
+};
+
+var C = {
+  name: 'C',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.c', '.cats', '.h', '.h.in', '.idc'],
+  languageId: 41,
+  tmScope: 'source.c',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  color: '#555555',
+  interpreters: ['tcc'],
+};
+
+var C_23_ = {
+  name: 'C#',
+  type: 'programming',
+  aceMode: 'csharp',
+  extensions: ['.cs', '.cake', '.cs.pp', '.csx', '.linq'],
+  languageId: 42,
+  tmScope: 'source.cs',
+  aliases: ['csharp', 'cake', 'cakescript'],
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csharp',
+  color: '#178600',
+};
+
+var C_2b__2b_ = {
+  name: 'C++',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: [
+    '.cpp',
+    '.c++',
+    '.cc',
+    '.cp',
+    '.cppm',
+    '.cxx',
+    '.h',
+    '.h++',
+    '.hh',
+    '.hpp',
+    '.hxx',
+    '.inc',
+    '.inl',
+    '.ino',
+    '.ipp',
+    '.ixx',
+    '.re',
+    '.tcc',
+    '.tpp',
+    '.txx',
+  ],
+  languageId: 43,
+  tmScope: 'source.c++',
+  aliases: ['cpp'],
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-c++src',
+  color: '#f34b7d',
+};
+
+var CObjDump = {
+  name: 'C-ObjDump',
+  type: 'data',
+  aceMode: 'assembly_x86',
+  extensions: ['.c-objdump'],
+  languageId: 44,
+  tmScope: 'objdump.x86asm',
+};
+
+var C2hs_20_Haskell = {
+  name: 'C2hs Haskell',
+  type: 'programming',
+  aceMode: 'haskell',
+  extensions: ['.chs'],
+  languageId: 45,
+  tmScope: 'source.haskell',
+  aliases: ['c2hs'],
+  codemirrorMode: 'haskell',
+  codemirrorMimeType: 'text/x-haskell',
+  group: 'Haskell',
+};
+
+var C3 = {
+  name: 'C3',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.c3'],
+  languageId: 769248603,
+  tmScope: 'source.c3',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  color: '#2563eb',
+};
+
+var CAP_20_CDS = {
+  name: 'CAP CDS',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.cds'],
+  languageId: 390788699,
+  tmScope: 'source.cds',
+  aliases: ['cds'],
+  color: '#0092d1',
+};
+
+var CIL = {
+  name: 'CIL',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.cil'],
+  languageId: 29176339,
+  tmScope: 'source.cil',
+};
+
+var CLIPS = {
+  name: 'CLIPS',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.clp'],
+  languageId: 46,
+  tmScope: 'source.clips',
+  color: '#00A300',
+};
+
+var CMake = {
+  name: 'CMake',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.cmake', '.cmake.in'],
+  filenames: ['CMakeLists.txt'],
+  languageId: 47,
+  tmScope: 'source.cmake',
+  codemirrorMode: 'cmake',
+  codemirrorMimeType: 'text/x-cmake',
+  color: '#DA3434',
+};
+
+var COBOL = {
+  name: 'COBOL',
+  type: 'programming',
+  aceMode: 'cobol',
+  extensions: ['.cob', '.cbl', '.ccp', '.cobol', '.cpy'],
+  languageId: 48,
+  tmScope: 'source.cobol',
+  codemirrorMode: 'cobol',
+  codemirrorMimeType: 'text/x-cobol',
+};
+
+var CODEOWNERS = {
+  name: 'CODEOWNERS',
+  type: 'data',
+  aceMode: 'gitignore',
+  filenames: ['CODEOWNERS'],
+  languageId: 321684729,
+  tmScope: 'text.codeowners',
+};
+
+var COLLADA = {
+  name: 'COLLADA',
+  type: 'data',
+  aceMode: 'xml',
+  extensions: ['.dae'],
+  languageId: 49,
+  tmScope: 'text.xml',
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'text/xml',
+  color: '#F1A42B',
+};
+
+var CQL = {
+  name: 'CQL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.cql'],
+  languageId: 71155397,
+  tmScope: 'source.cql',
+  color: '#006091',
+};
+
+var CSON = {
+  name: 'CSON',
+  type: 'data',
+  aceMode: 'coffee',
+  extensions: ['.cson'],
+  languageId: 424,
+  tmScope: 'source.coffee',
+  codemirrorMode: 'coffeescript',
+  codemirrorMimeType: 'text/x-coffeescript',
+  color: '#244776',
+};
+
+var CSS = {
+  name: 'CSS',
+  type: 'markup',
+  aceMode: 'css',
+  extensions: ['.css'],
+  languageId: 50,
+  tmScope: 'source.css',
+  codemirrorMode: 'css',
+  codemirrorMimeType: 'text/css',
+  color: '#663399',
+};
+
+var CSV = {
+  name: 'CSV',
+  type: 'data',
+  aceMode: 'csv',
+  extensions: ['.csv'],
+  languageId: 51,
+  tmScope: 'source.csv',
+  color: '#237346',
+};
+
+var CUE = {
+  name: 'CUE',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.cue'],
+  languageId: 356063509,
+  tmScope: 'source.cue',
+  color: '#5886E1',
+};
+
+var CWeb = {
+  name: 'CWeb',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.w'],
+  languageId: 657332628,
+  tmScope: 'none',
+  color: '#00007a',
+};
+
+var Cabal_20_Config = {
+  name: 'Cabal Config',
+  type: 'data',
+  aceMode: 'haskell_cabal',
+  extensions: ['.cabal'],
+  filenames: ['cabal.config', 'cabal.project'],
+  languageId: 677095381,
+  tmScope: 'source.cabal',
+  aliases: ['Cabal'],
+  codemirrorMode: 'haskell',
+  codemirrorMimeType: 'text/x-haskell',
+  color: '#483465',
+};
+
+var Caddyfile = {
+  name: 'Caddyfile',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.caddyfile'],
+  filenames: ['Caddyfile'],
+  languageId: 615465151,
+  tmScope: 'source.Caddyfile',
+  aliases: ['Caddy'],
+  color: '#22b638',
+};
+
+var Cadence = {
+  name: 'Cadence',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.cdc'],
+  languageId: 270184138,
+  tmScope: 'source.cadence',
+  color: '#00ef8b',
+};
+
+var Cairo = {
+  name: 'Cairo',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.cairo'],
+  languageId: 620599567,
+  tmScope: 'source.cairo',
+  color: '#ff4a48',
+  group: 'Cairo',
+};
+
+var Cairo_20_Zero = {
+  name: 'Cairo Zero',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.cairo'],
+  languageId: 891399890,
+  tmScope: 'source.cairo0',
+  color: '#ff4a48',
+  group: 'Cairo',
+};
+
+var CameLIGO = {
+  name: 'CameLIGO',
+  type: 'programming',
+  aceMode: 'ocaml',
+  extensions: ['.mligo'],
+  languageId: 829207807,
+  tmScope: 'source.mligo',
+  codemirrorMode: 'mllike',
+  codemirrorMimeType: 'text/x-ocaml',
+  color: '#3be133',
+  group: 'LigoLANG',
+};
+
+var Cangjie = {
+  name: 'Cangjie',
+  type: 'programming',
+  aceMode: 'swift',
+  extensions: ['.cj'],
+  languageId: 581895317,
+  tmScope: 'source.cj',
+  codemirrorMode: 'swift',
+  codemirrorMimeType: 'text/x-swift',
+  color: '#00868B',
+};
+
+var Cap_27_n_20_Proto = {
+  name: "Cap'n Proto",
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.capnp'],
+  languageId: 52,
+  tmScope: 'source.capnp',
+  color: '#c42727',
+};
+
+var Carbon = {
+  name: 'Carbon',
+  type: 'programming',
+  aceMode: 'golang',
+  extensions: ['.carbon'],
+  languageId: 55627273,
+  tmScope: 'source.v',
+  codemirrorMode: 'go',
+  codemirrorMimeType: 'text/x-go',
+  color: '#222222',
+};
+
+var CartoCSS = {
+  name: 'CartoCSS',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mss'],
+  languageId: 53,
+  tmScope: 'source.css.mss',
+  aliases: ['Carto'],
+};
+
+var Ceylon = {
+  name: 'Ceylon',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ceylon'],
+  languageId: 54,
+  tmScope: 'source.ceylon',
+  color: '#dfa535',
+};
+
+var Chapel = {
+  name: 'Chapel',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.chpl'],
+  languageId: 55,
+  tmScope: 'source.chapel',
+  aliases: ['chpl'],
+  color: '#8dc63f',
+};
+
+var Charity = {
+  name: 'Charity',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ch'],
+  languageId: 56,
+  tmScope: 'none',
+};
+
+var Checksums = {
+  name: 'Checksums',
+  type: 'data',
+  aceMode: 'text',
+  extensions: [
+    '.crc32',
+    '.md2',
+    '.md4',
+    '.md5',
+    '.sha1',
+    '.sha2',
+    '.sha224',
+    '.sha256',
+    '.sha256sum',
+    '.sha3',
+    '.sha384',
+    '.sha512',
+  ],
+  filenames: [
+    'MD5SUMS',
+    'SHA1SUMS',
+    'SHA256SUMS',
+    'SHA256SUMS.txt',
+    'SHA512SUMS',
+    'checksums.txt',
+    'cksums',
+    'md5sum.txt',
+  ],
+  languageId: 372063053,
+  tmScope: 'text.checksums',
+  aliases: ['checksum', 'hash', 'hashes', 'sum', 'sums'],
+};
+
+var ChucK = {
+  name: 'ChucK',
+  type: 'programming',
+  aceMode: 'java',
+  extensions: ['.ck'],
+  languageId: 57,
+  tmScope: 'source.java',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-java',
+  color: '#3f8000',
+};
+
+var Circom = {
+  name: 'Circom',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.circom'],
+  languageId: 1042332086,
+  tmScope: 'source.circom',
+  color: '#707575',
+};
+
+var Cirru = {
+  name: 'Cirru',
+  type: 'programming',
+  aceMode: 'cirru',
+  extensions: ['.cirru'],
+  languageId: 58,
+  tmScope: 'source.cirru',
+  color: '#ccccff',
+};
+
+var Clarion = {
+  name: 'Clarion',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.clw'],
+  languageId: 59,
+  tmScope: 'source.clarion',
+  color: '#db901e',
+};
+
+var Clarity = {
+  name: 'Clarity',
+  type: 'programming',
+  aceMode: 'lisp',
+  extensions: ['.clar'],
+  languageId: 91493841,
+  tmScope: 'source.clar',
+  color: '#5546ff',
+};
+
+var Classic_20_ASP = {
+  name: 'Classic ASP',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.asp'],
+  languageId: 8,
+  tmScope: 'text.html.asp',
+  aliases: ['asp'],
+  color: '#6a40fd',
+};
+
+var Clean = {
+  name: 'Clean',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.icl', '.dcl'],
+  languageId: 60,
+  tmScope: 'source.clean',
+  color: '#3F85AF',
+};
+
+var Click = {
+  name: 'Click',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.click'],
+  languageId: 61,
+  tmScope: 'source.click',
+  color: '#E4E6F3',
+};
+
+var Clojure = {
+  name: 'Clojure',
+  type: 'programming',
+  aceMode: 'clojure',
+  extensions: [
+    '.clj',
+    '.bb',
+    '.boot',
+    '.cl2',
+    '.cljc',
+    '.cljs',
+    '.cljs.hl',
+    '.cljscm',
+    '.cljx',
+    '.hic',
+  ],
+  filenames: ['riemann.config'],
+  languageId: 62,
+  tmScope: 'source.clojure',
+  codemirrorMode: 'clojure',
+  codemirrorMimeType: 'text/x-clojure',
+  color: '#db5855',
+  interpreters: ['bb'],
+};
+
+var Closure_20_Templates = {
+  name: 'Closure Templates',
+  type: 'markup',
+  aceMode: 'soy_template',
+  extensions: ['.soy'],
+  languageId: 357046146,
+  tmScope: 'text.html.soy',
+  aliases: ['soy'],
+  codemirrorMode: 'soy',
+  codemirrorMimeType: 'text/x-soy',
+  color: '#0d948f',
+};
+
+var Cloud_20_Firestore_20_Security_20_Rules = {
+  name: 'Cloud Firestore Security Rules',
+  type: 'data',
+  aceMode: 'less',
+  filenames: ['firestore.rules'],
+  languageId: 407996372,
+  tmScope: 'source.firestore',
+  codemirrorMode: 'css',
+  codemirrorMimeType: 'text/css',
+  color: '#FFA000',
+};
+
+var Clue = {
+  name: 'Clue',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.clue'],
+  languageId: 163763508,
+  tmScope: 'source.clue',
+  color: '#0009b5',
+};
+
+var CoNLLU = {
+  name: 'CoNLL-U',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.conllu', '.conll'],
+  languageId: 421026389,
+  tmScope: 'text.conllu',
+  aliases: ['CoNLL', 'CoNLL-X'],
+};
+
+var CodeQL = {
+  name: 'CodeQL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ql', '.qll'],
+  languageId: 424259634,
+  tmScope: 'source.ql',
+  aliases: ['ql'],
+  color: '#140f46',
+};
+
+var CoffeeScript = {
+  name: 'CoffeeScript',
+  type: 'programming',
+  aceMode: 'coffee',
+  extensions: ['.coffee', '._coffee', '.cake', '.cjsx', '.iced'],
+  filenames: ['Cakefile'],
+  languageId: 63,
+  tmScope: 'source.coffee',
+  aliases: ['coffee', 'coffee-script'],
+  codemirrorMode: 'coffeescript',
+  codemirrorMimeType: 'text/x-coffeescript',
+  color: '#244776',
+  interpreters: ['coffee'],
+};
+
+var ColdFusion = {
+  name: 'ColdFusion',
+  type: 'programming',
+  aceMode: 'coldfusion',
+  extensions: ['.cfm', '.cfml'],
+  languageId: 64,
+  tmScope: 'text.html.cfm',
+  aliases: ['cfm', 'cfml', 'coldfusion html'],
+  color: '#ed2cd6',
+};
+
+var ColdFusion_20_CFC = {
+  name: 'ColdFusion CFC',
+  type: 'programming',
+  aceMode: 'coldfusion',
+  extensions: ['.cfc'],
+  languageId: 65,
+  tmScope: 'source.cfscript',
+  aliases: ['cfc'],
+  color: '#ed2cd6',
+  group: 'ColdFusion',
+};
+
+var Common_20_Lisp = {
+  name: 'Common Lisp',
+  type: 'programming',
+  aceMode: 'lisp',
+  extensions: ['.lisp', '.asd', '.cl', '.l', '.lsp', '.ny', '.podsl', '.sexp'],
+  languageId: 66,
+  tmScope: 'source.commonlisp',
+  aliases: ['lisp'],
+  codemirrorMode: 'commonlisp',
+  codemirrorMimeType: 'text/x-common-lisp',
+  color: '#3fb68b',
+  interpreters: ['lisp', 'sbcl', 'ccl', 'clisp', 'ecl'],
+};
+
+var Common_20_Workflow_20_Language = {
+  name: 'Common Workflow Language',
+  type: 'programming',
+  aceMode: 'yaml',
+  extensions: ['.cwl'],
+  languageId: 988547172,
+  tmScope: 'source.cwl',
+  aliases: ['cwl'],
+  codemirrorMode: 'yaml',
+  codemirrorMimeType: 'text/x-yaml',
+  color: '#B5314C',
+  interpreters: ['cwl-runner'],
+};
+
+var Component_20_Pascal = {
+  name: 'Component Pascal',
+  type: 'programming',
+  aceMode: 'pascal',
+  extensions: ['.cp', '.cps'],
+  languageId: 67,
+  tmScope: 'source.pascal',
+  codemirrorMode: 'pascal',
+  codemirrorMimeType: 'text/x-pascal',
+  color: '#B0CE4E',
+};
+
+var Cooklang = {
+  name: 'Cooklang',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.cook'],
+  languageId: 788037493,
+  tmScope: 'source.cooklang',
+  color: '#E15A29',
+  wrap: true,
+};
+
+var Cool = {
+  name: 'Cool',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.cl'],
+  languageId: 68,
+  tmScope: 'source.cool',
+};
+
+var CppObjDump = {
+  name: 'Cpp-ObjDump',
+  type: 'data',
+  aceMode: 'assembly_x86',
+  extensions: [
+    '.cppobjdump',
+    '.c++-objdump',
+    '.c++objdump',
+    '.cpp-objdump',
+    '.cxx-objdump',
+  ],
+  languageId: 70,
+  tmScope: 'objdump.x86asm',
+  aliases: ['c++-objdump'],
+};
+
+var Creole = {
+  name: 'Creole',
+  type: 'prose',
+  aceMode: 'text',
+  extensions: ['.creole'],
+  languageId: 71,
+  tmScope: 'text.html.creole',
+  wrap: true,
+};
+
+var Crystal = {
+  name: 'Crystal',
+  type: 'programming',
+  aceMode: 'crystal',
+  extensions: ['.cr'],
+  languageId: 72,
+  tmScope: 'source.crystal',
+  codemirrorMode: 'crystal',
+  codemirrorMimeType: 'text/x-crystal',
+  color: '#000100',
+  interpreters: ['crystal'],
+};
+
+var Csound = {
+  name: 'Csound',
+  type: 'programming',
+  aceMode: 'csound_orchestra',
+  extensions: ['.orc', '.udo'],
+  languageId: 73,
+  tmScope: 'source.csound',
+  aliases: ['csound-orc'],
+  color: '#1a1a1a',
+};
+
+var Csound_20_Document = {
+  name: 'Csound Document',
+  type: 'programming',
+  aceMode: 'csound_document',
+  extensions: ['.csd'],
+  languageId: 74,
+  tmScope: 'source.csound-document',
+  aliases: ['csound-csd'],
+  color: '#1a1a1a',
+};
+
+var Csound_20_Score = {
+  name: 'Csound Score',
+  type: 'programming',
+  aceMode: 'csound_score',
+  extensions: ['.sco'],
+  languageId: 75,
+  tmScope: 'source.csound-score',
+  aliases: ['csound-sco'],
+  color: '#1a1a1a',
+};
+
+var Cuda = {
+  name: 'Cuda',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.cu', '.cuh'],
+  languageId: 77,
+  tmScope: 'source.cuda-c++',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-c++src',
+  color: '#3A4E3A',
+};
+
+var Cue_20_Sheet = {
+  name: 'Cue Sheet',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.cue'],
+  languageId: 942714150,
+  tmScope: 'source.cuesheet',
+};
+
+var Curry = {
+  name: 'Curry',
+  type: 'programming',
+  aceMode: 'haskell',
+  extensions: ['.curry'],
+  languageId: 439829048,
+  tmScope: 'source.curry',
+  color: '#531242',
+};
+
+var Cycript = {
+  name: 'Cycript',
+  type: 'programming',
+  aceMode: 'javascript',
+  extensions: ['.cy'],
+  languageId: 78,
+  tmScope: 'source.js',
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'text/javascript',
+};
+
+var Cylc = {
+  name: 'Cylc',
+  type: 'data',
+  aceMode: 'ini',
+  extensions: ['.cylc'],
+  filenames: ['suite.rc'],
+  languageId: 476447814,
+  tmScope: 'source.cylc',
+  color: '#00b3fd',
+  group: 'INI',
+};
+
+var Cypher = {
+  name: 'Cypher',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.cyp', '.cypher'],
+  languageId: 850806976,
+  tmScope: 'source.cypher',
+  codemirrorMode: 'cypher',
+  codemirrorMimeType: 'application/x-cypher-query',
+  color: '#34c0eb',
+};
+
+var Cython = {
+  name: 'Cython',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pyx', '.pxd', '.pxi'],
+  languageId: 79,
+  tmScope: 'source.cython',
+  aliases: ['pyrex'],
+  codemirrorMode: 'python',
+  codemirrorMimeType: 'text/x-cython',
+  color: '#fedf5b',
+};
+
+var D = {
+  name: 'D',
+  type: 'programming',
+  aceMode: 'd',
+  extensions: ['.d', '.di'],
+  languageId: 80,
+  tmScope: 'source.d',
+  aliases: ['Dlang'],
+  codemirrorMode: 'd',
+  codemirrorMimeType: 'text/x-d',
+  color: '#ba595e',
+};
+
+var DObjDump = {
+  name: 'D-ObjDump',
+  type: 'data',
+  aceMode: 'assembly_x86',
+  extensions: ['.d-objdump'],
+  languageId: 81,
+  tmScope: 'objdump.x86asm',
+};
+
+var D2 = {
+  name: 'D2',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.d2'],
+  languageId: 37531557,
+  tmScope: 'source.d2',
+  aliases: ['d2lang'],
+  color: '#526ee8',
+};
+
+var DIGITAL_20_Command_20_Language = {
+  name: 'DIGITAL Command Language',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.com'],
+  languageId: 82,
+  tmScope: 'none',
+  aliases: ['dcl'],
+};
+
+var DM = {
+  name: 'DM',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.dm'],
+  languageId: 83,
+  tmScope: 'source.dm',
+  aliases: ['byond'],
+  color: '#447265',
+};
+
+var DNS_20_Zone = {
+  name: 'DNS Zone',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.zone', '.arpa'],
+  languageId: 84,
+  tmScope: 'text.zone_file',
+};
+
+var DTrace = {
+  name: 'DTrace',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.d'],
+  languageId: 85,
+  tmScope: 'source.c',
+  aliases: ['dtrace-script'],
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  interpreters: ['dtrace'],
+};
+
+var Dafny = {
+  name: 'Dafny',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.dfy'],
+  languageId: 969323346,
+  tmScope: 'text.dfy.dafny',
+  color: '#FFEC25',
+  interpreters: ['dafny'],
+};
+
+var Darcs_20_Patch = {
+  name: 'Darcs Patch',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.darcspatch', '.dpatch'],
+  languageId: 86,
+  tmScope: 'none',
+  aliases: ['dpatch'],
+  color: '#8eff23',
+};
+
+var Dart = {
+  name: 'Dart',
+  type: 'programming',
+  aceMode: 'dart',
+  extensions: ['.dart'],
+  languageId: 87,
+  tmScope: 'source.dart',
+  codemirrorMode: 'dart',
+  codemirrorMimeType: 'application/dart',
+  color: '#00B4AB',
+  interpreters: ['dart'],
+};
+
+var Daslang = {
+  name: 'Daslang',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.das'],
+  languageId: 648759486,
+  tmScope: 'source.daslang',
+  color: '#d3d3d3',
+};
+
+var DataWeave = {
+  name: 'DataWeave',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.dwl'],
+  languageId: 974514097,
+  tmScope: 'source.data-weave',
+  color: '#003a52',
+};
+
+var Debian_20_Package_20_Control_20_File = {
+  name: 'Debian Package Control File',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.dsc'],
+  languageId: 527438264,
+  tmScope: 'source.deb-control',
+  color: '#D70751',
+};
+
+var DenizenScript = {
+  name: 'DenizenScript',
+  type: 'programming',
+  aceMode: 'yaml',
+  extensions: ['.dsc'],
+  languageId: 435000929,
+  tmScope: 'source.denizenscript',
+  codemirrorMode: 'yaml',
+  codemirrorMimeType: 'text/x-yaml',
+  color: '#FBEE96',
+};
+
+var Dhall = {
+  name: 'Dhall',
+  type: 'programming',
+  aceMode: 'haskell',
+  extensions: ['.dhall'],
+  languageId: 793969321,
+  tmScope: 'source.haskell',
+  codemirrorMode: 'haskell',
+  codemirrorMimeType: 'text/x-haskell',
+  color: '#dfafff',
+};
+
+var Diff = {
+  name: 'Diff',
+  type: 'data',
+  aceMode: 'diff',
+  extensions: ['.diff', '.patch'],
+  languageId: 88,
+  tmScope: 'source.diff',
+  aliases: ['udiff'],
+  codemirrorMode: 'diff',
+  codemirrorMimeType: 'text/x-diff',
+};
+
+var DirectX_20_3D_20_File = {
+  name: 'DirectX 3D File',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.x'],
+  languageId: 201049282,
+  tmScope: 'none',
+  color: '#aace60',
+};
+
+var Dockerfile = {
+  name: 'Dockerfile',
+  type: 'programming',
+  aceMode: 'dockerfile',
+  extensions: ['.dockerfile', '.containerfile'],
+  filenames: ['Containerfile', 'Dockerfile'],
+  languageId: 89,
+  tmScope: 'source.dockerfile',
+  aliases: ['Containerfile'],
+  codemirrorMode: 'dockerfile',
+  codemirrorMimeType: 'text/x-dockerfile',
+  color: '#384d54',
+};
+
+var Dogescript = {
+  name: 'Dogescript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.djs'],
+  languageId: 90,
+  tmScope: 'none',
+  color: '#cca760',
+};
+
+var Dotenv = {
+  name: 'Dotenv',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.env'],
+  filenames: [
+    '.env',
+    '.env.ci',
+    '.env.dev',
+    '.env.development',
+    '.env.development.local',
+    '.env.example',
+    '.env.local',
+    '.env.prod',
+    '.env.production',
+    '.env.sample',
+    '.env.staging',
+    '.env.template',
+    '.env.test',
+    '.env.testing',
+  ],
+  languageId: 111148035,
+  tmScope: 'source.dotenv',
+  color: '#e5d559',
+};
+
+var Dune = {
+  name: 'Dune',
+  type: 'programming',
+  aceMode: 'lisp',
+  filenames: ['dune-project'],
+  languageId: 754574151,
+  tmScope: 'source.dune',
+  color: '#89421e',
+};
+
+var Dylan = {
+  name: 'Dylan',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.dylan', '.dyl', '.intr', '.lid'],
+  languageId: 91,
+  tmScope: 'source.dylan',
+  codemirrorMode: 'dylan',
+  codemirrorMimeType: 'text/x-dylan',
+  color: '#6c616e',
+};
+
+var E = {
+  name: 'E',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.e'],
+  languageId: 92,
+  tmScope: 'none',
+  color: '#ccce35',
+  interpreters: ['rune'],
+};
+
+var EMail = {
+  name: 'E-mail',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.eml', '.mbox'],
+  languageId: 529653389,
+  tmScope: 'text.eml.basic',
+  aliases: ['email', 'eml', 'mail', 'mbox'],
+  codemirrorMode: 'mbox',
+  codemirrorMimeType: 'application/mbox',
+};
+
+var EBNF = {
+  name: 'EBNF',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.ebnf'],
+  languageId: 430,
+  tmScope: 'source.ebnf',
+  codemirrorMode: 'ebnf',
+  codemirrorMimeType: 'text/x-ebnf',
+};
+
+var ECL = {
+  name: 'ECL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ecl', '.eclxml'],
+  languageId: 93,
+  tmScope: 'source.ecl',
+  codemirrorMode: 'ecl',
+  codemirrorMimeType: 'text/x-ecl',
+  color: '#8a1267',
+};
+
+var ECLiPSe = {
+  name: 'ECLiPSe',
+  type: 'programming',
+  aceMode: 'prolog',
+  extensions: ['.ecl'],
+  languageId: 94,
+  tmScope: 'source.prolog.eclipse',
+  color: '#001d9d',
+  group: 'Prolog',
+};
+
+var EJS = {
+  name: 'EJS',
+  type: 'markup',
+  aceMode: 'ejs',
+  extensions: ['.ejs', '.ect', '.ejs.t', '.jst'],
+  languageId: 95,
+  tmScope: 'text.html.js',
+  codemirrorMode: 'htmlembedded',
+  codemirrorMimeType: 'application/x-ejs',
+  color: '#a91e50',
+};
+
+var EQ = {
+  name: 'EQ',
+  type: 'programming',
+  aceMode: 'csharp',
+  extensions: ['.eq'],
+  languageId: 96,
+  tmScope: 'source.cs',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csharp',
+  color: '#a78649',
+};
+
+var Eagle = {
+  name: 'Eagle',
+  type: 'data',
+  aceMode: 'xml',
+  extensions: ['.sch', '.brd'],
+  languageId: 97,
+  tmScope: 'text.xml',
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'text/xml',
+};
+
+var Earthly = {
+  name: 'Earthly',
+  type: 'programming',
+  aceMode: 'text',
+  filenames: ['Earthfile'],
+  languageId: 963512632,
+  tmScope: 'source.earthfile',
+  aliases: ['Earthfile'],
+  color: '#2af0ff',
+};
+
+var Easybuild = {
+  name: 'Easybuild',
+  type: 'data',
+  aceMode: 'python',
+  extensions: ['.eb'],
+  languageId: 342840477,
+  tmScope: 'source.python',
+  codemirrorMode: 'python',
+  codemirrorMimeType: 'text/x-python',
+  color: '#069406',
+  group: 'Python',
+};
+
+var Ecere_20_Projects = {
+  name: 'Ecere Projects',
+  type: 'data',
+  aceMode: 'json',
+  extensions: ['.epj'],
+  languageId: 98,
+  tmScope: 'source.json',
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'application/json',
+  color: '#913960',
+  group: 'JavaScript',
+};
+
+var Ecmarkup = {
+  name: 'Ecmarkup',
+  type: 'markup',
+  aceMode: 'html',
+  extensions: ['.html'],
+  languageId: 844766630,
+  tmScope: 'text.html.ecmarkup',
+  aliases: ['ecmarkdown'],
+  codemirrorMode: 'htmlmixed',
+  codemirrorMimeType: 'text/html',
+  color: '#eb8131',
+  group: 'HTML',
+};
+
+var Edge = {
+  name: 'Edge',
+  type: 'markup',
+  aceMode: 'html',
+  extensions: ['.edge'],
+  languageId: 460509620,
+  tmScope: 'text.html.edge',
+  color: '#0dffe0',
+};
+
+var EdgeQL = {
+  name: 'EdgeQL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.edgeql', '.esdl'],
+  languageId: 925235833,
+  tmScope: 'source.edgeql',
+  aliases: ['esdl'],
+  color: '#31A7FF',
+};
+
+var EditorConfig = {
+  name: 'EditorConfig',
+  type: 'data',
+  aceMode: 'ini',
+  extensions: ['.editorconfig'],
+  filenames: ['.editorconfig'],
+  languageId: 96139566,
+  tmScope: 'source.editorconfig',
+  aliases: ['editor-config'],
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+  color: '#fff1f2',
+  group: 'INI',
+};
+
+var Edje_20_Data_20_Collection = {
+  name: 'Edje Data Collection',
+  type: 'data',
+  aceMode: 'c_cpp',
+  extensions: ['.edc'],
+  languageId: 342840478,
+  tmScope: 'source.c++',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-c++src',
+};
+
+var Eiffel = {
+  name: 'Eiffel',
+  type: 'programming',
+  aceMode: 'eiffel',
+  extensions: ['.e'],
+  languageId: 99,
+  tmScope: 'source.eiffel',
+  codemirrorMode: 'eiffel',
+  codemirrorMimeType: 'text/x-eiffel',
+  color: '#4d6977',
+};
+
+var Elixir = {
+  name: 'Elixir',
+  type: 'programming',
+  aceMode: 'elixir',
+  extensions: ['.ex', '.exs'],
+  filenames: ['mix.lock'],
+  languageId: 100,
+  tmScope: 'source.elixir',
+  color: '#6e4a7e',
+  interpreters: ['elixir'],
+};
+
+var Elm = {
+  name: 'Elm',
+  type: 'programming',
+  aceMode: 'elm',
+  extensions: ['.elm'],
+  languageId: 101,
+  tmScope: 'source.elm',
+  codemirrorMode: 'elm',
+  codemirrorMimeType: 'text/x-elm',
+  color: '#60B5CC',
+};
+
+var Elvish = {
+  name: 'Elvish',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.elv'],
+  languageId: 570996448,
+  tmScope: 'source.elvish',
+  color: '#55BB55',
+  interpreters: ['elvish'],
+};
+
+var Elvish_20_Transcript = {
+  name: 'Elvish Transcript',
+  type: 'programming',
+  aceMode: 'text',
+  languageId: 452025714,
+  tmScope: 'source.elvish-transcript',
+  color: '#55BB55',
+  group: 'Elvish',
+};
+
+var Emacs_20_Lisp = {
+  name: 'Emacs Lisp',
+  type: 'programming',
+  aceMode: 'lisp',
+  extensions: ['.el', '.emacs', '.emacs.desktop'],
+  filenames: [
+    '.abbrev_defs',
+    '.emacs',
+    '.emacs.desktop',
+    '.gnus',
+    '.spacemacs',
+    '.viper',
+    'Cask',
+    'Eask',
+    'Project.ede',
+    '_emacs',
+    'abbrev_defs',
+  ],
+  languageId: 102,
+  tmScope: 'source.emacs.lisp',
+  aliases: ['cask', 'eask', 'elisp', 'emacs'],
+  codemirrorMode: 'commonlisp',
+  codemirrorMimeType: 'text/x-common-lisp',
+  color: '#c065db',
+};
+
+var EmberScript = {
+  name: 'EmberScript',
+  type: 'programming',
+  aceMode: 'coffee',
+  extensions: ['.em', '.emberscript'],
+  languageId: 103,
+  tmScope: 'source.coffee',
+  codemirrorMode: 'coffeescript',
+  codemirrorMimeType: 'text/x-coffeescript',
+  color: '#FFF4F3',
+};
+
+var Erlang = {
+  name: 'Erlang',
+  type: 'programming',
+  aceMode: 'erlang',
+  extensions: [
+    '.erl',
+    '.app',
+    '.app.src',
+    '.es',
+    '.escript',
+    '.hrl',
+    '.xrl',
+    '.yrl',
+  ],
+  filenames: ['Emakefile', 'rebar.config', 'rebar.config.lock', 'rebar.lock'],
+  languageId: 104,
+  tmScope: 'source.erlang',
+  codemirrorMode: 'erlang',
+  codemirrorMimeType: 'text/x-erlang',
+  color: '#B83998',
+  interpreters: ['escript'],
+};
+
+var Euphoria = {
+  name: 'Euphoria',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.e', '.ex'],
+  languageId: 880693982,
+  tmScope: 'source.euphoria',
+  color: '#FF790B',
+  interpreters: ['eui', 'euiw'],
+};
+
+var F_23_ = {
+  name: 'F#',
+  type: 'programming',
+  aceMode: 'fsharp',
+  extensions: ['.fs', '.fsi', '.fsx'],
+  languageId: 105,
+  tmScope: 'source.fsharp',
+  aliases: ['fsharp'],
+  codemirrorMode: 'mllike',
+  codemirrorMimeType: 'text/x-fsharp',
+  color: '#b845fc',
+};
+
+var F_2a_ = {
+  name: 'F*',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.fst', '.fsti'],
+  languageId: 336943375,
+  tmScope: 'source.fstar',
+  aliases: ['fstar'],
+  color: '#572e30',
+};
+
+var FIGlet_20_Font = {
+  name: 'FIGlet Font',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.flf'],
+  languageId: 686129783,
+  tmScope: 'source.figfont',
+  aliases: ['FIGfont'],
+  color: '#FFDDBB',
+};
+
+var FIRRTL = {
+  name: 'FIRRTL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.fir'],
+  languageId: 906694254,
+  tmScope: 'source.firrtl',
+  color: '#2f632f',
+};
+
+var FLUX = {
+  name: 'FLUX',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.fx', '.flux'],
+  languageId: 106,
+  tmScope: 'none',
+  color: '#88ccff',
+};
+
+var Factor = {
+  name: 'Factor',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.factor'],
+  filenames: ['.factor-boot-rc', '.factor-rc'],
+  languageId: 108,
+  tmScope: 'source.factor',
+  codemirrorMode: 'factor',
+  codemirrorMimeType: 'text/x-factor',
+  color: '#636746',
+};
+
+var Fancy = {
+  name: 'Fancy',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.fy', '.fancypack'],
+  filenames: ['Fakefile'],
+  languageId: 109,
+  tmScope: 'source.fancy',
+  color: '#7b9db4',
+};
+
+var Fantom = {
+  name: 'Fantom',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.fan'],
+  languageId: 110,
+  tmScope: 'source.fan',
+  color: '#14253c',
+};
+
+var Faust = {
+  name: 'Faust',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.dsp'],
+  languageId: 622529198,
+  tmScope: 'source.faust',
+  color: '#c37240',
+};
+
+var Fennel = {
+  name: 'Fennel',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.fnl'],
+  languageId: 239946126,
+  tmScope: 'source.fnl',
+  color: '#fff3d7',
+  interpreters: ['fennel'],
+};
+
+var Filebench_20_WML = {
+  name: 'Filebench WML',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.f'],
+  languageId: 111,
+  tmScope: 'none',
+  color: '#F6B900',
+};
+
+var Filterscript = {
+  name: 'Filterscript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.fs'],
+  languageId: 112,
+  tmScope: 'none',
+  group: 'RenderScript',
+};
+
+var FlatBuffers = {
+  name: 'FlatBuffers',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.fbs'],
+  languageId: 577640576,
+  tmScope: 'source.flatbuffers',
+  color: '#ed284a',
+};
+
+var Flix = {
+  name: 'Flix',
+  type: 'programming',
+  aceMode: 'flix',
+  extensions: ['.flix'],
+  languageId: 800935960,
+  tmScope: 'source.flix',
+  color: '#d44a45',
+};
+
+var Fluent = {
+  name: 'Fluent',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ftl'],
+  languageId: 206353404,
+  tmScope: 'source.ftl',
+  color: '#ffcc33',
+};
+
+var Formatted = {
+  name: 'Formatted',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.for', '.eam.fs'],
+  languageId: 113,
+  tmScope: 'none',
+};
+
+var Forth = {
+  name: 'Forth',
+  type: 'programming',
+  aceMode: 'forth',
+  extensions: ['.fth', '.4th', '.f', '.for', '.forth', '.fr', '.frt', '.fs'],
+  languageId: 114,
+  tmScope: 'source.forth',
+  codemirrorMode: 'forth',
+  codemirrorMimeType: 'text/x-forth',
+  color: '#341708',
+};
+
+var Fortran = {
+  name: 'Fortran',
+  type: 'programming',
+  aceMode: 'fortran',
+  extensions: ['.f', '.f77', '.for', '.fpp'],
+  languageId: 107,
+  tmScope: 'source.fortran',
+  codemirrorMode: 'fortran',
+  codemirrorMimeType: 'text/x-fortran',
+  color: '#4d41b1',
+  group: 'Fortran',
+};
+
+var Fortran_20_Free_20_Form = {
+  name: 'Fortran Free Form',
+  type: 'programming',
+  aceMode: 'fortran',
+  extensions: ['.f90', '.f03', '.f08', '.f95'],
+  languageId: 761352333,
+  tmScope: 'source.fortran.modern',
+  codemirrorMode: 'fortran',
+  codemirrorMimeType: 'text/x-fortran',
+  color: '#4d41b1',
+  group: 'Fortran',
+};
+
+var FreeBASIC = {
+  name: 'FreeBASIC',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bi', '.bas'],
+  languageId: 472896659,
+  tmScope: 'source.vbnet',
+  aliases: ['fb'],
+  codemirrorMode: 'vb',
+  codemirrorMimeType: 'text/x-vb',
+  color: '#141AC9',
+};
+
+var FreeMarker = {
+  name: 'FreeMarker',
+  type: 'programming',
+  aceMode: 'ftl',
+  extensions: ['.ftl', '.ftlh'],
+  languageId: 115,
+  tmScope: 'text.html.ftl',
+  aliases: ['ftl'],
+  color: '#0050b2',
+};
+
+var Frege = {
+  name: 'Frege',
+  type: 'programming',
+  aceMode: 'haskell',
+  extensions: ['.fr'],
+  languageId: 116,
+  tmScope: 'source.haskell',
+  color: '#00cafe',
+};
+
+var Futhark = {
+  name: 'Futhark',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.fut'],
+  languageId: 97358117,
+  tmScope: 'source.futhark',
+  color: '#5f021f',
+};
+
+var GCode = {
+  name: 'G-code',
+  type: 'programming',
+  aceMode: 'gcode',
+  extensions: ['.g', '.cnc', '.gco', '.gcode'],
+  languageId: 117,
+  tmScope: 'source.gcode',
+  color: '#D08CF2',
+};
+
+var GAML = {
+  name: 'GAML',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.gaml'],
+  languageId: 290345951,
+  tmScope: 'none',
+  color: '#FFC766',
+};
+
+var GAMS = {
+  name: 'GAMS',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.gms'],
+  languageId: 118,
+  tmScope: 'none',
+  color: '#f49a22',
+};
+
+var GAP = {
+  name: 'GAP',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.g', '.gap', '.gd', '.gi', '.tst'],
+  languageId: 119,
+  tmScope: 'source.gap',
+  color: '#0000cc',
+};
+
+var GCC_20_Machine_20_Description = {
+  name: 'GCC Machine Description',
+  type: 'programming',
+  aceMode: 'lisp',
+  extensions: ['.md'],
+  languageId: 121,
+  tmScope: 'source.lisp',
+  codemirrorMode: 'commonlisp',
+  codemirrorMimeType: 'text/x-common-lisp',
+  color: '#FFCFAB',
+};
+
+var GDB = {
+  name: 'GDB',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.gdb', '.gdbinit'],
+  languageId: 122,
+  tmScope: 'source.gdb',
+};
+
+var GDScript = {
+  name: 'GDScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.gd'],
+  languageId: 123,
+  tmScope: 'source.gdscript',
+  color: '#355570',
+};
+
+var GDShader = {
+  name: 'GDShader',
+  type: 'programming',
+  aceMode: 'glsl',
+  extensions: ['.gdshader', '.gdshaderinc'],
+  languageId: 694638086,
+  tmScope: 'source.gdshader',
+  color: '#478CBF',
+};
+
+var GEDCOM = {
+  name: 'GEDCOM',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.ged'],
+  languageId: 459577965,
+  tmScope: 'source.gedcom',
+  color: '#003058',
+};
+
+var GLSL = {
+  name: 'GLSL',
+  type: 'programming',
+  aceMode: 'glsl',
+  extensions: [
+    '.glsl',
+    '.fp',
+    '.frag',
+    '.frg',
+    '.fs',
+    '.fsh',
+    '.fshader',
+    '.geo',
+    '.geom',
+    '.glslf',
+    '.glslv',
+    '.gs',
+    '.gshader',
+    '.rchit',
+    '.rmiss',
+    '.shader',
+    '.tesc',
+    '.tese',
+    '.vert',
+    '.vrx',
+    '.vs',
+    '.vsh',
+    '.vshader',
+  ],
+  languageId: 124,
+  tmScope: 'source.glsl',
+  color: '#5686a5',
+};
+
+var GN = {
+  name: 'GN',
+  type: 'data',
+  aceMode: 'python',
+  extensions: ['.gn', '.gni'],
+  filenames: ['.gn'],
+  languageId: 302957008,
+  tmScope: 'source.gn',
+  codemirrorMode: 'python',
+  codemirrorMimeType: 'text/x-python',
+  interpreters: ['gn'],
+};
+
+var GSC = {
+  name: 'GSC',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.gsc', '.csc', '.gsh'],
+  languageId: 257856279,
+  tmScope: 'source.gsc',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  color: '#FF6800',
+};
+
+var Game_20_Maker_20_Language = {
+  name: 'Game Maker Language',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.gml'],
+  languageId: 125,
+  tmScope: 'source.c++',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-c++src',
+  color: '#71b417',
+};
+
+var Gemfile_lock = {
+  name: 'Gemfile.lock',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['Gemfile.lock'],
+  languageId: 907065713,
+  tmScope: 'source.gemfile-lock',
+  color: '#701516',
+};
+
+var Gemini = {
+  name: 'Gemini',
+  type: 'prose',
+  aceMode: 'text',
+  extensions: ['.gmi'],
+  languageId: 310828396,
+  tmScope: 'source.gemini',
+  aliases: ['gemtext'],
+  color: '#ff6900',
+  wrap: true,
+};
+
+var Genero_20_4gl = {
+  name: 'Genero 4gl',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.4gl'],
+  languageId: 986054050,
+  tmScope: 'source.genero-4gl',
+  color: '#63408e',
+};
+
+var Genero_20_per = {
+  name: 'Genero per',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.per'],
+  languageId: 902995658,
+  tmScope: 'source.genero-per',
+  color: '#d8df39',
+};
+
+var Genie = {
+  name: 'Genie',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.gs'],
+  languageId: 792408528,
+  tmScope: 'none',
+  color: '#fb855d',
+};
+
+var Genshi = {
+  name: 'Genshi',
+  type: 'programming',
+  aceMode: 'xml',
+  extensions: ['.kid'],
+  languageId: 126,
+  tmScope: 'text.xml.genshi',
+  aliases: ['xml+genshi', 'xml+kid'],
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'text/xml',
+  color: '#951531',
+};
+
+var Gentoo_20_Ebuild = {
+  name: 'Gentoo Ebuild',
+  type: 'programming',
+  aceMode: 'sh',
+  extensions: ['.ebuild'],
+  languageId: 127,
+  tmScope: 'source.shell',
+  codemirrorMode: 'shell',
+  codemirrorMimeType: 'text/x-sh',
+  color: '#9400ff',
+  group: 'Shell',
+};
+
+var Gentoo_20_Eclass = {
+  name: 'Gentoo Eclass',
+  type: 'programming',
+  aceMode: 'sh',
+  extensions: ['.eclass'],
+  languageId: 128,
+  tmScope: 'source.shell',
+  codemirrorMode: 'shell',
+  codemirrorMimeType: 'text/x-sh',
+  color: '#9400ff',
+  group: 'Shell',
+};
+
+var Gerber_20_Image = {
+  name: 'Gerber Image',
+  type: 'data',
+  aceMode: 'text',
+  extensions: [
+    '.gbr',
+    '.cmp',
+    '.gbl',
+    '.gbo',
+    '.gbp',
+    '.gbs',
+    '.gko',
+    '.gml',
+    '.gpb',
+    '.gpt',
+    '.gtl',
+    '.gto',
+    '.gtp',
+    '.gts',
+    '.ncl',
+    '.sol',
+  ],
+  languageId: 404627610,
+  tmScope: 'source.gerber',
+  aliases: ['rs-274x'],
+  color: '#d20b00',
+  interpreters: ['gerbv', 'gerbview'],
+};
+
+var Gettext_20_Catalog = {
+  name: 'Gettext Catalog',
+  type: 'prose',
+  aceMode: 'text',
+  extensions: ['.po', '.pot'],
+  languageId: 129,
+  tmScope: 'source.po',
+  aliases: ['pot'],
+};
+
+var Gherkin = {
+  name: 'Gherkin',
+  type: 'programming',
+  aceMode: 'gherkin',
+  extensions: ['.feature', '.story'],
+  languageId: 76,
+  tmScope: 'text.gherkin.feature',
+  aliases: ['cucumber'],
+  codemirrorMode: 'gherkin',
+  codemirrorMimeType: 'text/x-feature',
+  color: '#5B2063',
+};
+
+var Git_20_Attributes = {
+  name: 'Git Attributes',
+  type: 'data',
+  aceMode: 'gitignore',
+  filenames: ['.gitattributes'],
+  languageId: 956324166,
+  tmScope: 'source.gitattributes',
+  aliases: ['gitattributes'],
+  codemirrorMode: 'shell',
+  codemirrorMimeType: 'text/x-sh',
+  color: '#F44D27',
+};
+
+var Git_20_Commit = {
+  name: 'Git Commit',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['COMMIT_EDITMSG'],
+  languageId: 131750475,
+  tmScope: 'text.git-commit',
+  aliases: ['commit'],
+  color: '#F44D27',
+  wrap: true,
+};
+
+var Git_20_Config = {
+  name: 'Git Config',
+  type: 'data',
+  aceMode: 'ini',
+  extensions: ['.gitconfig'],
+  filenames: ['.gitconfig', '.gitmodules'],
+  languageId: 807968997,
+  tmScope: 'source.gitconfig',
+  aliases: ['gitconfig', 'gitmodules'],
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+  color: '#F44D27',
+  group: 'INI',
+};
+
+var Git_20_Revision_20_List = {
+  name: 'Git Revision List',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['.git-blame-ignore-revs'],
+  languageId: 461881235,
+  tmScope: 'source.git-revlist',
+  aliases: ['Git Blame Ignore Revs'],
+  color: '#F44D27',
+};
+
+var Gleam = {
+  name: 'Gleam',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.gleam'],
+  languageId: 1054258749,
+  tmScope: 'source.gleam',
+  color: '#ffaff3',
+};
+
+var Glimmer_20_JS = {
+  name: 'Glimmer JS',
+  type: 'programming',
+  aceMode: 'javascript',
+  extensions: ['.gjs'],
+  languageId: 5523150,
+  tmScope: 'source.gjs',
+  aliases: ['gjs'],
+  color: '#F5835F',
+  group: 'JavaScript',
+};
+
+var Glimmer_20_TS = {
+  name: 'Glimmer TS',
+  type: 'programming',
+  aceMode: 'typescript',
+  extensions: ['.gts'],
+  languageId: 95110458,
+  tmScope: 'source.gts',
+  aliases: ['gts'],
+  color: '#3178c6',
+  group: 'TypeScript',
+};
+
+var Glyph = {
+  name: 'Glyph',
+  type: 'programming',
+  aceMode: 'tcl',
+  extensions: ['.glf'],
+  languageId: 130,
+  tmScope: 'source.tcl',
+  codemirrorMode: 'tcl',
+  codemirrorMimeType: 'text/x-tcl',
+  color: '#c1ac7f',
+};
+
+var Glyph_20_Bitmap_20_Distribution_20_Format = {
+  name: 'Glyph Bitmap Distribution Format',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.bdf'],
+  languageId: 997665271,
+  tmScope: 'source.bdf',
+};
+
+var Gnuplot = {
+  name: 'Gnuplot',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.gp', '.gnu', '.gnuplot', '.p', '.plot', '.plt'],
+  languageId: 131,
+  tmScope: 'source.gnuplot',
+  color: '#f0a9f0',
+  interpreters: ['gnuplot'],
+};
+
+var Go = {
+  name: 'Go',
+  type: 'programming',
+  aceMode: 'golang',
+  extensions: ['.go'],
+  languageId: 132,
+  tmScope: 'source.go',
+  aliases: ['golang'],
+  codemirrorMode: 'go',
+  codemirrorMimeType: 'text/x-go',
+  color: '#00ADD8',
+};
+
+var Go_20_Checksums = {
+  name: 'Go Checksums',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['go.sum', 'go.work.sum'],
+  languageId: 1054391671,
+  tmScope: 'go.sum',
+  aliases: ['go.sum', 'go sum', 'go.work.sum', 'go work sum'],
+  color: '#00ADD8',
+};
+
+var Go_20_Module = {
+  name: 'Go Module',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['go.mod'],
+  languageId: 947461016,
+  tmScope: 'go.mod',
+  aliases: ['go.mod', 'go mod'],
+  color: '#00ADD8',
+};
+
+var Go_20_Template = {
+  name: 'Go Template',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.gohtml', '.gotmpl', '.html.tmpl', '.tmpl', '.tpl'],
+  filenames: ['_helpers.tpl'],
+  languageId: 247918769,
+  tmScope: 'source.go-template',
+  aliases: ['gotmpl'],
+  color: '#00ADD8',
+};
+
+var Go_20_Workspace = {
+  name: 'Go Workspace',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['go.work'],
+  languageId: 934546256,
+  tmScope: 'go.mod',
+  aliases: ['go.work', 'go work'],
+  color: '#00ADD8',
+};
+
+var Godot_20_Resource = {
+  name: 'Godot Resource',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.gdnlib', '.gdns', '.tres', '.tscn'],
+  filenames: ['project.godot'],
+  languageId: 738107771,
+  tmScope: 'source.gdresource',
+  color: '#355570',
+};
+
+var Golo = {
+  name: 'Golo',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.golo'],
+  languageId: 133,
+  tmScope: 'source.golo',
+  color: '#88562A',
+};
+
+var Gosu = {
+  name: 'Gosu',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.gs', '.gst', '.gsx', '.vark'],
+  languageId: 134,
+  tmScope: 'source.gosu.2',
+  color: '#82937f',
+};
+
+var Grace = {
+  name: 'Grace',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.grace'],
+  languageId: 135,
+  tmScope: 'source.grace',
+  color: '#615f8b',
+};
+
+var Gradle = {
+  name: 'Gradle',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.gradle'],
+  languageId: 136,
+  tmScope: 'source.groovy.gradle',
+  color: '#02303a',
+};
+
+var Gradle_20_Kotlin_20_DSL = {
+  name: 'Gradle Kotlin DSL',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.gradle.kts'],
+  languageId: 432600901,
+  tmScope: 'source.kotlin',
+  color: '#02303a',
+  group: 'Gradle',
+};
+
+var Grammatical_20_Framework = {
+  name: 'Grammatical Framework',
+  type: 'programming',
+  aceMode: 'haskell',
+  extensions: ['.gf'],
+  languageId: 137,
+  tmScope: 'source.gf',
+  aliases: ['gf'],
+  codemirrorMode: 'haskell',
+  codemirrorMimeType: 'text/x-haskell',
+  color: '#ff0000',
+};
+
+var Graph_20_Modeling_20_Language = {
+  name: 'Graph Modeling Language',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.gml'],
+  languageId: 138,
+  tmScope: 'none',
+};
+
+var GraphQL = {
+  name: 'GraphQL',
+  type: 'data',
+  aceMode: 'graphqlschema',
+  extensions: ['.graphql', '.gql', '.graphqls'],
+  languageId: 139,
+  tmScope: 'source.graphql',
+  color: '#e10098',
+};
+
+var Graphviz_20__28_DOT_29_ = {
+  name: 'Graphviz (DOT)',
+  type: 'data',
+  aceMode: 'dot',
+  extensions: ['.dot', '.gv'],
+  languageId: 140,
+  tmScope: 'source.dot',
+  color: '#2596be',
+};
+
+var Groovy = {
+  name: 'Groovy',
+  type: 'programming',
+  aceMode: 'groovy',
+  extensions: ['.groovy', '.grt', '.gtpl', '.gvy'],
+  filenames: ['Jenkinsfile'],
+  languageId: 142,
+  tmScope: 'source.groovy',
+  codemirrorMode: 'groovy',
+  codemirrorMimeType: 'text/x-groovy',
+  color: '#4298b8',
+  interpreters: ['groovy'],
+};
+
+var Groovy_20_Server_20_Pages = {
+  name: 'Groovy Server Pages',
+  type: 'programming',
+  aceMode: 'jsp',
+  extensions: ['.gsp'],
+  languageId: 143,
+  tmScope: 'text.html.jsp',
+  aliases: ['gsp', 'java server page'],
+  codemirrorMode: 'htmlembedded',
+  codemirrorMimeType: 'application/x-jsp',
+  color: '#4298b8',
+  group: 'Groovy',
+};
+
+var GtkRC = {
+  name: 'GtkRC',
+  type: 'data',
+  aceMode: 'ruby',
+  extensions: ['.gtkrc'],
+  filenames: ['gtkrc', 'gtkrc-2.0'],
+  languageId: 876401352,
+  tmScope: 'source.gtkrc',
+  aliases: ['gtk', 'gtk 1', 'gtk 2'],
+  codemirrorMode: 'ruby',
+  codemirrorMimeType: 'text/x-ruby',
+  color: '#7fe719',
+};
+
+var HAProxy = {
+  name: 'HAProxy',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.cfg'],
+  filenames: ['haproxy.cfg'],
+  languageId: 366607477,
+  tmScope: 'source.haproxy-config',
+  color: '#106da9',
+};
+
+var HCL = {
+  name: 'HCL',
+  type: 'programming',
+  aceMode: 'terraform',
+  extensions: ['.hcl', '.nomad', '.tf', '.tfvars', '.tofu', '.workflow'],
+  languageId: 144,
+  tmScope: 'source.hcl',
+  aliases: ['HashiCorp Configuration Language', 'opentofu', 'terraform'],
+  codemirrorMode: 'ruby',
+  codemirrorMimeType: 'text/x-ruby',
+  color: '#844FBA',
+};
+
+var HIP = {
+  name: 'HIP',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.hip'],
+  languageId: 674379998,
+  tmScope: 'source.c++',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-c++src',
+  color: '#4F3A4F',
+};
+
+var HLSL = {
+  name: 'HLSL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.hlsl', '.cginc', '.fx', '.fxh', '.hlsli'],
+  languageId: 145,
+  tmScope: 'source.hlsl',
+  color: '#aace60',
+};
+
+var HOCON = {
+  name: 'HOCON',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.hocon'],
+  filenames: ['.scalafix.conf', '.scalafmt.conf'],
+  languageId: 679725279,
+  tmScope: 'source.hocon',
+  color: '#9ff8ee',
+};
+
+var HTML = {
+  name: 'HTML',
+  type: 'markup',
+  aceMode: 'html',
+  extensions: ['.html', '.hta', '.htm', '.html.hl', '.inc', '.xht', '.xhtml'],
+  languageId: 146,
+  tmScope: 'text.html.basic',
+  aliases: ['xhtml'],
+  codemirrorMode: 'htmlmixed',
+  codemirrorMimeType: 'text/html',
+  color: '#e34c26',
+};
+
+var HTML_2b_ECR = {
+  name: 'HTML+ECR',
+  type: 'markup',
+  aceMode: 'html_ruby',
+  extensions: ['.ecr'],
+  languageId: 148,
+  tmScope: 'text.html.ecr',
+  aliases: ['ecr'],
+  codemirrorMode: 'htmlmixed',
+  codemirrorMimeType: 'text/html',
+  color: '#2e1052',
+  group: 'HTML',
+};
+
+var HTML_2b_EEX = {
+  name: 'HTML+EEX',
+  type: 'markup',
+  aceMode: 'html_elixir',
+  extensions: ['.html.eex', '.heex', '.leex'],
+  languageId: 149,
+  tmScope: 'text.html.elixir',
+  aliases: ['eex', 'heex', 'leex'],
+  codemirrorMode: 'htmlmixed',
+  codemirrorMimeType: 'text/html',
+  color: '#6e4a7e',
+  group: 'HTML',
+};
+
+var HTML_2b_ERB = {
+  name: 'HTML+ERB',
+  type: 'markup',
+  aceMode: 'html_ruby',
+  extensions: ['.erb', '.erb.deface', '.rhtml'],
+  languageId: 150,
+  tmScope: 'text.html.erb',
+  aliases: ['erb', 'rhtml', 'html+ruby'],
+  codemirrorMode: 'htmlembedded',
+  codemirrorMimeType: 'application/x-erb',
+  color: '#701516',
+  group: 'HTML',
+};
+
+var HTML_2b_PHP = {
+  name: 'HTML+PHP',
+  type: 'markup',
+  aceMode: 'php',
+  extensions: ['.phtml'],
+  languageId: 151,
+  tmScope: 'text.html.php',
+  codemirrorMode: 'php',
+  codemirrorMimeType: 'application/x-httpd-php',
+  color: '#4f5d95',
+  group: 'HTML',
+};
+
+var HTML_2b_Razor = {
+  name: 'HTML+Razor',
+  type: 'markup',
+  aceMode: 'razor',
+  extensions: ['.cshtml', '.razor'],
+  languageId: 479039817,
+  tmScope: 'text.html.cshtml',
+  aliases: ['razor'],
+  codemirrorMode: 'htmlmixed',
+  codemirrorMimeType: 'text/html',
+  color: '#512be4',
+  group: 'HTML',
+};
+
+var HTTP = {
+  name: 'HTTP',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.http'],
+  languageId: 152,
+  tmScope: 'source.httpspec',
+  codemirrorMode: 'http',
+  codemirrorMimeType: 'message/http',
+  color: '#005C9C',
+};
+
+var HXML = {
+  name: 'HXML',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.hxml'],
+  languageId: 786683730,
+  tmScope: 'source.hxml',
+  codemirrorMode: 'haxe',
+  codemirrorMimeType: 'text/x-hxml',
+  color: '#f68712',
+};
+
+var Hack = {
+  name: 'Hack',
+  type: 'programming',
+  aceMode: 'php',
+  extensions: ['.hack', '.hh', '.hhi', '.php'],
+  languageId: 153,
+  tmScope: 'source.hack',
+  codemirrorMode: 'php',
+  codemirrorMimeType: 'application/x-httpd-php',
+  color: '#878787',
+};
+
+var Haml = {
+  name: 'Haml',
+  type: 'markup',
+  aceMode: 'haml',
+  extensions: ['.haml', '.haml.deface'],
+  languageId: 154,
+  tmScope: 'text.haml',
+  codemirrorMode: 'haml',
+  codemirrorMimeType: 'text/x-haml',
+  color: '#ece2a9',
+};
+
+var Handlebars = {
+  name: 'Handlebars',
+  type: 'markup',
+  aceMode: 'handlebars',
+  extensions: ['.handlebars', '.hbs'],
+  languageId: 155,
+  tmScope: 'text.html.handlebars',
+  aliases: ['hbs', 'htmlbars'],
+  color: '#f7931e',
+};
+
+var Harbour = {
+  name: 'Harbour',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.hb'],
+  languageId: 156,
+  tmScope: 'source.harbour',
+  color: '#0e60e3',
+};
+
+var Hare = {
+  name: 'Hare',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ha'],
+  languageId: 463518941,
+  tmScope: 'none',
+  color: '#9d7424',
+};
+
+var Haskell = {
+  name: 'Haskell',
+  type: 'programming',
+  aceMode: 'haskell',
+  extensions: ['.hs', '.hs-boot', '.hsc'],
+  languageId: 157,
+  tmScope: 'source.haskell',
+  codemirrorMode: 'haskell',
+  codemirrorMimeType: 'text/x-haskell',
+  color: '#5e5086',
+  interpreters: ['runghc', 'runhaskell', 'runhugs'],
+};
+
+var Haxe = {
+  name: 'Haxe',
+  type: 'programming',
+  aceMode: 'haxe',
+  extensions: ['.hx', '.hxsl'],
+  languageId: 158,
+  tmScope: 'source.hx',
+  codemirrorMode: 'haxe',
+  codemirrorMimeType: 'text/x-haxe',
+  color: '#df7900',
+};
+
+var HiveQL = {
+  name: 'HiveQL',
+  type: 'programming',
+  aceMode: 'sql',
+  extensions: ['.q', '.hql'],
+  languageId: 931814087,
+  tmScope: 'source.hql',
+  color: '#dce200',
+};
+
+var HolyC = {
+  name: 'HolyC',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.hc'],
+  languageId: 928121743,
+  tmScope: 'source.hc',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  color: '#ffefaf',
+};
+
+var Hosts_20_File = {
+  name: 'Hosts File',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['HOSTS', 'hosts', 'hosts.txt'],
+  languageId: 231021894,
+  tmScope: 'source.hosts',
+  aliases: ['hosts'],
+  color: '#308888',
+};
+
+var Hurl = {
+  name: 'Hurl',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.hurl'],
+  languageId: 959040217,
+  tmScope: 'source.hurl',
+  color: '#FF0288',
+};
+
+var Hy = {
+  name: 'Hy',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.hy'],
+  languageId: 159,
+  tmScope: 'source.hy',
+  aliases: ['hylang'],
+  color: '#7790B2',
+  interpreters: ['hy'],
+};
+
+var HyPhy = {
+  name: 'HyPhy',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bf'],
+  languageId: 160,
+  tmScope: 'none',
+};
+
+var IDL = {
+  name: 'IDL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pro', '.dlm'],
+  languageId: 161,
+  tmScope: 'source.idl',
+  codemirrorMode: 'idl',
+  codemirrorMimeType: 'text/x-idl',
+  color: '#a3522f',
+};
+
+var IGOR_20_Pro = {
+  name: 'IGOR Pro',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ipf'],
+  languageId: 162,
+  tmScope: 'source.igor',
+  aliases: ['igor', 'igorpro'],
+  color: '#0000cc',
+};
+
+var IL_20_Assembly = {
+  name: 'IL Assembly',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.il'],
+  languageId: 592065806,
+  tmScope: 'source.il',
+  aliases: ['ilasm', 'msil'],
+  color: '#512BD4',
+};
+
+var INI = {
+  name: 'INI',
+  type: 'data',
+  aceMode: 'ini',
+  extensions: [
+    '.ini',
+    '.cfg',
+    '.cnf',
+    '.container',
+    '.dof',
+    '.frm',
+    '.lektorproject',
+    '.mount',
+    '.network',
+    '.prefs',
+    '.pro',
+    '.properties',
+    '.service',
+    '.socket',
+    '.target',
+    '.timer',
+    '.url',
+  ],
+  filenames: [
+    '.buckconfig',
+    '.coveragerc',
+    '.flake8',
+    '.pylintrc',
+    'HOSTS',
+    'buildozer.spec',
+    'hosts',
+    'pylintrc',
+    'vlcrc',
+  ],
+  languageId: 163,
+  tmScope: 'source.ini',
+  aliases: ['conf', 'dosini'],
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+  color: '#d1dbe0',
+};
+
+var IRC_20_log = {
+  name: 'IRC log',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.irclog', '.weechatlog'],
+  languageId: 164,
+  tmScope: 'none',
+  aliases: ['irc', 'irc logs'],
+  codemirrorMode: 'mirc',
+  codemirrorMimeType: 'text/mirc',
+};
+
+var ISPC = {
+  name: 'ISPC',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.ispc'],
+  languageId: 327071,
+  tmScope: 'source.ispc',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  color: '#2D68B1',
+};
+
+var Idris = {
+  name: 'Idris',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.idr', '.lidr'],
+  languageId: 165,
+  tmScope: 'source.idris',
+  color: '#b30000',
+};
+
+var Ignore_20_List = {
+  name: 'Ignore List',
+  type: 'data',
+  aceMode: 'gitignore',
+  extensions: ['.gitignore'],
+  filenames: [
+    '.atomignore',
+    '.babelignore',
+    '.bzrignore',
+    '.coffeelintignore',
+    '.cvsignore',
+    '.dockerignore',
+    '.easignore',
+    '.eleventyignore',
+    '.eslint-ignore',
+    '.eslintignore',
+    '.gitignore',
+    '.ignore',
+    '.markdownlintignore',
+    '.nodemonignore',
+    '.npmignore',
+    '.prettierignore',
+    '.stylelintignore',
+    '.vercelignore',
+    '.vscodeignore',
+    'gitignore-global',
+    'gitignore_global',
+  ],
+  languageId: 74444240,
+  tmScope: 'source.gitignore',
+  aliases: ['ignore', 'gitignore', 'git-ignore'],
+  codemirrorMode: 'shell',
+  codemirrorMimeType: 'text/x-sh',
+  color: '#000000',
+};
+
+var ImageJ_20_Macro = {
+  name: 'ImageJ Macro',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ijm'],
+  languageId: 575143428,
+  tmScope: 'none',
+  aliases: ['ijm'],
+  color: '#99AAFF',
+};
+
+var Imba = {
+  name: 'Imba',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.imba'],
+  languageId: 1057618448,
+  tmScope: 'source.imba',
+  color: '#16cec6',
+};
+
+var Inform_20_7 = {
+  name: 'Inform 7',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ni', '.i7x'],
+  languageId: 166,
+  tmScope: 'source.inform7',
+  aliases: ['i7', 'inform7'],
+  wrap: true,
+};
+
+var Ink = {
+  name: 'Ink',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ink'],
+  languageId: 838252715,
+  tmScope: 'source.ink',
+  wrap: true,
+};
+
+var Inno_20_Setup = {
+  name: 'Inno Setup',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.iss', '.isl'],
+  languageId: 167,
+  tmScope: 'source.inno',
+  color: '#264b99',
+};
+
+var Io = {
+  name: 'Io',
+  type: 'programming',
+  aceMode: 'io',
+  extensions: ['.io'],
+  languageId: 168,
+  tmScope: 'source.io',
+  color: '#a9188d',
+  interpreters: ['io'],
+};
+
+var Ioke = {
+  name: 'Ioke',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ik'],
+  languageId: 169,
+  tmScope: 'source.ioke',
+  color: '#078193',
+  interpreters: ['ioke'],
+};
+
+var Isabelle = {
+  name: 'Isabelle',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.thy'],
+  languageId: 170,
+  tmScope: 'source.isabelle.theory',
+  color: '#FEFE00',
+};
+
+var Isabelle_20_ROOT = {
+  name: 'Isabelle ROOT',
+  type: 'programming',
+  aceMode: 'text',
+  filenames: ['ROOT'],
+  languageId: 171,
+  tmScope: 'source.isabelle.root',
+  color: '#FEFE00',
+  group: 'Isabelle',
+};
+
+var J = {
+  name: 'J',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ijs'],
+  languageId: 172,
+  tmScope: 'source.j',
+  color: '#9EEDFF',
+  interpreters: ['jconsole'],
+};
+
+var JAR_20_Manifest = {
+  name: 'JAR Manifest',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['MANIFEST.MF'],
+  languageId: 447261135,
+  tmScope: 'source.yaml',
+  color: '#b07219',
+};
+
+var JCL = {
+  name: 'JCL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.jcl'],
+  languageId: 316620079,
+  tmScope: 'source.jcl',
+  color: '#d90e09',
+};
+
+var JFlex = {
+  name: 'JFlex',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.flex', '.jflex'],
+  languageId: 173,
+  tmScope: 'source.jflex',
+  color: '#DBCA00',
+  group: 'Lex',
+};
+
+var JSON$1 = {
+  name: 'JSON',
+  type: 'data',
+  aceMode: 'json',
+  extensions: [
+    '.json',
+    '.4DForm',
+    '.4DProject',
+    '.avsc',
+    '.geojson',
+    '.gltf',
+    '.har',
+    '.ice',
+    '.JSON-tmLanguage',
+    '.json.example',
+    '.jsonl',
+    '.mcmeta',
+    '.sarif',
+    '.slnlaunch',
+    '.tact',
+    '.tfstate',
+    '.tfstate.backup',
+    '.topojson',
+    '.webapp',
+    '.webmanifest',
+    '.yy',
+    '.yyp',
+  ],
+  filenames: [
+    '.all-contributorsrc',
+    '.arcconfig',
+    '.auto-changelog',
+    '.c8rc',
+    '.htmlhintrc',
+    '.imgbotconfig',
+    '.nycrc',
+    '.tern-config',
+    '.tern-project',
+    '.watchmanconfig',
+    'MODULE.bazel.lock',
+    'Package.resolved',
+    'Pipfile.lock',
+    'bun.lock',
+    'composer.lock',
+    'deno.lock',
+    'flake.lock',
+    'mcmod.info',
+  ],
+  languageId: 174,
+  tmScope: 'source.json',
+  aliases: ['geojson', 'jsonl', 'sarif', 'topojson'],
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'application/json',
+  color: '#292929',
+};
+
+var JSON_20_with_20_Comments = {
+  name: 'JSON with Comments',
+  type: 'data',
+  aceMode: 'javascript',
+  extensions: [
+    '.jsonc',
+    '.code-snippets',
+    '.code-workspace',
+    '.sublime-build',
+    '.sublime-color-scheme',
+    '.sublime-commands',
+    '.sublime-completions',
+    '.sublime-keymap',
+    '.sublime-macro',
+    '.sublime-menu',
+    '.sublime-mousemap',
+    '.sublime-project',
+    '.sublime-settings',
+    '.sublime-theme',
+    '.sublime-workspace',
+    '.sublime_metrics',
+    '.sublime_session',
+    '.tsconfig.json',
+  ],
+  filenames: [
+    '.babelrc',
+    '.devcontainer.json',
+    '.eslintrc.json',
+    '.jscsrc',
+    '.jshintrc',
+    '.jslintrc',
+    '.oxlintrc.json',
+    '.swcrc',
+    'api-extractor.json',
+    'devcontainer.json',
+    'jsconfig.json',
+    'language-configuration.json',
+    'tsconfig.json',
+    'tslint.json',
+  ],
+  languageId: 423,
+  tmScope: 'source.json.comments',
+  aliases: ['jsonc'],
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'text/javascript',
+  color: '#292929',
+  group: 'JSON',
+};
+
+var JSON5 = {
+  name: 'JSON5',
+  type: 'data',
+  aceMode: 'json5',
+  extensions: ['.json5'],
+  languageId: 175,
+  tmScope: 'source.js',
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'application/json',
+  color: '#267CB9',
+};
+
+var JSONLD = {
+  name: 'JSONLD',
+  type: 'data',
+  aceMode: 'javascript',
+  extensions: ['.jsonld'],
+  languageId: 176,
+  tmScope: 'source.js',
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'application/ld+json',
+  color: '#0c479c',
+};
+
+var JSONiq = {
+  name: 'JSONiq',
+  type: 'programming',
+  aceMode: 'jsoniq',
+  extensions: ['.jq'],
+  languageId: 177,
+  tmScope: 'source.jsoniq',
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'application/json',
+  color: '#40d47e',
+};
+
+var Jac = {
+  name: 'Jac',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.jac'],
+  languageId: 235277043,
+  tmScope: 'source.jac',
+  color: '#FC792D',
+};
+
+var Jai = {
+  name: 'Jai',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.jai'],
+  languageId: 70127133,
+  tmScope: 'source.jai',
+  color: '#ab8b4b',
+};
+
+var Janet = {
+  name: 'Janet',
+  type: 'programming',
+  aceMode: 'scheme',
+  extensions: ['.janet'],
+  languageId: 1028705371,
+  tmScope: 'source.janet',
+  codemirrorMode: 'scheme',
+  codemirrorMimeType: 'text/x-scheme',
+  color: '#0886a5',
+  interpreters: ['janet'],
+};
+
+var Jasmin = {
+  name: 'Jasmin',
+  type: 'programming',
+  aceMode: 'java',
+  extensions: ['.j'],
+  languageId: 180,
+  tmScope: 'source.jasmin',
+  color: '#d03600',
+};
+
+var Java = {
+  name: 'Java',
+  type: 'programming',
+  aceMode: 'java',
+  extensions: ['.java', '.jav', '.jsh'],
+  languageId: 181,
+  tmScope: 'source.java',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-java',
+  color: '#b07219',
+};
+
+var Java_20_Properties = {
+  name: 'Java Properties',
+  type: 'data',
+  aceMode: 'properties',
+  extensions: ['.properties'],
+  languageId: 519377561,
+  tmScope: 'source.java-properties',
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+  color: '#2A6277',
+};
+
+var Java_20_Server_20_Pages = {
+  name: 'Java Server Pages',
+  type: 'programming',
+  aceMode: 'jsp',
+  extensions: ['.jsp', '.tag'],
+  languageId: 182,
+  tmScope: 'text.html.jsp',
+  aliases: ['jsp'],
+  codemirrorMode: 'htmlembedded',
+  codemirrorMimeType: 'application/x-jsp',
+  color: '#2A6277',
+  group: 'Java',
+};
+
+var Java_20_Template_20_Engine = {
+  name: 'Java Template Engine',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.jte'],
+  languageId: 599494012,
+  tmScope: 'text.html.jte',
+  aliases: ['jte'],
+  color: '#2A6277',
+  group: 'Java',
+};
+
+var JavaScript = {
+  name: 'JavaScript',
+  type: 'programming',
+  aceMode: 'javascript',
+  extensions: [
+    '.js',
+    '._js',
+    '.bones',
+    '.cjs',
+    '.es',
+    '.es6',
+    '.frag',
+    '.gs',
+    '.jake',
+    '.javascript',
+    '.jsb',
+    '.jscad',
+    '.jsfl',
+    '.jslib',
+    '.jsm',
+    '.jspre',
+    '.jss',
+    '.jsx',
+    '.mjs',
+    '.njs',
+    '.pac',
+    '.sjs',
+    '.ssjs',
+    '.xsjs',
+    '.xsjslib',
+  ],
+  filenames: ['Jakefile'],
+  languageId: 183,
+  tmScope: 'source.js',
+  aliases: ['js', 'node'],
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'text/javascript',
+  color: '#f1e05a',
+  interpreters: [
+    'bun',
+    'chakra',
+    'd8',
+    'deno',
+    'gjs',
+    'js',
+    'node',
+    'nodejs',
+    'qjs',
+    'rhino',
+    'v8',
+    'v8-shell',
+  ],
+};
+
+var JavaScript_2b_ERB = {
+  name: 'JavaScript+ERB',
+  type: 'programming',
+  aceMode: 'javascript',
+  extensions: ['.js.erb'],
+  languageId: 914318960,
+  tmScope: 'source.js',
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'application/javascript',
+  color: '#f1e05a',
+  group: 'JavaScript',
+};
+
+var Jest_20_Snapshot = {
+  name: 'Jest Snapshot',
+  type: 'data',
+  aceMode: 'javascript',
+  extensions: ['.snap'],
+  languageId: 774635084,
+  tmScope: 'source.jest.snap',
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'application/javascript',
+  color: '#15c213',
+};
+
+var JetBrains_20_MPS = {
+  name: 'JetBrains MPS',
+  type: 'programming',
+  aceMode: 'xml',
+  extensions: ['.mps', '.mpl', '.msd'],
+  languageId: 465165328,
+  tmScope: 'none',
+  aliases: ['mps'],
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'text/xml',
+  color: '#21D789',
+};
+
+var Jinja = {
+  name: 'Jinja',
+  type: 'markup',
+  aceMode: 'django',
+  extensions: ['.jinja', '.j2', '.jinja2'],
+  languageId: 147,
+  tmScope: 'text.html.django',
+  aliases: ['django', 'html+django', 'html+jinja', 'htmldjango'],
+  codemirrorMode: 'jinja2',
+  codemirrorMimeType: 'text/jinja2',
+  color: '#a52a22',
+};
+
+var Jison = {
+  name: 'Jison',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.jison'],
+  languageId: 284531423,
+  tmScope: 'source.jison',
+  color: '#56b3cb',
+  group: 'Yacc',
+};
+
+var Jison_20_Lex = {
+  name: 'Jison Lex',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.jisonlex'],
+  languageId: 406395330,
+  tmScope: 'source.jisonlex',
+  color: '#56b3cb',
+  group: 'Lex',
+};
+
+var Jolie = {
+  name: 'Jolie',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ol', '.iol'],
+  languageId: 998078858,
+  tmScope: 'source.jolie',
+  color: '#843179',
+  interpreters: ['jolie'],
+};
+
+var Jsonnet = {
+  name: 'Jsonnet',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.jsonnet', '.libsonnet'],
+  languageId: 664885656,
+  tmScope: 'source.jsonnet',
+  color: '#0064bd',
+};
+
+var Julia = {
+  name: 'Julia',
+  type: 'programming',
+  aceMode: 'julia',
+  extensions: ['.jl'],
+  languageId: 184,
+  tmScope: 'source.julia',
+  codemirrorMode: 'julia',
+  codemirrorMimeType: 'text/x-julia',
+  color: '#a270ba',
+  interpreters: ['julia'],
+};
+
+var Julia_20_REPL = {
+  name: 'Julia REPL',
+  type: 'programming',
+  aceMode: 'text',
+  languageId: 220689142,
+  tmScope: 'source.julia.console',
+  color: '#a270ba',
+  group: 'Julia',
+};
+
+var Jupyter_20_Notebook = {
+  name: 'Jupyter Notebook',
+  type: 'markup',
+  aceMode: 'json',
+  extensions: ['.ipynb'],
+  filenames: ['Notebook'],
+  languageId: 185,
+  tmScope: 'source.json',
+  aliases: ['IPython Notebook'],
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'application/json',
+  color: '#DA5B0B',
+};
+
+var Just = {
+  name: 'Just',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.just'],
+  filenames: [
+    '.JUSTFILE',
+    '.Justfile',
+    '.justfile',
+    'JUSTFILE',
+    'Justfile',
+    'justfile',
+  ],
+  languageId: 128447695,
+  tmScope: 'source.just',
+  aliases: ['Justfile'],
+  color: '#384d54',
+};
+
+var KCL = {
+  name: 'KCL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.k'],
+  filenames: ['kcl.mod', 'kcl.mod.lock'],
+  languageId: 1052003890,
+  tmScope: 'source.kcl',
+  color: '#7ABABF',
+};
+
+var KDL = {
+  name: 'KDL',
+  type: 'data',
+  aceMode: 'tcl',
+  extensions: ['.kdl'],
+  languageId: 931123626,
+  tmScope: 'source.kdl',
+  codemirrorMode: 'yacas',
+  codemirrorMimeType: 'text/x-yacas',
+  color: '#ffb3b3',
+};
+
+var KFramework = {
+  name: 'KFramework',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.k'],
+  languageId: 9479532,
+  tmScope: 'text.k',
+  color: '#4195c5',
+};
+
+var KRL = {
+  name: 'KRL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.krl'],
+  languageId: 186,
+  tmScope: 'none',
+  color: '#28430A',
+};
+
+var Kaitai_20_Struct = {
+  name: 'Kaitai Struct',
+  type: 'programming',
+  aceMode: 'yaml',
+  extensions: ['.ksy'],
+  languageId: 818804755,
+  tmScope: 'source.yaml',
+  aliases: ['ksy'],
+  codemirrorMode: 'yaml',
+  codemirrorMimeType: 'text/x-yaml',
+  color: '#773b37',
+};
+
+var KakouneScript = {
+  name: 'KakouneScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.kak'],
+  filenames: ['kakrc'],
+  languageId: 603336474,
+  tmScope: 'source.kakscript',
+  aliases: ['kak', 'kakscript'],
+  color: '#6f8042',
+};
+
+var KerboScript = {
+  name: 'KerboScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ks'],
+  languageId: 59716426,
+  tmScope: 'source.kerboscript',
+  color: '#41adf0',
+};
+
+var KiCad_20_Layout = {
+  name: 'KiCad Layout',
+  type: 'data',
+  aceMode: 'lisp',
+  extensions: ['.kicad_pcb', '.kicad_mod', '.kicad_wks'],
+  filenames: ['fp-lib-table'],
+  languageId: 187,
+  tmScope: 'source.pcb.sexp',
+  aliases: ['pcbnew'],
+  codemirrorMode: 'commonlisp',
+  codemirrorMimeType: 'text/x-common-lisp',
+  color: '#2f4aab',
+};
+
+var KiCad_20_Legacy_20_Layout = {
+  name: 'KiCad Legacy Layout',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.brd'],
+  languageId: 140848857,
+  tmScope: 'source.pcb.board',
+  color: '#2f4aab',
+};
+
+var KiCad_20_Schematic = {
+  name: 'KiCad Schematic',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.kicad_sch', '.kicad_sym', '.sch'],
+  languageId: 622447435,
+  tmScope: 'source.pcb.schematic',
+  aliases: ['eeschema schematic'],
+  color: '#2f4aab',
+};
+
+var Kickstart = {
+  name: 'Kickstart',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.ks'],
+  languageId: 692635484,
+  tmScope: 'source.kickstart',
+};
+
+var Kit = {
+  name: 'Kit',
+  type: 'markup',
+  aceMode: 'html',
+  extensions: ['.kit'],
+  languageId: 188,
+  tmScope: 'text.html.basic',
+  codemirrorMode: 'htmlmixed',
+  codemirrorMimeType: 'text/html',
+};
+
+var KoLmafia_20_ASH = {
+  name: 'KoLmafia ASH',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ash'],
+  languageId: 852099832,
+  tmScope: 'source.ash',
+  color: '#B9D9B9',
+};
+
+var Koka = {
+  name: 'Koka',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.kk'],
+  languageId: 597930447,
+  tmScope: 'source.koka',
+  color: '#215166',
+  interpreters: ['koka'],
+};
+
+var Kotlin = {
+  name: 'Kotlin',
+  type: 'programming',
+  aceMode: 'kotlin',
+  extensions: ['.kt', '.ktm', '.kts'],
+  languageId: 189,
+  tmScope: 'source.kotlin',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-kotlin',
+  color: '#A97BFF',
+};
+
+var Kusto = {
+  name: 'Kusto',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.csl', '.kql'],
+  languageId: 225697190,
+  tmScope: 'source.kusto',
+};
+
+var LFE = {
+  name: 'LFE',
+  type: 'programming',
+  aceMode: 'lisp',
+  extensions: ['.lfe'],
+  languageId: 190,
+  tmScope: 'source.lisp',
+  codemirrorMode: 'commonlisp',
+  codemirrorMimeType: 'text/x-common-lisp',
+  color: '#4C3023',
+};
+
+var LLVM = {
+  name: 'LLVM',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ll'],
+  languageId: 191,
+  tmScope: 'source.llvm',
+  color: '#185619',
+};
+
+var LOLCODE = {
+  name: 'LOLCODE',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.lol'],
+  languageId: 192,
+  tmScope: 'source.lolcode',
+  color: '#cc9900',
+};
+
+var LSL = {
+  name: 'LSL',
+  type: 'programming',
+  aceMode: 'lsl',
+  extensions: ['.lsl', '.lslp'],
+  languageId: 193,
+  tmScope: 'source.lsl',
+  color: '#3d9970',
+  interpreters: ['lsl'],
+};
+
+var LTspice_20_Symbol = {
+  name: 'LTspice Symbol',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.asy'],
+  languageId: 1013566805,
+  tmScope: 'source.ltspice.symbol',
+  codemirrorMode: 'spreadsheet',
+  codemirrorMimeType: 'text/x-spreadsheet',
+};
+
+var LabVIEW = {
+  name: 'LabVIEW',
+  type: 'programming',
+  aceMode: 'xml',
+  extensions: ['.lvproj', '.lvclass', '.lvlib'],
+  languageId: 194,
+  tmScope: 'text.xml',
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'text/xml',
+  color: '#fede06',
+};
+
+var Lambdapi = {
+  name: 'Lambdapi',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.lp'],
+  languageId: 759240513,
+  tmScope: 'source.lp',
+  color: '#8027a3',
+};
+
+var Langium = {
+  name: 'Langium',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.langium'],
+  languageId: 548603830,
+  tmScope: 'source.langium',
+  color: '#2c8c87',
+};
+
+var Lark = {
+  name: 'Lark',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.lark'],
+  languageId: 758480799,
+  tmScope: 'source.lark',
+  codemirrorMode: 'ebnf',
+  codemirrorMimeType: 'text/x-ebnf',
+  color: '#2980B9',
+};
+
+var Lasso = {
+  name: 'Lasso',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.lasso', '.las', '.lasso8', '.lasso9'],
+  languageId: 195,
+  tmScope: 'file.lasso',
+  aliases: ['lassoscript'],
+  color: '#999999',
+};
+
+var Latte = {
+  name: 'Latte',
+  type: 'markup',
+  aceMode: 'latte',
+  extensions: ['.latte'],
+  languageId: 196,
+  tmScope: 'text.html.smarty',
+  codemirrorMode: 'smarty',
+  codemirrorMimeType: 'text/x-smarty',
+  color: '#f2a542',
+};
+
+var Lean = {
+  name: 'Lean',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.lean', '.hlean'],
+  languageId: 197,
+  tmScope: 'source.lean',
+};
+
+var Lean_20_4 = {
+  name: 'Lean 4',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.lean'],
+  languageId: 455147478,
+  tmScope: 'source.lean4',
+  aliases: ['lean4'],
+  group: 'Lean',
+};
+
+var Leo = {
+  name: 'Leo',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.leo'],
+  languageId: 916034822,
+  tmScope: 'source.leo',
+  color: '#C4FFC2',
+  wrap: true,
+};
+
+var Less = {
+  name: 'Less',
+  type: 'markup',
+  aceMode: 'less',
+  extensions: ['.less'],
+  languageId: 198,
+  tmScope: 'source.css.less',
+  aliases: ['less-css'],
+  codemirrorMode: 'css',
+  codemirrorMimeType: 'text/x-less',
+  color: '#1d365d',
+};
+
+var Lex = {
+  name: 'Lex',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.l', '.lex'],
+  filenames: ['Lexer.x', 'lexer.x'],
+  languageId: 199,
+  tmScope: 'source.lex',
+  aliases: ['flex'],
+  color: '#DBCA00',
+};
+
+var LigoLANG = {
+  name: 'LigoLANG',
+  type: 'programming',
+  aceMode: 'pascal',
+  extensions: ['.ligo'],
+  languageId: 1040646257,
+  tmScope: 'source.ligo',
+  codemirrorMode: 'pascal',
+  codemirrorMimeType: 'text/x-pascal',
+  color: '#0e74ff',
+  group: 'LigoLANG',
+};
+
+var LilyPond = {
+  name: 'LilyPond',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ly', '.ily'],
+  languageId: 200,
+  tmScope: 'source.lilypond',
+  color: '#9ccc7c',
+};
+
+var Limbo = {
+  name: 'Limbo',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.b', '.m'],
+  languageId: 201,
+  tmScope: 'none',
+};
+
+var Linear_20_Programming = {
+  name: 'Linear Programming',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.lp'],
+  languageId: 377204539,
+  tmScope: 'none',
+};
+
+var Linker_20_Script = {
+  name: 'Linker Script',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ld', '.lds', '.x'],
+  filenames: ['ld.script'],
+  languageId: 202,
+  tmScope: 'source.c.linker',
+};
+
+var Linux_20_Kernel_20_Module = {
+  name: 'Linux Kernel Module',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.mod'],
+  languageId: 203,
+  tmScope: 'none',
+};
+
+var Liquid = {
+  name: 'Liquid',
+  type: 'markup',
+  aceMode: 'liquid',
+  extensions: ['.liquid'],
+  languageId: 204,
+  tmScope: 'text.html.liquid',
+  color: '#67b8de',
+};
+
+var Liquidsoap = {
+  name: 'Liquidsoap',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.liq'],
+  languageId: 614641732,
+  tmScope: 'source.liquidsoap',
+  color: '#990066',
+};
+
+var Literate_20_Agda = {
+  name: 'Literate Agda',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.lagda'],
+  languageId: 205,
+  tmScope: 'none',
+  color: '#315665',
+  group: 'Agda',
+};
+
+var Literate_20_CoffeeScript = {
+  name: 'Literate CoffeeScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.litcoffee', '.coffee.md'],
+  languageId: 206,
+  tmScope: 'source.litcoffee',
+  aliases: ['litcoffee'],
+  color: '#244776',
+  group: 'CoffeeScript',
+  wrap: true,
+};
+
+var Literate_20_Haskell = {
+  name: 'Literate Haskell',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.lhs'],
+  languageId: 207,
+  tmScope: 'text.tex.latex.haskell',
+  aliases: ['lhaskell', 'lhs'],
+  codemirrorMode: 'haskell-literate',
+  codemirrorMimeType: 'text/x-literate-haskell',
+  color: '#5e5086',
+  group: 'Haskell',
+};
+
+var LiveCode_20_Script = {
+  name: 'LiveCode Script',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.livecodescript'],
+  languageId: 891017,
+  tmScope: 'source.livecodescript',
+  color: '#0c5ba5',
+};
+
+var LiveScript = {
+  name: 'LiveScript',
+  type: 'programming',
+  aceMode: 'livescript',
+  extensions: ['.ls', '._ls'],
+  filenames: ['Slakefile'],
+  languageId: 208,
+  tmScope: 'source.livescript',
+  aliases: ['live-script', 'ls'],
+  codemirrorMode: 'livescript',
+  codemirrorMimeType: 'text/x-livescript',
+  color: '#499886',
+};
+
+var Logos = {
+  name: 'Logos',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.xm', '.x', '.xi'],
+  languageId: 209,
+  tmScope: 'source.logos',
+};
+
+var Logtalk = {
+  name: 'Logtalk',
+  type: 'programming',
+  aceMode: 'logtalk',
+  extensions: ['.lgt', '.logtalk'],
+  languageId: 210,
+  tmScope: 'source.logtalk',
+  color: '#295b9a',
+};
+
+var LookML = {
+  name: 'LookML',
+  type: 'programming',
+  aceMode: 'yaml',
+  extensions: ['.lkml', '.lookml'],
+  languageId: 211,
+  tmScope: 'source.yaml',
+  codemirrorMode: 'yaml',
+  codemirrorMimeType: 'text/x-yaml',
+  color: '#652B81',
+};
+
+var LoomScript = {
+  name: 'LoomScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ls'],
+  languageId: 212,
+  tmScope: 'source.loomscript',
+};
+
+var Lua = {
+  name: 'Lua',
+  type: 'programming',
+  aceMode: 'lua',
+  extensions: [
+    '.lua',
+    '.fcgi',
+    '.nse',
+    '.p8',
+    '.pd_lua',
+    '.rbxs',
+    '.rockspec',
+    '.wlua',
+  ],
+  filenames: ['.luacheckrc'],
+  languageId: 213,
+  tmScope: 'source.lua',
+  codemirrorMode: 'lua',
+  codemirrorMimeType: 'text/x-lua',
+  color: '#000080',
+  interpreters: ['lua', 'luajit'],
+};
+
+var Luau = {
+  name: 'Luau',
+  type: 'programming',
+  aceMode: 'lua',
+  extensions: ['.luau'],
+  languageId: 365050359,
+  tmScope: 'source.luau',
+  codemirrorMode: 'lua',
+  codemirrorMimeType: 'text/x-lua',
+  color: '#00A2FF',
+  interpreters: ['luau'],
+};
+
+var M = {
+  name: 'M',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mumps', '.m'],
+  languageId: 214,
+  tmScope: 'none',
+  aliases: ['mumps'],
+  codemirrorMode: 'mumps',
+  codemirrorMimeType: 'text/x-mumps',
+};
+
+var M3U = {
+  name: 'M3U',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.m3u', '.m3u8'],
+  languageId: 89638692,
+  tmScope: 'source.m3u',
+  aliases: ['hls playlist', 'm3u playlist'],
+  color: '#179C7D',
+};
+
+var M4 = {
+  name: 'M4',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.m4', '.mc'],
+  languageId: 215,
+  tmScope: 'source.m4',
+};
+
+var M4Sugar = {
+  name: 'M4Sugar',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.m4'],
+  filenames: ['configure.ac'],
+  languageId: 216,
+  tmScope: 'source.m4',
+  aliases: ['autoconf'],
+  group: 'M4',
+};
+
+var MATLAB = {
+  name: 'MATLAB',
+  type: 'programming',
+  aceMode: 'matlab',
+  extensions: ['.matlab', '.m'],
+  languageId: 225,
+  tmScope: 'source.matlab',
+  aliases: ['octave'],
+  codemirrorMode: 'octave',
+  codemirrorMimeType: 'text/x-octave',
+  color: '#e16737',
+};
+
+var MAXScript = {
+  name: 'MAXScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ms', '.mcr'],
+  languageId: 217,
+  tmScope: 'source.maxscript',
+  color: '#00a6a6',
+};
+
+var MDX = {
+  name: 'MDX',
+  type: 'markup',
+  aceMode: 'markdown',
+  extensions: ['.mdx'],
+  languageId: 512838272,
+  tmScope: 'source.mdx',
+  codemirrorMode: 'gfm',
+  codemirrorMimeType: 'text/x-gfm',
+  color: '#fcb32c',
+  wrap: true,
+};
+
+var MLIR = {
+  name: 'MLIR',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mlir'],
+  languageId: 448253929,
+  tmScope: 'source.mlir',
+  color: '#5EC8DB',
+};
+
+var MQL4 = {
+  name: 'MQL4',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.mq4', '.mqh'],
+  languageId: 426,
+  tmScope: 'source.mql5',
+  color: '#62A8D6',
+};
+
+var MQL5 = {
+  name: 'MQL5',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.mq5', '.mqh'],
+  languageId: 427,
+  tmScope: 'source.mql5',
+  color: '#4A76B8',
+};
+
+var MTML = {
+  name: 'MTML',
+  type: 'markup',
+  aceMode: 'html',
+  extensions: ['.mtml'],
+  languageId: 218,
+  tmScope: 'text.html.basic',
+  codemirrorMode: 'htmlmixed',
+  codemirrorMimeType: 'text/html',
+  color: '#b7e1f4',
+};
+
+var MUF = {
+  name: 'MUF',
+  type: 'programming',
+  aceMode: 'forth',
+  extensions: ['.muf', '.m'],
+  languageId: 219,
+  tmScope: 'none',
+  codemirrorMode: 'forth',
+  codemirrorMimeType: 'text/x-forth',
+  group: 'Forth',
+};
+
+var Macaulay2 = {
+  name: 'Macaulay2',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.m2'],
+  languageId: 34167825,
+  tmScope: 'source.m2',
+  aliases: ['m2'],
+  color: '#d8ffff',
+  interpreters: ['M2'],
+};
+
+var Makefile = {
+  name: 'Makefile',
+  type: 'programming',
+  aceMode: 'makefile',
+  extensions: ['.mak', '.d', '.make', '.makefile', '.mk', '.mkfile'],
+  filenames: [
+    'BSDmakefile',
+    'GNUmakefile',
+    'Kbuild',
+    'Makefile',
+    'Makefile.am',
+    'Makefile.boot',
+    'Makefile.frag',
+    'Makefile.in',
+    'Makefile.inc',
+    'Makefile.pc',
+    'Makefile.wat',
+    'makefile',
+    'makefile.sco',
+    'mkfile',
+  ],
+  languageId: 220,
+  tmScope: 'source.makefile',
+  aliases: ['bsdmake', 'make', 'mf'],
+  codemirrorMode: 'cmake',
+  codemirrorMimeType: 'text/x-cmake',
+  color: '#427819',
+  interpreters: ['make'],
+};
+
+var Mako = {
+  name: 'Mako',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mako', '.mao'],
+  languageId: 221,
+  tmScope: 'text.html.mako',
+  color: '#7e858d',
+};
+
+var Markdown = {
+  name: 'Markdown',
+  type: 'prose',
+  aceMode: 'markdown',
+  extensions: [
+    '.md',
+    '.livemd',
+    '.markdown',
+    '.mdown',
+    '.mdwn',
+    '.mkd',
+    '.mkdn',
+    '.mkdown',
+    '.ronn',
+    '.scd',
+    '.workbook',
+  ],
+  filenames: ['contents.lr'],
+  languageId: 222,
+  tmScope: 'text.md',
+  aliases: ['md', 'pandoc'],
+  codemirrorMode: 'gfm',
+  codemirrorMimeType: 'text/x-gfm',
+  color: '#083fa1',
+  wrap: true,
+};
+
+var Marko = {
+  name: 'Marko',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.marko'],
+  languageId: 932782397,
+  tmScope: 'text.marko',
+  aliases: ['markojs'],
+  codemirrorMode: 'htmlmixed',
+  codemirrorMimeType: 'text/html',
+  color: '#42bff2',
+};
+
+var Mask = {
+  name: 'Mask',
+  type: 'markup',
+  aceMode: 'mask',
+  extensions: ['.mask'],
+  languageId: 223,
+  tmScope: 'source.mask',
+  color: '#f97732',
+};
+
+var Mathematical_20_Programming_20_System = {
+  name: 'Mathematical Programming System',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mps'],
+  languageId: 429002699,
+  tmScope: 'text.source.mps',
+  color: '#0530ad',
+};
+
+var Maven_20_POM = {
+  name: 'Maven POM',
+  type: 'data',
+  aceMode: 'xml',
+  filenames: ['pom.xml'],
+  languageId: 226,
+  tmScope: 'text.xml.pom',
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'text/xml',
+  group: 'XML',
+};
+
+var Max = {
+  name: 'Max',
+  type: 'programming',
+  aceMode: 'json',
+  extensions: ['.maxpat', '.maxhelp', '.maxproj', '.mxt', '.pat'],
+  languageId: 227,
+  tmScope: 'source.json',
+  aliases: ['max/msp', 'maxmsp'],
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'application/json',
+  color: '#c4a79c',
+};
+
+var MeTTa = {
+  name: 'MeTTa',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.metta'],
+  languageId: 1037612668,
+  tmScope: 'source.metta',
+  color: '#6a5acd',
+};
+
+var Mercury = {
+  name: 'Mercury',
+  type: 'programming',
+  aceMode: 'prolog',
+  extensions: ['.m', '.moo'],
+  languageId: 229,
+  tmScope: 'source.mercury',
+  color: '#ff2b2b',
+  interpreters: ['mmi'],
+};
+
+var Mermaid = {
+  name: 'Mermaid',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.mmd', '.mermaid'],
+  languageId: 385992043,
+  tmScope: 'source.mermaid',
+  aliases: ['mermaid example'],
+  color: '#ff3670',
+};
+
+var Meson = {
+  name: 'Meson',
+  type: 'programming',
+  aceMode: 'text',
+  filenames: ['meson.build', 'meson_options.txt'],
+  languageId: 799141244,
+  tmScope: 'source.meson',
+  color: '#007800',
+};
+
+var Metal = {
+  name: 'Metal',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.metal'],
+  languageId: 230,
+  tmScope: 'source.c++',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-c++src',
+  color: '#8f14e9',
+};
+
+var Microsoft_20_Developer_20_Studio_20_Project = {
+  name: 'Microsoft Developer Studio Project',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.dsp'],
+  languageId: 800983837,
+  tmScope: 'none',
+};
+
+var Microsoft_20_Visual_20_Studio_20_Solution = {
+  name: 'Microsoft Visual Studio Solution',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.sln'],
+  languageId: 849523096,
+  tmScope: 'source.solution',
+};
+
+var MiniD = {
+  name: 'MiniD',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.minid'],
+  languageId: 231,
+  tmScope: 'none',
+};
+
+var MiniYAML = {
+  name: 'MiniYAML',
+  type: 'data',
+  aceMode: 'yaml',
+  extensions: ['.yaml', '.yml'],
+  languageId: 4896465,
+  tmScope: 'source.miniyaml',
+  codemirrorMode: 'yaml',
+  codemirrorMimeType: 'text/x-yaml',
+  color: '#ff1111',
+};
+
+var MiniZinc = {
+  name: 'MiniZinc',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mzn'],
+  languageId: 238874535,
+  tmScope: 'source.mzn',
+  color: '#06a9e6',
+};
+
+var MiniZinc_20_Data = {
+  name: 'MiniZinc Data',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.dzn'],
+  languageId: 938193433,
+  tmScope: 'source.mzn',
+};
+
+var Mint = {
+  name: 'Mint',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mint'],
+  languageId: 968740319,
+  tmScope: 'source.mint',
+  color: '#02b046',
+};
+
+var Mirah = {
+  name: 'Mirah',
+  type: 'programming',
+  aceMode: 'ruby',
+  extensions: ['.druby', '.duby', '.mirah'],
+  languageId: 232,
+  tmScope: 'source.ruby',
+  codemirrorMode: 'ruby',
+  codemirrorMimeType: 'text/x-ruby',
+  color: '#c7a938',
+};
+
+var Modelica = {
+  name: 'Modelica',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mo'],
+  languageId: 233,
+  tmScope: 'source.modelica',
+  codemirrorMode: 'modelica',
+  codemirrorMimeType: 'text/x-modelica',
+  color: '#de1d31',
+};
+
+var Modula2 = {
+  name: 'Modula-2',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mod'],
+  languageId: 234,
+  tmScope: 'source.modula2',
+  color: '#10253f',
+};
+
+var Modula3 = {
+  name: 'Modula-3',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.i3', '.ig', '.m3', '.mg'],
+  languageId: 564743864,
+  tmScope: 'source.modula-3',
+  color: '#223388',
+};
+
+var Module_20_Management_20_System = {
+  name: 'Module Management System',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mms', '.mmk'],
+  filenames: ['descrip.mmk', 'descrip.mms'],
+  languageId: 235,
+  tmScope: 'none',
+};
+
+var Mojo = {
+  name: 'Mojo',
+  type: 'programming',
+  aceMode: 'python',
+  extensions: ['.mojo'],
+  languageId: 1045019587,
+  tmScope: 'source.mojo',
+  codemirrorMode: 'python',
+  codemirrorMimeType: 'text/x-python',
+  color: '#ff4c1f',
+};
+
+var Monkey = {
+  name: 'Monkey',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.monkey', '.monkey2'],
+  languageId: 236,
+  tmScope: 'source.monkey',
+};
+
+var Monkey_20_C = {
+  name: 'Monkey C',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.mc'],
+  languageId: 231751931,
+  tmScope: 'source.mc',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  color: '#8D6747',
+};
+
+var Moocode = {
+  name: 'Moocode',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.moo'],
+  languageId: 237,
+  tmScope: 'none',
+};
+
+var MoonBit = {
+  name: 'MoonBit',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mbt'],
+  languageId: 181453007,
+  tmScope: 'source.moonbit',
+  color: '#b92381',
+};
+
+var MoonScript = {
+  name: 'MoonScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.moon'],
+  languageId: 238,
+  tmScope: 'source.moonscript',
+  color: '#ff4585',
+  interpreters: ['moon'],
+};
+
+var Motoko = {
+  name: 'Motoko',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mo'],
+  languageId: 202937027,
+  tmScope: 'source.mo',
+  color: '#fbb03b',
+};
+
+var Motorola_20_68K_20_Assembly = {
+  name: 'Motorola 68K Assembly',
+  type: 'programming',
+  aceMode: 'assembly_x86',
+  extensions: ['.asm', '.i', '.inc', '.s', '.x68'],
+  languageId: 477582706,
+  tmScope: 'source.m68k',
+  aliases: ['m68k'],
+  color: '#005daa',
+  group: 'Assembly',
+};
+
+var Move = {
+  name: 'Move',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.move'],
+  languageId: 638334599,
+  tmScope: 'source.move',
+  color: '#4a137a',
+};
+
+var Muse = {
+  name: 'Muse',
+  type: 'prose',
+  aceMode: 'text',
+  extensions: ['.muse'],
+  languageId: 474864066,
+  tmScope: 'text.muse',
+  aliases: ['amusewiki', 'emacs muse'],
+  wrap: true,
+};
+
+var Mustache = {
+  name: 'Mustache',
+  type: 'markup',
+  aceMode: 'smarty',
+  extensions: ['.mustache'],
+  languageId: 638334590,
+  tmScope: 'text.html.smarty',
+  codemirrorMode: 'smarty',
+  codemirrorMimeType: 'text/x-smarty',
+  color: '#724b3b',
+};
+
+var Myghty = {
+  name: 'Myghty',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.myt'],
+  languageId: 239,
+  tmScope: 'none',
+};
+
+var NASL = {
+  name: 'NASL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.nasl', '.inc'],
+  languageId: 171666519,
+  tmScope: 'source.nasl',
+};
+
+var NCL = {
+  name: 'NCL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ncl'],
+  languageId: 240,
+  tmScope: 'source.ncl',
+  color: '#28431f',
+};
+
+var NEON = {
+  name: 'NEON',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.neon'],
+  languageId: 481192983,
+  tmScope: 'source.neon',
+  aliases: ['nette object notation', 'ne-on'],
+};
+
+var NL = {
+  name: 'NL',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.nl'],
+  languageId: 241,
+  tmScope: 'none',
+};
+
+var NMODL = {
+  name: 'NMODL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mod'],
+  languageId: 136456478,
+  tmScope: 'none',
+  color: '#00356B',
+};
+
+var NPM_20_Config = {
+  name: 'NPM Config',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['.npmrc'],
+  languageId: 685022663,
+  tmScope: 'source.ini.npmrc',
+  aliases: ['npmrc'],
+  color: '#cb3837',
+  group: 'INI',
+};
+
+var NSIS = {
+  name: 'NSIS',
+  type: 'programming',
+  aceMode: 'nsis',
+  extensions: ['.nsi', '.nsh'],
+  languageId: 242,
+  tmScope: 'source.nsis',
+  codemirrorMode: 'nsis',
+  codemirrorMimeType: 'text/x-nsis',
+};
+
+var NWScript = {
+  name: 'NWScript',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.nss'],
+  languageId: 731233819,
+  tmScope: 'source.c.nwscript',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  color: '#111522',
+};
+
+var Nasal = {
+  name: 'Nasal',
+  type: 'programming',
+  aceMode: 'nasal',
+  extensions: ['.nas'],
+  languageId: 178322513,
+  tmScope: 'source.nasal',
+  color: '#1d2c4e',
+};
+
+var Nearley = {
+  name: 'Nearley',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ne', '.nearley'],
+  languageId: 521429430,
+  tmScope: 'source.ne',
+  color: '#990000',
+};
+
+var Nemerle = {
+  name: 'Nemerle',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.n'],
+  languageId: 243,
+  tmScope: 'source.nemerle',
+  color: '#3d3c6e',
+};
+
+var NetLinx = {
+  name: 'NetLinx',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.axs', '.axi'],
+  languageId: 244,
+  tmScope: 'source.netlinx',
+  color: '#0aa0ff',
+};
+
+var NetLinx_2b_ERB = {
+  name: 'NetLinx+ERB',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.axs.erb', '.axi.erb'],
+  languageId: 245,
+  tmScope: 'source.netlinx.erb',
+  color: '#747faa',
+};
+
+var NetLogo = {
+  name: 'NetLogo',
+  type: 'programming',
+  aceMode: 'lisp',
+  extensions: ['.nlogo'],
+  languageId: 246,
+  tmScope: 'source.lisp',
+  codemirrorMode: 'commonlisp',
+  codemirrorMimeType: 'text/x-common-lisp',
+  color: '#ff6375',
+};
+
+var NewLisp = {
+  name: 'NewLisp',
+  type: 'programming',
+  aceMode: 'lisp',
+  extensions: ['.nl', '.lisp', '.lsp'],
+  languageId: 247,
+  tmScope: 'source.lisp',
+  codemirrorMode: 'commonlisp',
+  codemirrorMimeType: 'text/x-common-lisp',
+  color: '#87AED7',
+  interpreters: ['newlisp'],
+};
+
+var Nextflow = {
+  name: 'Nextflow',
+  type: 'programming',
+  aceMode: 'groovy',
+  extensions: ['.nf'],
+  filenames: ['nextflow.config'],
+  languageId: 506780613,
+  tmScope: 'source.nextflow',
+  color: '#3ac486',
+  interpreters: ['nextflow'],
+};
+
+var Nginx = {
+  name: 'Nginx',
+  type: 'data',
+  aceMode: 'nginx',
+  extensions: ['.nginx', '.nginxconf', '.vhost'],
+  filenames: ['nginx.conf'],
+  languageId: 248,
+  tmScope: 'source.nginx',
+  aliases: ['nginx configuration file'],
+  codemirrorMode: 'nginx',
+  codemirrorMimeType: 'text/x-nginx-conf',
+  color: '#009639',
+};
+
+var Nickel = {
+  name: 'Nickel',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ncl'],
+  languageId: 1067292664,
+  tmScope: 'source.nickel',
+  color: '#E0C3FC',
+};
+
+var Nim = {
+  name: 'Nim',
+  type: 'programming',
+  aceMode: 'nim',
+  extensions: ['.nim', '.nim.cfg', '.nimble', '.nimrod', '.nims'],
+  filenames: ['nim.cfg'],
+  languageId: 249,
+  tmScope: 'source.nim',
+  color: '#ffc200',
+};
+
+var Ninja = {
+  name: 'Ninja',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.ninja'],
+  languageId: 250,
+  tmScope: 'source.ninja',
+};
+
+var Nit = {
+  name: 'Nit',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.nit'],
+  languageId: 251,
+  tmScope: 'source.nit',
+  color: '#009917',
+};
+
+var Nix = {
+  name: 'Nix',
+  type: 'programming',
+  aceMode: 'nix',
+  extensions: ['.nix'],
+  languageId: 252,
+  tmScope: 'source.nix',
+  aliases: ['nixos'],
+  color: '#7e7eff',
+};
+
+var Noir = {
+  name: 'Noir',
+  type: 'programming',
+  aceMode: 'rust',
+  extensions: ['.nr'],
+  languageId: 813068465,
+  tmScope: 'source.nr',
+  aliases: ['nargo'],
+  codemirrorMode: 'rust',
+  codemirrorMimeType: 'text/x-rustsrc',
+  color: '#2f1f49',
+};
+
+var Nu = {
+  name: 'Nu',
+  type: 'programming',
+  aceMode: 'scheme',
+  extensions: ['.nu'],
+  filenames: ['Nukefile'],
+  languageId: 253,
+  tmScope: 'source.nu',
+  aliases: ['nush'],
+  codemirrorMode: 'scheme',
+  codemirrorMimeType: 'text/x-scheme',
+  color: '#c9df40',
+  interpreters: ['nush'],
+};
+
+var NumPy = {
+  name: 'NumPy',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.numpy', '.numpyw', '.numsc'],
+  languageId: 254,
+  tmScope: 'none',
+  codemirrorMode: 'python',
+  codemirrorMimeType: 'text/x-python',
+  color: '#9C8AF9',
+  group: 'Python',
+};
+
+var Nunjucks = {
+  name: 'Nunjucks',
+  type: 'markup',
+  aceMode: 'nunjucks',
+  extensions: ['.njk'],
+  languageId: 461856962,
+  tmScope: 'text.html.nunjucks',
+  aliases: ['njk'],
+  color: '#3d8137',
+};
+
+var Nushell = {
+  name: 'Nushell',
+  type: 'programming',
+  aceMode: 'sh',
+  extensions: ['.nu'],
+  languageId: 446573572,
+  tmScope: 'source.nushell',
+  aliases: ['nu-script', 'nushell-script'],
+  codemirrorMode: 'shell',
+  codemirrorMimeType: 'text/x-sh',
+  color: '#4E9906',
+  interpreters: ['nu'],
+};
+
+var OASv2Json = {
+  name: 'OASv2-json',
+  type: 'data',
+  aceMode: 'json',
+  extensions: ['.json'],
+  languageId: 834374816,
+  tmScope: 'source.json',
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'application/json',
+  color: '#85ea2d',
+  group: 'OpenAPI Specification v2',
+};
+
+var OASv2Yaml = {
+  name: 'OASv2-yaml',
+  type: 'data',
+  aceMode: 'yaml',
+  extensions: ['.yaml', '.yml'],
+  languageId: 105187618,
+  tmScope: 'source.yaml',
+  codemirrorMode: 'yaml',
+  codemirrorMimeType: 'text/x-yaml',
+  color: '#85ea2d',
+  group: 'OpenAPI Specification v2',
+};
+
+var OASv3Json = {
+  name: 'OASv3-json',
+  type: 'data',
+  aceMode: 'json',
+  extensions: ['.json'],
+  languageId: 980062566,
+  tmScope: 'source.json',
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'application/json',
+  color: '#85ea2d',
+  group: 'OpenAPI Specification v3',
+};
+
+var OASv3Yaml = {
+  name: 'OASv3-yaml',
+  type: 'data',
+  aceMode: 'yaml',
+  extensions: ['.yaml', '.yml'],
+  languageId: 51239111,
+  tmScope: 'source.yaml',
+  codemirrorMode: 'yaml',
+  codemirrorMimeType: 'text/x-yaml',
+  color: '#85ea2d',
+  group: 'OpenAPI Specification v3',
+};
+
+var OCaml = {
+  name: 'OCaml',
+  type: 'programming',
+  aceMode: 'ocaml',
+  extensions: ['.ml', '.eliom', '.eliomi', '.ml4', '.mli', '.mll', '.mly'],
+  languageId: 255,
+  tmScope: 'source.ocaml',
+  codemirrorMode: 'mllike',
+  codemirrorMimeType: 'text/x-ocaml',
+  color: '#ef7a08',
+  interpreters: ['ocaml', 'ocamlrun', 'ocamlscript'],
+};
+
+var OMNeT_2b__2b__20_MSG = {
+  name: 'OMNeT++ MSG',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.msg'],
+  languageId: 664100008,
+  tmScope: 'source.msg',
+  aliases: ['omnetpp-msg'],
+  color: '#a0e0a0',
+};
+
+var OMNeT_2b__2b__20_NED = {
+  name: 'OMNeT++ NED',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ned'],
+  languageId: 924868392,
+  tmScope: 'source.ned',
+  aliases: ['omnetpp-ned'],
+  color: '#08607c',
+};
+
+var Oberon = {
+  name: 'Oberon',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ob2'],
+  languageId: 677210597,
+  tmScope: 'source.modula2',
+};
+
+var ObjDump = {
+  name: 'ObjDump',
+  type: 'data',
+  aceMode: 'assembly_x86',
+  extensions: ['.objdump'],
+  languageId: 256,
+  tmScope: 'objdump.x86asm',
+};
+
+var Object_20_Data_20_Instance_20_Notation = {
+  name: 'Object Data Instance Notation',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.odin'],
+  languageId: 985227236,
+  tmScope: 'source.odin-ehr',
+};
+
+var ObjectScript = {
+  name: 'ObjectScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.cls'],
+  languageId: 202735509,
+  tmScope: 'source.objectscript',
+  color: '#424893',
+};
+
+var ObjectiveC = {
+  name: 'Objective-C',
+  type: 'programming',
+  aceMode: 'objectivec',
+  extensions: ['.m', '.h'],
+  languageId: 257,
+  tmScope: 'source.objc',
+  aliases: ['obj-c', 'objc', 'objectivec'],
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-objectivec',
+  color: '#438eff',
+};
+
+var ObjectiveC_2b__2b_ = {
+  name: 'Objective-C++',
+  type: 'programming',
+  aceMode: 'objectivec',
+  extensions: ['.mm'],
+  languageId: 258,
+  tmScope: 'source.objc++',
+  aliases: ['obj-c++', 'objc++', 'objectivec++'],
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-objectivec++',
+  color: '#6866fb',
+};
+
+var ObjectiveJ = {
+  name: 'Objective-J',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.j', '.sj'],
+  languageId: 259,
+  tmScope: 'source.js.objj',
+  aliases: ['obj-j', 'objectivej', 'objj'],
+  color: '#ff0c5a',
+};
+
+var Odin = {
+  name: 'Odin',
+  type: 'programming',
+  aceMode: 'odin',
+  extensions: ['.odin'],
+  languageId: 889244082,
+  tmScope: 'source.odin',
+  aliases: ['odinlang', 'odin-lang'],
+  color: '#60AFFE',
+};
+
+var Omgrofl = {
+  name: 'Omgrofl',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.omgrofl'],
+  languageId: 260,
+  tmScope: 'none',
+  color: '#cabbff',
+};
+
+var Opa = {
+  name: 'Opa',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.opa'],
+  languageId: 261,
+  tmScope: 'source.opa',
+};
+
+var Opal = {
+  name: 'Opal',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.opal'],
+  languageId: 262,
+  tmScope: 'source.opal',
+  color: '#f7ede0',
+};
+
+var Open_20_Policy_20_Agent = {
+  name: 'Open Policy Agent',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.rego'],
+  languageId: 840483232,
+  tmScope: 'source.rego',
+  color: '#7d9199',
+};
+
+var OpenAPI_20_Specification_20_v2 = {
+  name: 'OpenAPI Specification v2',
+  type: 'data',
+  aceMode: 'text',
+  languageId: 848295328,
+  tmScope: 'none',
+  aliases: ['oasv2'],
+  color: '#85ea2d',
+};
+
+var OpenAPI_20_Specification_20_v3 = {
+  name: 'OpenAPI Specification v3',
+  type: 'data',
+  aceMode: 'text',
+  languageId: 557959099,
+  tmScope: 'none',
+  aliases: ['oasv3'],
+  color: '#85ea2d',
+};
+
+var OpenCL = {
+  name: 'OpenCL',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.cl', '.opencl'],
+  languageId: 263,
+  tmScope: 'source.c',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  color: '#ed2e2d',
+  group: 'C',
+};
+
+var OpenEdge_20_ABL = {
+  name: 'OpenEdge ABL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.p', '.cls', '.w'],
+  languageId: 264,
+  tmScope: 'source.abl',
+  aliases: ['progress', 'openedge', 'abl'],
+  color: '#5ce600',
+};
+
+var OpenQASM = {
+  name: 'OpenQASM',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.qasm'],
+  languageId: 153739399,
+  tmScope: 'source.qasm',
+  color: '#AA70FF',
+};
+
+var OpenRC_20_runscript = {
+  name: 'OpenRC runscript',
+  type: 'programming',
+  aceMode: 'sh',
+  languageId: 265,
+  tmScope: 'source.shell',
+  aliases: ['openrc'],
+  codemirrorMode: 'shell',
+  codemirrorMimeType: 'text/x-sh',
+  group: 'Shell',
+  interpreters: ['openrc-run'],
+};
+
+var OpenSCAD = {
+  name: 'OpenSCAD',
+  type: 'programming',
+  aceMode: 'scad',
+  extensions: ['.scad'],
+  languageId: 266,
+  tmScope: 'source.scad',
+  color: '#e5cd45',
+};
+
+var OpenStep_20_Property_20_List = {
+  name: 'OpenStep Property List',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.plist', '.glyphs'],
+  languageId: 598917541,
+  tmScope: 'source.plist',
+};
+
+var OpenType_20_Feature_20_File = {
+  name: 'OpenType Feature File',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.fea'],
+  languageId: 374317347,
+  tmScope: 'source.opentype',
+  aliases: ['AFDKO'],
+};
+
+var Option_20_List = {
+  name: 'Option List',
+  type: 'data',
+  aceMode: 'sh',
+  filenames: ['.ackrc', '.rspec', '.yardopts', 'ackrc', 'mocha.opts'],
+  languageId: 723589315,
+  tmScope: 'source.opts',
+  aliases: ['opts', 'ackrc'],
+  codemirrorMode: 'shell',
+  codemirrorMimeType: 'text/x-sh',
+  color: '#476732',
+};
+
+var Org = {
+  name: 'Org',
+  type: 'prose',
+  aceMode: 'text',
+  extensions: ['.org'],
+  languageId: 267,
+  tmScope: 'none',
+  color: '#77aa99',
+  wrap: true,
+};
+
+var OverPy = {
+  name: 'OverPy',
+  type: 'programming',
+  aceMode: 'python',
+  extensions: ['.opy'],
+  languageId: 492781155,
+  tmScope: 'source.opy',
+  aliases: ['opy'],
+  codemirrorMode: 'python',
+  codemirrorMimeType: 'text/x-python',
+  color: '#78b355',
+  wrap: true,
+};
+
+var OverpassQL = {
+  name: 'OverpassQL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.overpassql'],
+  languageId: 689079655,
+  tmScope: 'source.overpassql',
+  color: '#cce2aa',
+  wrap: true,
+};
+
+var Ox = {
+  name: 'Ox',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ox', '.oxh', '.oxo'],
+  languageId: 268,
+  tmScope: 'source.ox',
+};
+
+var Oxygene = {
+  name: 'Oxygene',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.oxygene'],
+  languageId: 269,
+  tmScope: 'none',
+  color: '#cdd0e3',
+};
+
+var Oz = {
+  name: 'Oz',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.oz'],
+  languageId: 270,
+  tmScope: 'source.oz',
+  codemirrorMode: 'oz',
+  codemirrorMimeType: 'text/x-oz',
+  color: '#fab738',
+};
+
+var P4 = {
+  name: 'P4',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.p4'],
+  languageId: 348895984,
+  tmScope: 'source.p4',
+  color: '#7055b5',
+};
+
+var PDDL = {
+  name: 'PDDL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pddl'],
+  languageId: 736235603,
+  tmScope: 'source.pddl',
+  color: '#0d00ff',
+};
+
+var PEG_js = {
+  name: 'PEG.js',
+  type: 'programming',
+  aceMode: 'javascript',
+  extensions: ['.pegjs', '.peggy'],
+  languageId: 81442128,
+  tmScope: 'source.peggy',
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'text/javascript',
+  color: '#234d6b',
+};
+
+var PHP = {
+  name: 'PHP',
+  type: 'programming',
+  aceMode: 'php',
+  extensions: [
+    '.php',
+    '.aw',
+    '.ctp',
+    '.fcgi',
+    '.inc',
+    '.php3',
+    '.php4',
+    '.php5',
+    '.phps',
+    '.phpt',
+  ],
+  filenames: ['.php', '.php_cs', '.php_cs.dist', 'Phakefile'],
+  languageId: 272,
+  tmScope: 'text.html.php',
+  aliases: ['inc'],
+  codemirrorMode: 'php',
+  codemirrorMimeType: 'application/x-httpd-php',
+  color: '#4F5D95',
+  interpreters: ['php'],
+};
+
+var PLSQL = {
+  name: 'PLSQL',
+  type: 'programming',
+  aceMode: 'plsql',
+  extensions: [
+    '.pls',
+    '.bdy',
+    '.ddl',
+    '.fnc',
+    '.pck',
+    '.pkb',
+    '.pks',
+    '.plb',
+    '.plsql',
+    '.prc',
+    '.spc',
+    '.sql',
+    '.tpb',
+    '.tps',
+    '.trg',
+    '.vw',
+  ],
+  languageId: 273,
+  tmScope: 'none',
+  codemirrorMode: 'sql',
+  codemirrorMimeType: 'text/x-plsql',
+  color: '#dad8d8',
+};
+
+var PLpgSQL = {
+  name: 'PLpgSQL',
+  type: 'programming',
+  aceMode: 'pgsql',
+  extensions: ['.pgsql', '.sql'],
+  languageId: 274,
+  tmScope: 'source.sql',
+  codemirrorMode: 'sql',
+  codemirrorMimeType: 'text/x-sql',
+  color: '#336790',
+};
+
+var POVRay_20_SDL = {
+  name: 'POV-Ray SDL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pov', '.inc'],
+  languageId: 275,
+  tmScope: 'source.pov-ray sdl',
+  aliases: ['pov-ray', 'povray'],
+  color: '#6bac65',
+};
+
+var Pact = {
+  name: 'Pact',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pact'],
+  languageId: 756774415,
+  tmScope: 'source.pact',
+  color: '#F7A8B8',
+};
+
+var Pan = {
+  name: 'Pan',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pan'],
+  languageId: 276,
+  tmScope: 'source.pan',
+  color: '#cc0000',
+};
+
+var Papyrus = {
+  name: 'Papyrus',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.psc'],
+  languageId: 277,
+  tmScope: 'source.papyrus.skyrim',
+  color: '#6600cc',
+};
+
+var Parrot = {
+  name: 'Parrot',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.parrot'],
+  languageId: 278,
+  tmScope: 'none',
+  color: '#f3ca0a',
+};
+
+var Parrot_20_Assembly = {
+  name: 'Parrot Assembly',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pasm'],
+  languageId: 279,
+  tmScope: 'none',
+  aliases: ['pasm'],
+  group: 'Parrot',
+  interpreters: ['parrot'],
+};
+
+var Parrot_20_Internal_20_Representation = {
+  name: 'Parrot Internal Representation',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pir'],
+  languageId: 280,
+  tmScope: 'source.parrot.pir',
+  aliases: ['pir'],
+  group: 'Parrot',
+  interpreters: ['parrot'],
+};
+
+var Pascal = {
+  name: 'Pascal',
+  type: 'programming',
+  aceMode: 'pascal',
+  extensions: ['.pas', '.dfm', '.dpr', '.inc', '.lpr', '.pascal', '.pp'],
+  languageId: 281,
+  tmScope: 'source.pascal',
+  aliases: ['delphi', 'objectpascal'],
+  codemirrorMode: 'pascal',
+  codemirrorMimeType: 'text/x-pascal',
+  color: '#E3F171',
+  interpreters: ['instantfpc'],
+};
+
+var Pawn = {
+  name: 'Pawn',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pwn', '.inc', '.sma'],
+  languageId: 271,
+  tmScope: 'source.pawn',
+  color: '#dbb284',
+};
+
+var Pep8 = {
+  name: 'Pep8',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pep'],
+  languageId: 840372442,
+  tmScope: 'source.pep8',
+  color: '#C76F5B',
+};
+
+var Perl = {
+  name: 'Perl',
+  type: 'programming',
+  aceMode: 'perl',
+  extensions: [
+    '.pl',
+    '.al',
+    '.cgi',
+    '.fcgi',
+    '.perl',
+    '.ph',
+    '.plx',
+    '.pm',
+    '.psgi',
+    '.t',
+  ],
+  filenames: [
+    '.latexmkrc',
+    'Makefile.PL',
+    'Rexfile',
+    'ack',
+    'cpanfile',
+    'latexmkrc',
+  ],
+  languageId: 282,
+  tmScope: 'source.perl',
+  aliases: ['cperl'],
+  codemirrorMode: 'perl',
+  codemirrorMimeType: 'text/x-perl',
+  color: '#0298c3',
+  interpreters: ['cperl', 'perl'],
+};
+
+var Pic = {
+  name: 'Pic',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.pic', '.chem'],
+  languageId: 425,
+  tmScope: 'source.pic',
+  aliases: ['pikchr'],
+  codemirrorMode: 'troff',
+  codemirrorMimeType: 'text/troff',
+  group: 'Roff',
+};
+
+var Pickle = {
+  name: 'Pickle',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.pkl'],
+  languageId: 284,
+  tmScope: 'none',
+};
+
+var PicoLisp = {
+  name: 'PicoLisp',
+  type: 'programming',
+  aceMode: 'lisp',
+  extensions: ['.l'],
+  languageId: 285,
+  tmScope: 'source.lisp',
+  color: '#6067af',
+  interpreters: ['picolisp', 'pil'],
+};
+
+var PigLatin = {
+  name: 'PigLatin',
+  type: 'programming',
+  aceMode: 'pig',
+  extensions: ['.pig'],
+  languageId: 286,
+  tmScope: 'source.pig_latin',
+  codemirrorMode: 'pig',
+  codemirrorMimeType: 'text/x-pig',
+  color: '#fcd7de',
+};
+
+var Pike = {
+  name: 'Pike',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pike', '.pmod'],
+  languageId: 287,
+  tmScope: 'source.pike',
+  color: '#005390',
+  interpreters: ['pike'],
+};
+
+var Pip_20_Requirements = {
+  name: 'Pip Requirements',
+  type: 'data',
+  aceMode: 'text',
+  filenames: [
+    'dev-requirements.txt',
+    'requirements-dev.txt',
+    'requirements.lock.txt',
+    'requirements.txt',
+  ],
+  languageId: 684385621,
+  tmScope: 'source.pip-requirements',
+  color: '#FFD343',
+};
+
+var Pkl = {
+  name: 'Pkl',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pkl'],
+  languageId: 288822799,
+  tmScope: 'source.pkl',
+  color: '#6b9543',
+  interpreters: ['pkl'],
+};
+
+var PlantUML = {
+  name: 'PlantUML',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.puml', '.iuml', '.plantuml'],
+  languageId: 833504686,
+  tmScope: 'source.wsd',
+  color: '#fbbd16',
+};
+
+var Pod = {
+  name: 'Pod',
+  type: 'prose',
+  aceMode: 'perl',
+  extensions: ['.pod'],
+  languageId: 288,
+  tmScope: 'none',
+  codemirrorMode: 'perl',
+  codemirrorMimeType: 'text/x-perl',
+  interpreters: ['perl'],
+  wrap: true,
+};
+
+var Pod_20_6 = {
+  name: 'Pod 6',
+  type: 'prose',
+  aceMode: 'perl',
+  extensions: ['.pod', '.pod6'],
+  languageId: 155357471,
+  tmScope: 'source.raku',
+  interpreters: ['perl6'],
+  wrap: true,
+};
+
+var PogoScript = {
+  name: 'PogoScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pogo'],
+  languageId: 289,
+  tmScope: 'source.pogoscript',
+  color: '#d80074',
+};
+
+var Polar = {
+  name: 'Polar',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.polar'],
+  languageId: 839112914,
+  tmScope: 'source.polar',
+  color: '#ae81ff',
+};
+
+var Pony = {
+  name: 'Pony',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pony'],
+  languageId: 290,
+  tmScope: 'source.pony',
+};
+
+var Portugol = {
+  name: 'Portugol',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.por'],
+  languageId: 832391833,
+  tmScope: 'source.portugol',
+  color: '#f8bd00',
+};
+
+var PostCSS = {
+  name: 'PostCSS',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.pcss', '.postcss'],
+  languageId: 262764437,
+  tmScope: 'source.postcss',
+  color: '#dc3a0c',
+  group: 'CSS',
+};
+
+var PostScript = {
+  name: 'PostScript',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.ps', '.eps', '.epsi', '.pfa'],
+  languageId: 291,
+  tmScope: 'source.postscript',
+  aliases: ['postscr'],
+  color: '#da291c',
+};
+
+var Power_20_Query = {
+  name: 'Power Query',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pq'],
+  languageId: 37496382,
+  tmScope: 'source.powerquery',
+  aliases: ['powerquery'],
+  color: '#d38e0d',
+};
+
+var PowerBuilder = {
+  name: 'PowerBuilder',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pbt', '.sra', '.sru', '.srw'],
+  languageId: 292,
+  tmScope: 'source.powerbuilder',
+  color: '#8f0f8d',
+};
+
+var PowerShell = {
+  name: 'PowerShell',
+  type: 'programming',
+  aceMode: 'powershell',
+  extensions: ['.ps1', '.psd1', '.psm1'],
+  languageId: 293,
+  tmScope: 'source.powershell',
+  aliases: ['posh', 'pwsh'],
+  codemirrorMode: 'powershell',
+  codemirrorMimeType: 'application/x-powershell',
+  color: '#012456',
+  interpreters: ['pwsh'],
+};
+
+var Praat = {
+  name: 'Praat',
+  type: 'programming',
+  aceMode: 'praat',
+  extensions: ['.praat'],
+  languageId: 106029007,
+  tmScope: 'source.praat',
+  color: '#c8506d',
+};
+
+var Prisma = {
+  name: 'Prisma',
+  type: 'data',
+  aceMode: 'prisma',
+  extensions: ['.prisma'],
+  languageId: 499933428,
+  tmScope: 'source.prisma',
+  color: '#0c344b',
+};
+
+var Pro_2a_C = {
+  name: 'Pro*C',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.pc'],
+  languageId: 991047534,
+  tmScope: 'source.c',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  color: '#bb8368',
+};
+
+var Processing = {
+  name: 'Processing',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pde'],
+  languageId: 294,
+  tmScope: 'source.processing',
+  color: '#0096D8',
+};
+
+var Procfile = {
+  name: 'Procfile',
+  type: 'programming',
+  aceMode: 'batchfile',
+  filenames: ['Procfile'],
+  languageId: 305313959,
+  tmScope: 'source.procfile',
+  color: '#3B2F63',
+};
+
+var Proguard = {
+  name: 'Proguard',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.pro'],
+  languageId: 716513858,
+  tmScope: 'none',
+};
+
+var Prolog = {
+  name: 'Prolog',
+  type: 'programming',
+  aceMode: 'prolog',
+  extensions: ['.pl', '.plt', '.pro', '.prolog', '.yap'],
+  languageId: 295,
+  tmScope: 'source.prolog',
+  color: '#74283c',
+  interpreters: ['swipl', 'yap'],
+};
+
+var Promela = {
+  name: 'Promela',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pml'],
+  languageId: 441858312,
+  tmScope: 'source.promela',
+  color: '#de0000',
+};
+
+var Propeller_20_Spin = {
+  name: 'Propeller Spin',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.spin'],
+  languageId: 296,
+  tmScope: 'source.spin',
+  color: '#7fa2a7',
+};
+
+var Protocol_20_Buffer = {
+  name: 'Protocol Buffer',
+  type: 'data',
+  aceMode: 'protobuf',
+  extensions: ['.proto'],
+  languageId: 297,
+  tmScope: 'source.proto',
+  aliases: ['proto', 'protobuf', 'Protocol Buffers'],
+  codemirrorMode: 'protobuf',
+  codemirrorMimeType: 'text/x-protobuf',
+};
+
+var Protocol_20_Buffer_20_Text_20_Format = {
+  name: 'Protocol Buffer Text Format',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.textproto', '.pbt', '.pbtxt', '.txtpb'],
+  languageId: 436568854,
+  tmScope: 'source.textproto',
+  aliases: ['text proto', 'protobuf text format'],
+};
+
+var Public_20_Key = {
+  name: 'Public Key',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.asc', '.pub'],
+  languageId: 298,
+  tmScope: 'none',
+  codemirrorMode: 'asciiarmor',
+  codemirrorMimeType: 'application/pgp',
+};
+
+var Pug = {
+  name: 'Pug',
+  type: 'markup',
+  aceMode: 'jade',
+  extensions: ['.jade', '.pug'],
+  languageId: 179,
+  tmScope: 'text.jade',
+  codemirrorMode: 'pug',
+  codemirrorMimeType: 'text/x-pug',
+  color: '#a86454',
+};
+
+var Puppet = {
+  name: 'Puppet',
+  type: 'programming',
+  aceMode: 'puppet',
+  extensions: ['.pp'],
+  filenames: ['Modulefile'],
+  languageId: 299,
+  tmScope: 'source.puppet',
+  codemirrorMode: 'puppet',
+  codemirrorMimeType: 'text/x-puppet',
+  color: '#302B6D',
+};
+
+var Pure_20_Data = {
+  name: 'Pure Data',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.pd'],
+  languageId: 300,
+  tmScope: 'none',
+};
+
+var PureBasic = {
+  name: 'PureBasic',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pb', '.pbi'],
+  languageId: 301,
+  tmScope: 'none',
+  color: '#5a6986',
+};
+
+var PureScript = {
+  name: 'PureScript',
+  type: 'programming',
+  aceMode: 'haskell',
+  extensions: ['.purs'],
+  languageId: 302,
+  tmScope: 'source.purescript',
+  codemirrorMode: 'haskell',
+  codemirrorMimeType: 'text/x-haskell',
+  color: '#1D222D',
+};
+
+var Pyret = {
+  name: 'Pyret',
+  type: 'programming',
+  aceMode: 'python',
+  extensions: ['.arr'],
+  languageId: 252961827,
+  tmScope: 'source.arr',
+  color: '#ee1e10',
+};
+
+var Python = {
+  name: 'Python',
+  type: 'programming',
+  aceMode: 'python',
+  extensions: [
+    '.py',
+    '.cgi',
+    '.fcgi',
+    '.gyp',
+    '.gypi',
+    '.lmi',
+    '.py3',
+    '.pyde',
+    '.pyi',
+    '.pyp',
+    '.pyt',
+    '.pyw',
+    '.rpy',
+    '.spec',
+    '.tac',
+    '.wsgi',
+    '.xpy',
+  ],
+  filenames: ['.gclient', 'DEPS', 'SConscript', 'SConstruct', 'wscript'],
+  languageId: 303,
+  tmScope: 'source.python',
+  aliases: ['py', 'py3', 'python3', 'rusthon'],
+  codemirrorMode: 'python',
+  codemirrorMimeType: 'text/x-python',
+  color: '#3572A5',
+  interpreters: ['python', 'python2', 'python3', 'py', 'pypy', 'pypy3', 'uv'],
+};
+
+var Python_20_console = {
+  name: 'Python console',
+  type: 'programming',
+  aceMode: 'text',
+  languageId: 428,
+  tmScope: 'text.python.console',
+  aliases: ['pycon'],
+  color: '#3572A5',
+  group: 'Python',
+};
+
+var Python_20_traceback = {
+  name: 'Python traceback',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.pytb'],
+  languageId: 304,
+  tmScope: 'text.python.traceback',
+  color: '#3572A5',
+  group: 'Python',
+};
+
+var Q_23_ = {
+  name: 'Q#',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.qs'],
+  languageId: 697448245,
+  tmScope: 'source.qsharp',
+  aliases: ['qsharp'],
+  color: '#fed659',
+};
+
+var QML = {
+  name: 'QML',
+  type: 'programming',
+  aceMode: 'qml',
+  extensions: ['.qml', '.qbs'],
+  languageId: 305,
+  tmScope: 'source.qml',
+  color: '#44a51c',
+};
+
+var QMake = {
+  name: 'QMake',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.pro', '.pri'],
+  languageId: 306,
+  tmScope: 'source.qmake',
+  interpreters: ['qmake'],
+};
+
+var Qt_20_Script = {
+  name: 'Qt Script',
+  type: 'programming',
+  aceMode: 'javascript',
+  extensions: ['.qs'],
+  filenames: ['installscript.qs', 'toolchain_installscript.qs'],
+  languageId: 558193693,
+  tmScope: 'source.js',
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'text/javascript',
+  color: '#00b841',
+};
+
+var Quake = {
+  name: 'Quake',
+  type: 'programming',
+  aceMode: 'text',
+  filenames: ['m3makefile', 'm3overrides'],
+  languageId: 375265331,
+  tmScope: 'source.quake',
+  color: '#882233',
+};
+
+var QuakeC = {
+  name: 'QuakeC',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.qc'],
+  languageId: 472308069,
+  tmScope: 'source.quakec',
+  color: '#975777',
+};
+
+var QuickBASIC = {
+  name: 'QuickBASIC',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bas', '.bi'],
+  languageId: 593107205,
+  tmScope: 'source.QB64',
+  aliases: ['qb', 'qbasic', 'qb64', 'classic qbasic', 'classic quickbasic'],
+  codemirrorMode: 'vb',
+  codemirrorMimeType: 'text/x-vb',
+  color: '#008080',
+};
+
+var Quint = {
+  name: 'Quint',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.qnt'],
+  languageId: 562056483,
+  tmScope: 'source.quint',
+  color: '#9d6ce5',
+};
+
+var R = {
+  name: 'R',
+  type: 'programming',
+  aceMode: 'r',
+  extensions: ['.r', '.rd', '.rsx'],
+  filenames: ['.Rprofile', 'expr-dist'],
+  languageId: 307,
+  tmScope: 'source.r',
+  aliases: ['Rscript', 'splus'],
+  codemirrorMode: 'r',
+  codemirrorMimeType: 'text/x-rsrc',
+  color: '#198CE7',
+  interpreters: ['Rscript'],
+};
+
+var RAML = {
+  name: 'RAML',
+  type: 'markup',
+  aceMode: 'yaml',
+  extensions: ['.raml'],
+  languageId: 308,
+  tmScope: 'source.yaml',
+  codemirrorMode: 'yaml',
+  codemirrorMimeType: 'text/x-yaml',
+  color: '#77d9fb',
+};
+
+var RAScript = {
+  name: 'RAScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.rascript'],
+  languageId: 601118790,
+  tmScope: 'source.rascript',
+  color: '#2C97FA',
+};
+
+var RBS = {
+  name: 'RBS',
+  type: 'data',
+  aceMode: 'ruby',
+  extensions: ['.rbs'],
+  languageId: 899227493,
+  tmScope: 'source.rbs',
+  codemirrorMode: 'ruby',
+  codemirrorMimeType: 'text/x-ruby',
+  color: '#701516',
+  group: 'Ruby',
+};
+
+var RDoc = {
+  name: 'RDoc',
+  type: 'prose',
+  aceMode: 'rdoc',
+  extensions: ['.rdoc'],
+  languageId: 309,
+  tmScope: 'text.rdoc',
+  color: '#701516',
+  wrap: true,
+};
+
+var REALbasic = {
+  name: 'REALbasic',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.rbbas', '.rbfrm', '.rbmnu', '.rbres', '.rbtbar', '.rbuistate'],
+  languageId: 310,
+  tmScope: 'source.vbnet',
+};
+
+var REXX = {
+  name: 'REXX',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.rexx', '.pprx', '.rex'],
+  languageId: 311,
+  tmScope: 'source.rexx',
+  aliases: ['arexx'],
+  color: '#d90e09',
+  interpreters: ['regina', 'rexx'],
+};
+
+var RMarkdown = {
+  name: 'RMarkdown',
+  type: 'prose',
+  aceMode: 'markdown',
+  extensions: ['.qmd', '.rmd'],
+  languageId: 313,
+  tmScope: 'text.md',
+  codemirrorMode: 'gfm',
+  codemirrorMimeType: 'text/x-gfm',
+  color: '#198ce7',
+  wrap: true,
+};
+
+var RON = {
+  name: 'RON',
+  type: 'data',
+  aceMode: 'rust',
+  extensions: ['.ron'],
+  languageId: 587855233,
+  tmScope: 'source.ron',
+  color: '#a62c00',
+};
+
+var ROS_20_Interface = {
+  name: 'ROS Interface',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.msg', '.action', '.srv'],
+  languageId: 809230569,
+  tmScope: 'source.rosmsg',
+  aliases: ['rosmsg'],
+  color: '#22314e',
+};
+
+var RPC = {
+  name: 'RPC',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.x'],
+  languageId: 1031374237,
+  tmScope: 'source.c',
+  aliases: ['rpcgen', 'oncrpc', 'xdr'],
+};
+
+var RPGLE = {
+  name: 'RPGLE',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.rpgle', '.sqlrpgle'],
+  languageId: 609977990,
+  tmScope: 'source.rpgle',
+  aliases: ['ile rpg', 'sqlrpgle'],
+  color: '#2BDE21',
+};
+
+var RPM_20_Spec = {
+  name: 'RPM Spec',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.spec'],
+  languageId: 314,
+  tmScope: 'source.rpm-spec',
+  aliases: ['specfile'],
+  codemirrorMode: 'rpm',
+  codemirrorMimeType: 'text/x-rpm-spec',
+};
+
+var RUNOFF = {
+  name: 'RUNOFF',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.rnh', '.rno'],
+  languageId: 315,
+  tmScope: 'text.runoff',
+  color: '#665a4e',
+  wrap: true,
+};
+
+var Racket = {
+  name: 'Racket',
+  type: 'programming',
+  aceMode: 'lisp',
+  extensions: ['.rkt', '.rktd', '.rktl', '.scrbl'],
+  languageId: 316,
+  tmScope: 'source.racket',
+  color: '#3c5caa',
+  interpreters: ['racket'],
+};
+
+var Ragel = {
+  name: 'Ragel',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.rl'],
+  languageId: 317,
+  tmScope: 'none',
+  aliases: ['ragel-rb', 'ragel-ruby'],
+  color: '#9d5200',
+};
+
+var Raku = {
+  name: 'Raku',
+  type: 'programming',
+  aceMode: 'raku',
+  extensions: [
+    '.6pl',
+    '.6pm',
+    '.nqp',
+    '.p6',
+    '.p6l',
+    '.p6m',
+    '.pl',
+    '.pl6',
+    '.pm',
+    '.pm6',
+    '.raku',
+    '.rakumod',
+    '.t',
+  ],
+  languageId: 283,
+  tmScope: 'source.raku',
+  aliases: ['perl6', 'perl-6'],
+  codemirrorMode: 'perl',
+  codemirrorMimeType: 'text/x-perl',
+  color: '#0000fb',
+  interpreters: ['perl6', 'raku', 'rakudo'],
+};
+
+var Rascal = {
+  name: 'Rascal',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.rsc'],
+  languageId: 173616037,
+  tmScope: 'source.rascal',
+  color: '#fffaa0',
+};
+
+var Raw_20_token_20_data = {
+  name: 'Raw token data',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.raw'],
+  languageId: 318,
+  tmScope: 'none',
+  aliases: ['raw'],
+};
+
+var ReScript = {
+  name: 'ReScript',
+  type: 'programming',
+  aceMode: 'rust',
+  extensions: ['.res', '.resi'],
+  languageId: 501875647,
+  tmScope: 'source.rescript',
+  codemirrorMode: 'rust',
+  codemirrorMimeType: 'text/x-rustsrc',
+  color: '#ed5051',
+  interpreters: ['ocaml'],
+};
+
+var Readline_20_Config = {
+  name: 'Readline Config',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['.inputrc', 'inputrc'],
+  languageId: 538732839,
+  tmScope: 'source.inputrc',
+  aliases: ['inputrc', 'readline'],
+  group: 'INI',
+};
+
+var Reason = {
+  name: 'Reason',
+  type: 'programming',
+  aceMode: 'rust',
+  extensions: ['.re', '.rei'],
+  languageId: 869538413,
+  tmScope: 'source.reason',
+  codemirrorMode: 'rust',
+  codemirrorMimeType: 'text/x-rustsrc',
+  color: '#ff5847',
+};
+
+var ReasonLIGO = {
+  name: 'ReasonLIGO',
+  type: 'programming',
+  aceMode: 'rust',
+  extensions: ['.religo'],
+  languageId: 319002153,
+  tmScope: 'source.religo',
+  codemirrorMode: 'rust',
+  codemirrorMimeType: 'text/x-rustsrc',
+  color: '#ff5847',
+  group: 'LigoLANG',
+};
+
+var Rebol = {
+  name: 'Rebol',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.reb', '.r', '.r2', '.r3', '.rebol'],
+  languageId: 319,
+  tmScope: 'source.rebol',
+  color: '#358a5b',
+};
+
+var Record_20_Jar = {
+  name: 'Record Jar',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['language-subtag-registry.txt'],
+  languageId: 865765202,
+  tmScope: 'source.record-jar',
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+  color: '#0673ba',
+};
+
+var Red = {
+  name: 'Red',
+  type: 'programming',
+  aceMode: 'red',
+  extensions: ['.red', '.reds'],
+  languageId: 320,
+  tmScope: 'source.red',
+  aliases: ['red/system'],
+  color: '#f50000',
+};
+
+var Redcode = {
+  name: 'Redcode',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.cw'],
+  languageId: 321,
+  tmScope: 'none',
+};
+
+var Redirect_20_Rules = {
+  name: 'Redirect Rules',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['_redirects'],
+  languageId: 1020148948,
+  tmScope: 'source.redirects',
+  aliases: ['redirects'],
+};
+
+var Redscript = {
+  name: 'Redscript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.reds'],
+  languageId: 686691365,
+  tmScope: 'source.redscript',
+  color: '#f44336',
+};
+
+var Regular_20_Expression = {
+  name: 'Regular Expression',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.regexp', '.regex'],
+  languageId: 363378884,
+  tmScope: 'source.regexp',
+  aliases: ['regexp', 'regex'],
+  color: '#009a00',
+};
+
+var Ren_27_Py = {
+  name: "Ren'Py",
+  type: 'programming',
+  aceMode: 'python',
+  extensions: ['.rpy'],
+  languageId: 322,
+  tmScope: 'source.renpy',
+  aliases: ['renpy'],
+  color: '#ff7f7f',
+};
+
+var RenderScript = {
+  name: 'RenderScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.rs', '.rsh'],
+  languageId: 323,
+  tmScope: 'none',
+};
+
+var Rez = {
+  name: 'Rez',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.r'],
+  languageId: 498022874,
+  tmScope: 'source.rez',
+  color: '#FFDAB3',
+};
+
+var Rich_20_Text_20_Format = {
+  name: 'Rich Text Format',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.rtf'],
+  languageId: 51601661,
+  tmScope: 'text.rtf',
+};
+
+var Ring = {
+  name: 'Ring',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ring'],
+  languageId: 431,
+  tmScope: 'source.ring',
+  color: '#2D54CB',
+};
+
+var Riot = {
+  name: 'Riot',
+  type: 'markup',
+  aceMode: 'html',
+  extensions: ['.riot'],
+  languageId: 878396783,
+  tmScope: 'text.html.riot',
+  color: '#A71E49',
+};
+
+var RobotFramework = {
+  name: 'RobotFramework',
+  type: 'programming',
+  aceMode: 'robot',
+  extensions: ['.robot', '.resource'],
+  languageId: 324,
+  tmScope: 'text.robot',
+  color: '#00c0b5',
+};
+
+var Robots_20_Exclusion_20_Rules = {
+  name: 'Robots Exclusion Rules',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['robots.txt'],
+  languageId: 674736065,
+  tmScope: 'text.robots-txt',
+  aliases: ['robots', 'robots txt', 'robotx.txt'],
+};
+
+var Roc = {
+  name: 'Roc',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.roc'],
+  languageId: 440182480,
+  tmScope: 'source.roc',
+  color: '#7c38f5',
+};
+
+var Rocq_20_Prover = {
+  name: 'Rocq Prover',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.v', '.coq'],
+  languageId: 69,
+  tmScope: 'source.coq',
+  aliases: ['coq', 'rocq'],
+  color: '#d0b68c',
+};
+
+var Roff = {
+  name: 'Roff',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: [
+    '.roff',
+    '.1',
+    '.1in',
+    '.1m',
+    '.1x',
+    '.2',
+    '.3',
+    '.3in',
+    '.3m',
+    '.3p',
+    '.3pm',
+    '.3qt',
+    '.3x',
+    '.4',
+    '.5',
+    '.6',
+    '.7',
+    '.8',
+    '.9',
+    '.l',
+    '.man',
+    '.mdoc',
+    '.me',
+    '.ms',
+    '.n',
+    '.nr',
+    '.rno',
+    '.tmac',
+  ],
+  filenames: ['eqnrc', 'mmn', 'mmt', 'troffrc', 'troffrc-end'],
+  languageId: 141,
+  tmScope: 'text.roff',
+  aliases: [
+    'groff',
+    'man',
+    'manpage',
+    'man page',
+    'man-page',
+    'mdoc',
+    'nroff',
+    'troff',
+  ],
+  codemirrorMode: 'troff',
+  codemirrorMimeType: 'text/troff',
+  color: '#ecdebe',
+  wrap: true,
+};
+
+var Roff_20_Manpage = {
+  name: 'Roff Manpage',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: [
+    '.1',
+    '.1in',
+    '.1m',
+    '.1x',
+    '.2',
+    '.3',
+    '.3in',
+    '.3m',
+    '.3p',
+    '.3pm',
+    '.3qt',
+    '.3x',
+    '.4',
+    '.5',
+    '.6',
+    '.7',
+    '.8',
+    '.9',
+    '.man',
+    '.mdoc',
+  ],
+  languageId: 612669833,
+  tmScope: 'text.roff',
+  codemirrorMode: 'troff',
+  codemirrorMimeType: 'text/troff',
+  color: '#ecdebe',
+  group: 'Roff',
+  wrap: true,
+};
+
+var Rouge = {
+  name: 'Rouge',
+  type: 'programming',
+  aceMode: 'clojure',
+  extensions: ['.rg'],
+  languageId: 325,
+  tmScope: 'source.clojure',
+  codemirrorMode: 'clojure',
+  codemirrorMimeType: 'text/x-clojure',
+  color: '#cc0088',
+};
+
+var RouterOS_20_Script = {
+  name: 'RouterOS Script',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.rsc'],
+  languageId: 592853203,
+  tmScope: 'none',
+  color: '#DE3941',
+  interpreters: ['RouterOS'],
+};
+
+var Ruby = {
+  name: 'Ruby',
+  type: 'programming',
+  aceMode: 'ruby',
+  extensions: [
+    '.rb',
+    '.builder',
+    '.eye',
+    '.fcgi',
+    '.gemspec',
+    '.god',
+    '.jbuilder',
+    '.mspec',
+    '.pluginspec',
+    '.podspec',
+    '.prawn',
+    '.rabl',
+    '.rake',
+    '.rbi',
+    '.rbuild',
+    '.rbw',
+    '.rbx',
+    '.ru',
+    '.ruby',
+    '.spec',
+    '.thor',
+    '.watchr',
+  ],
+  filenames: [
+    '.irbrc',
+    '.pryrc',
+    '.simplecov',
+    'Appraisals',
+    'Berksfile',
+    'Brewfile',
+    'Buildfile',
+    'Capfile',
+    'Dangerfile',
+    'Deliverfile',
+    'Fastfile',
+    'Gemfile',
+    'Guardfile',
+    'Jarfile',
+    'Mavenfile',
+    'Podfile',
+    'Puppetfile',
+    'Rakefile',
+    'Snapfile',
+    'Steepfile',
+    'Thorfile',
+    'Vagrantfile',
+    'buildfile',
+  ],
+  languageId: 326,
+  tmScope: 'source.ruby',
+  aliases: ['jruby', 'macruby', 'rake', 'rb', 'rbx'],
+  codemirrorMode: 'ruby',
+  codemirrorMimeType: 'text/x-ruby',
+  color: '#701516',
+  interpreters: ['ruby', 'macruby', 'rake', 'jruby', 'rbx'],
+};
+
+var Rust = {
+  name: 'Rust',
+  type: 'programming',
+  aceMode: 'rust',
+  extensions: ['.rs', '.rs.in'],
+  languageId: 327,
+  tmScope: 'source.rust',
+  aliases: ['rs'],
+  codemirrorMode: 'rust',
+  codemirrorMimeType: 'text/x-rustsrc',
+  color: '#dea584',
+  interpreters: ['rust-script'],
+};
+
+var SAS = {
+  name: 'SAS',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.sas'],
+  languageId: 328,
+  tmScope: 'source.sas',
+  codemirrorMode: 'sas',
+  codemirrorMimeType: 'text/x-sas',
+  color: '#B34936',
+};
+
+var SCSS = {
+  name: 'SCSS',
+  type: 'markup',
+  aceMode: 'scss',
+  extensions: ['.scss'],
+  languageId: 329,
+  tmScope: 'source.css.scss',
+  codemirrorMode: 'css',
+  codemirrorMimeType: 'text/x-scss',
+  color: '#c6538c',
+};
+
+var SELinux_20_Policy = {
+  name: 'SELinux Policy',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.te'],
+  filenames: [
+    'file_contexts',
+    'genfs_contexts',
+    'initial_sids',
+    'port_contexts',
+    'security_classes',
+  ],
+  languageId: 880010326,
+  tmScope: 'source.sepolicy',
+  aliases: ['SELinux Kernel Policy Language', 'sepolicy'],
+};
+
+var SMT = {
+  name: 'SMT',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.smt2', '.smt', '.z3'],
+  languageId: 330,
+  tmScope: 'source.smt',
+  interpreters: [
+    'boolector',
+    'cvc4',
+    'mathsat5',
+    'opensmt',
+    'smtinterpol',
+    'smt-rat',
+    'stp',
+    'verit',
+    'yices2',
+    'z3',
+  ],
+};
+
+var SPARQL = {
+  name: 'SPARQL',
+  type: 'data',
+  aceMode: 'sparql',
+  extensions: ['.sparql', '.rq'],
+  languageId: 331,
+  tmScope: 'source.sparql',
+  codemirrorMode: 'sparql',
+  codemirrorMimeType: 'application/sparql-query',
+  color: '#0C4597',
+};
+
+var SQF = {
+  name: 'SQF',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.sqf', '.hqf'],
+  languageId: 332,
+  tmScope: 'source.sqf',
+  color: '#3F3F3F',
+};
+
+var SQL = {
+  name: 'SQL',
+  type: 'data',
+  aceMode: 'sql',
+  extensions: [
+    '.sql',
+    '.ddl',
+    '.inc',
+    '.mysql',
+    '.prc',
+    '.tab',
+    '.udf',
+    '.viw',
+  ],
+  languageId: 333,
+  tmScope: 'source.sql',
+  codemirrorMode: 'sql',
+  codemirrorMimeType: 'text/x-sql',
+  color: '#e38c00',
+};
+
+var SQLPL = {
+  name: 'SQLPL',
+  type: 'programming',
+  aceMode: 'sql',
+  extensions: ['.sql', '.db2'],
+  languageId: 334,
+  tmScope: 'source.sql',
+  codemirrorMode: 'sql',
+  codemirrorMimeType: 'text/x-sql',
+  color: '#e38c00',
+};
+
+var SRecode_20_Template = {
+  name: 'SRecode Template',
+  type: 'markup',
+  aceMode: 'lisp',
+  extensions: ['.srt'],
+  languageId: 335,
+  tmScope: 'source.lisp',
+  codemirrorMode: 'commonlisp',
+  codemirrorMimeType: 'text/x-common-lisp',
+  color: '#348a34',
+};
+
+var SSH_20_Config = {
+  name: 'SSH Config',
+  type: 'data',
+  aceMode: 'text',
+  filenames: [
+    'ssh-config',
+    'ssh_config',
+    'sshconfig',
+    'sshconfig.snip',
+    'sshd-config',
+    'sshd_config',
+  ],
+  languageId: 554920715,
+  tmScope: 'source.ssh-config',
+  aliases: ['sshconfig', 'sshdconfig', 'ssh_config', 'sshd_config'],
+  group: 'INI',
+};
+
+var STAR = {
+  name: 'STAR',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.star'],
+  languageId: 424510560,
+  tmScope: 'source.star',
+};
+
+var STL = {
+  name: 'STL',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.stl'],
+  languageId: 455361735,
+  tmScope: 'source.stl',
+  aliases: ['ascii stl', 'stla'],
+  color: '#373b5e',
+};
+
+var STON = {
+  name: 'STON',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.ston'],
+  languageId: 336,
+  tmScope: 'source.smalltalk',
+  group: 'Smalltalk',
+};
+
+var SVG = {
+  name: 'SVG',
+  type: 'data',
+  aceMode: 'svg',
+  extensions: ['.svg'],
+  languageId: 337,
+  tmScope: 'text.xml.svg',
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'text/xml',
+  color: '#ff9900',
+};
+
+var SWIG = {
+  name: 'SWIG',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.i', '.swg', '.swig'],
+  languageId: 1066250075,
+  tmScope: 'source.c++',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-c++src',
+};
+
+var Sage = {
+  name: 'Sage',
+  type: 'programming',
+  aceMode: 'python',
+  extensions: ['.sage', '.sagews'],
+  languageId: 338,
+  tmScope: 'source.python',
+  codemirrorMode: 'python',
+  codemirrorMimeType: 'text/x-python',
+};
+
+var Sail = {
+  name: 'Sail',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.sail'],
+  languageId: 1029438153,
+  tmScope: 'source.sail',
+  color: '#259dd5',
+};
+
+var SaltStack = {
+  name: 'SaltStack',
+  type: 'programming',
+  aceMode: 'yaml',
+  extensions: ['.sls'],
+  languageId: 339,
+  tmScope: 'source.yaml.salt',
+  aliases: ['saltstate', 'salt'],
+  codemirrorMode: 'yaml',
+  codemirrorMimeType: 'text/x-yaml',
+  color: '#646464',
+};
+
+var Sass = {
+  name: 'Sass',
+  type: 'markup',
+  aceMode: 'sass',
+  extensions: ['.sass'],
+  languageId: 340,
+  tmScope: 'source.sass',
+  codemirrorMode: 'sass',
+  codemirrorMimeType: 'text/x-sass',
+  color: '#a53b70',
+};
+
+var Scala = {
+  name: 'Scala',
+  type: 'programming',
+  aceMode: 'scala',
+  extensions: ['.scala', '.kojo', '.sbt', '.sc'],
+  languageId: 341,
+  tmScope: 'source.scala',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-scala',
+  color: '#c22d40',
+  interpreters: ['scala'],
+};
+
+var Scaml = {
+  name: 'Scaml',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.scaml'],
+  languageId: 342,
+  tmScope: 'source.scaml',
+  color: '#bd181a',
+};
+
+var Scenic = {
+  name: 'Scenic',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.scenic'],
+  languageId: 619814037,
+  tmScope: 'source.scenic',
+  color: '#fdc700',
+  interpreters: ['scenic'],
+};
+
+var Scheme = {
+  name: 'Scheme',
+  type: 'programming',
+  aceMode: 'scheme',
+  extensions: ['.scm', '.sch', '.sld', '.sls', '.sps', '.ss'],
+  languageId: 343,
+  tmScope: 'source.scheme',
+  codemirrorMode: 'scheme',
+  codemirrorMimeType: 'text/x-scheme',
+  color: '#1e4aec',
+  interpreters: ['scheme', 'guile', 'bigloo', 'chicken', 'csi', 'gosh', 'r6rs'],
+};
+
+var Scilab = {
+  name: 'Scilab',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.sci', '.sce', '.tst'],
+  languageId: 344,
+  tmScope: 'source.scilab',
+  color: '#ca0f21',
+};
+
+var Self = {
+  name: 'Self',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.self'],
+  languageId: 345,
+  tmScope: 'none',
+  color: '#0579aa',
+};
+
+var ShaderLab = {
+  name: 'ShaderLab',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.shader'],
+  languageId: 664257356,
+  tmScope: 'source.shaderlab',
+  color: '#222c37',
+};
+
+var Shell = {
+  name: 'Shell',
+  type: 'programming',
+  aceMode: 'sh',
+  extensions: [
+    '.sh',
+    '.bash',
+    '.bats',
+    '.cgi',
+    '.command',
+    '.fcgi',
+    '.ksh',
+    '.sbatch',
+    '.sh.in',
+    '.slurm',
+    '.tmux',
+    '.tool',
+    '.trigger',
+    '.zsh',
+    '.zsh-theme',
+  ],
+  filenames: [
+    '.bash_aliases',
+    '.bash_functions',
+    '.bash_history',
+    '.bash_logout',
+    '.bash_profile',
+    '.bashrc',
+    '.cshrc',
+    '.envrc',
+    '.flaskenv',
+    '.kshrc',
+    '.login',
+    '.profile',
+    '.tmux.conf',
+    '.xinitrc',
+    '.xsession',
+    '.zlogin',
+    '.zlogout',
+    '.zprofile',
+    '.zshenv',
+    '.zshrc',
+    '9fs',
+    'PKGBUILD',
+    'bash_aliases',
+    'bash_logout',
+    'bash_profile',
+    'bashrc',
+    'cshrc',
+    'gradlew',
+    'kshrc',
+    'login',
+    'man',
+    'mvnw',
+    'profile',
+    'tmux.conf',
+    'xinitrc',
+    'xsession',
+    'zlogin',
+    'zlogout',
+    'zprofile',
+    'zshenv',
+    'zshrc',
+  ],
+  languageId: 346,
+  tmScope: 'source.shell',
+  aliases: ['sh', 'shell-script', 'bash', 'zsh', 'envrc'],
+  codemirrorMode: 'shell',
+  codemirrorMimeType: 'text/x-sh',
+  color: '#89e051',
+  interpreters: [
+    'ash',
+    'bash',
+    'dash',
+    'ksh',
+    'mksh',
+    'pdksh',
+    'rc',
+    'sh',
+    'zsh',
+  ],
+};
+
+var ShellCheck_20_Config = {
+  name: 'ShellCheck Config',
+  type: 'data',
+  aceMode: 'ini',
+  filenames: ['.shellcheckrc'],
+  languageId: 687511714,
+  tmScope: 'source.shellcheckrc',
+  aliases: ['shellcheckrc'],
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+  color: '#cecfcb',
+};
+
+var ShellSession = {
+  name: 'ShellSession',
+  type: 'programming',
+  aceMode: 'sh',
+  extensions: ['.sh-session'],
+  languageId: 347,
+  tmScope: 'text.shell-session',
+  aliases: ['bash session', 'console'],
+  codemirrorMode: 'shell',
+  codemirrorMimeType: 'text/x-sh',
+};
+
+var Shen = {
+  name: 'Shen',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.shen'],
+  languageId: 348,
+  tmScope: 'source.shen',
+  color: '#120F14',
+};
+
+var Sieve = {
+  name: 'Sieve',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.sieve'],
+  languageId: 208976687,
+  tmScope: 'source.sieve',
+  codemirrorMode: 'sieve',
+  codemirrorMimeType: 'application/sieve',
+};
+
+var Simple_20_File_20_Verification = {
+  name: 'Simple File Verification',
+  type: 'data',
+  aceMode: 'ini',
+  extensions: ['.sfv'],
+  languageId: 735623761,
+  tmScope: 'source.sfv',
+  aliases: ['sfv'],
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+  color: '#C9BFED',
+  group: 'Checksums',
+};
+
+var Singularity = {
+  name: 'Singularity',
+  type: 'programming',
+  aceMode: 'text',
+  filenames: ['Singularity'],
+  languageId: 987024632,
+  tmScope: 'source.singularity',
+  color: '#64E6AD',
+};
+
+var Slang = {
+  name: 'Slang',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.slang'],
+  languageId: 239357863,
+  tmScope: 'source.slang',
+  color: '#1fbec9',
+};
+
+var Slash = {
+  name: 'Slash',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.sl'],
+  languageId: 349,
+  tmScope: 'text.html.slash',
+  color: '#007eff',
+};
+
+var Slice = {
+  name: 'Slice',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ice'],
+  languageId: 894641667,
+  tmScope: 'source.ice',
+  color: '#003fa2',
+};
+
+var Slim = {
+  name: 'Slim',
+  type: 'markup',
+  aceMode: 'slim',
+  extensions: ['.slim'],
+  languageId: 350,
+  tmScope: 'text.slim',
+  codemirrorMode: 'slim',
+  codemirrorMimeType: 'text/x-slim',
+  color: '#2b2b2b',
+};
+
+var Slint = {
+  name: 'Slint',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.slint'],
+  languageId: 119900149,
+  tmScope: 'source.slint',
+  color: '#2379F4',
+};
+
+var SmPL = {
+  name: 'SmPL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.cocci'],
+  languageId: 164123055,
+  tmScope: 'source.smpl',
+  aliases: ['coccinelle'],
+  color: '#c94949',
+};
+
+var Smali = {
+  name: 'Smali',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.smali'],
+  languageId: 351,
+  tmScope: 'source.smali',
+};
+
+var Smalltalk = {
+  name: 'Smalltalk',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.st', '.cs'],
+  languageId: 352,
+  tmScope: 'source.smalltalk',
+  aliases: ['squeak'],
+  codemirrorMode: 'smalltalk',
+  codemirrorMimeType: 'text/x-stsrc',
+  color: '#596706',
+};
+
+var Smarty = {
+  name: 'Smarty',
+  type: 'programming',
+  aceMode: 'smarty',
+  extensions: ['.tpl'],
+  languageId: 353,
+  tmScope: 'text.html.smarty',
+  codemirrorMode: 'smarty',
+  codemirrorMimeType: 'text/x-smarty',
+  color: '#f0c040',
+};
+
+var Smithy = {
+  name: 'Smithy',
+  type: 'programming',
+  aceMode: 'smithy',
+  extensions: ['.smithy'],
+  languageId: 1027892786,
+  tmScope: 'source.smithy',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  color: '#c44536',
+};
+
+var Snakemake = {
+  name: 'Snakemake',
+  type: 'programming',
+  aceMode: 'python',
+  extensions: ['.smk', '.snakefile'],
+  filenames: ['Snakefile'],
+  languageId: 151241392,
+  tmScope: 'source.python',
+  aliases: ['snakefile'],
+  codemirrorMode: 'python',
+  codemirrorMimeType: 'text/x-python',
+  color: '#419179',
+  group: 'Python',
+};
+
+var Solidity = {
+  name: 'Solidity',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.sol'],
+  languageId: 237469032,
+  tmScope: 'source.solidity',
+  color: '#AA6746',
+};
+
+var Soong = {
+  name: 'Soong',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['Android.bp'],
+  languageId: 222900098,
+  tmScope: 'source.bp',
+};
+
+var SourcePawn = {
+  name: 'SourcePawn',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.sp', '.inc'],
+  languageId: 354,
+  tmScope: 'source.sourcepawn',
+  aliases: ['sourcemod'],
+  color: '#f69e1d',
+};
+
+var SpiceDB_20_Schema = {
+  name: 'SpiceDB Schema',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.zed'],
+  languageId: 864005057,
+  tmScope: 'source.spicedb',
+  color: '#a5318a',
+};
+
+var Spline_20_Font_20_Database = {
+  name: 'Spline Font Database',
+  type: 'data',
+  aceMode: 'yaml',
+  extensions: ['.sfd'],
+  languageId: 767169629,
+  tmScope: 'text.sfd',
+};
+
+var Squirrel = {
+  name: 'Squirrel',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.nut'],
+  languageId: 355,
+  tmScope: 'source.nut',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-squirrel',
+  color: '#800000',
+};
+
+var Stan = {
+  name: 'Stan',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.stan'],
+  languageId: 356,
+  tmScope: 'source.stan',
+  color: '#b2011d',
+};
+
+var Standard_20_ML = {
+  name: 'Standard ML',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ml', '.fun', '.sig', '.sml'],
+  languageId: 357,
+  tmScope: 'source.ml',
+  aliases: ['sml'],
+  codemirrorMode: 'mllike',
+  codemirrorMimeType: 'text/x-sml',
+  color: '#dc566d',
+};
+
+var Starlark = {
+  name: 'Starlark',
+  type: 'programming',
+  aceMode: 'python',
+  extensions: ['.bzl', '.star'],
+  filenames: [
+    'BUCK',
+    'BUILD',
+    'BUILD.bazel',
+    'MODULE.bazel',
+    'Tiltfile',
+    'WORKSPACE',
+    'WORKSPACE.bazel',
+    'WORKSPACE.bzlmod',
+  ],
+  languageId: 960266174,
+  tmScope: 'source.python',
+  aliases: ['bazel', 'bzl'],
+  codemirrorMode: 'python',
+  codemirrorMimeType: 'text/x-python',
+  color: '#76d275',
+};
+
+var Stata = {
+  name: 'Stata',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.do', '.ado', '.doh', '.ihlp', '.mata', '.matah', '.sthlp'],
+  languageId: 358,
+  tmScope: 'source.stata',
+  color: '#1a5f91',
+};
+
+var StringTemplate = {
+  name: 'StringTemplate',
+  type: 'markup',
+  aceMode: 'html',
+  extensions: ['.st'],
+  languageId: 89855901,
+  tmScope: 'source.string-template',
+  codemirrorMode: 'htmlmixed',
+  codemirrorMimeType: 'text/html',
+  color: '#3fb34f',
+};
+
+var Stylus = {
+  name: 'Stylus',
+  type: 'markup',
+  aceMode: 'stylus',
+  extensions: ['.styl'],
+  languageId: 359,
+  tmScope: 'source.stylus',
+  codemirrorMode: 'stylus',
+  codemirrorMimeType: 'text/x-styl',
+  color: '#ff6347',
+};
+
+var SubRip_20_Text = {
+  name: 'SubRip Text',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.srt'],
+  languageId: 360,
+  tmScope: 'text.srt',
+  color: '#9e0101',
+};
+
+var SugarSS = {
+  name: 'SugarSS',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.sss'],
+  languageId: 826404698,
+  tmScope: 'source.css.postcss.sugarss',
+  color: '#2fcc9f',
+};
+
+var SuperCollider = {
+  name: 'SuperCollider',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.sc', '.scd'],
+  languageId: 361,
+  tmScope: 'source.supercollider',
+  color: '#46390b',
+  interpreters: ['sclang', 'scsynth'],
+};
+
+var SurrealQL = {
+  name: 'SurrealQL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.surql'],
+  languageId: 735141027,
+  tmScope: 'source.surrealql',
+  aliases: ['surql'],
+  color: '#ff00a0',
+};
+
+var Survex_20_data = {
+  name: 'Survex data',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.svx'],
+  languageId: 24470517,
+  tmScope: 'none',
+  color: '#ffcc99',
+};
+
+var Svelte = {
+  name: 'Svelte',
+  type: 'markup',
+  aceMode: 'html',
+  extensions: ['.svelte'],
+  languageId: 928734530,
+  tmScope: 'source.svelte',
+  codemirrorMode: 'htmlmixed',
+  codemirrorMimeType: 'text/html',
+  color: '#ff3e00',
+};
+
+var Sway = {
+  name: 'Sway',
+  type: 'programming',
+  aceMode: 'rust',
+  extensions: ['.sw'],
+  languageId: 271471144,
+  tmScope: 'source.sway',
+  codemirrorMode: 'rust',
+  codemirrorMimeType: 'text/x-rustsrc',
+  color: '#00F58C',
+};
+
+var Sweave = {
+  name: 'Sweave',
+  type: 'prose',
+  aceMode: 'tex',
+  extensions: ['.rnw'],
+  languageId: 558779190,
+  tmScope: 'text.tex.latex.sweave',
+  color: '#198ce7',
+};
+
+var Swift = {
+  name: 'Swift',
+  type: 'programming',
+  aceMode: 'swift',
+  extensions: ['.swift'],
+  languageId: 362,
+  tmScope: 'source.swift',
+  codemirrorMode: 'swift',
+  codemirrorMimeType: 'text/x-swift',
+  color: '#F05138',
+};
+
+var SystemVerilog = {
+  name: 'SystemVerilog',
+  type: 'programming',
+  aceMode: 'verilog',
+  extensions: ['.sv', '.svh', '.vh'],
+  languageId: 363,
+  tmScope: 'source.systemverilog',
+  codemirrorMode: 'verilog',
+  codemirrorMimeType: 'text/x-systemverilog',
+  color: '#DAE1C2',
+};
+
+var TI_20_Program = {
+  name: 'TI Program',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.8xp', '.8xp.txt'],
+  languageId: 422,
+  tmScope: 'source.8xp',
+  color: '#A0AA87',
+};
+
+var TLVerilog = {
+  name: 'TL-Verilog',
+  type: 'programming',
+  aceMode: 'verilog',
+  extensions: ['.tlv'],
+  languageId: 118656070,
+  tmScope: 'source.tlverilog',
+  color: '#C40023',
+};
+
+var TLA = {
+  name: 'TLA',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.tla'],
+  languageId: 364,
+  tmScope: 'source.tla',
+  color: '#4b0079',
+};
+
+var TMDL = {
+  name: 'TMDL',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.tmdl'],
+  languageId: 769162295,
+  tmScope: 'source.tmdl',
+  aliases: ['Tabular Model Definition Language'],
+  color: '#f0c913',
+};
+
+var TOML = {
+  name: 'TOML',
+  type: 'data',
+  aceMode: 'toml',
+  extensions: ['.toml', '.toml.example'],
+  filenames: [
+    'Cargo.lock',
+    'Cargo.toml.orig',
+    'Gopkg.lock',
+    'Pipfile',
+    'mise.local.lock',
+    'mise.lock',
+    'pdm.lock',
+    'poetry.lock',
+    'uv.lock',
+  ],
+  languageId: 365,
+  tmScope: 'source.toml',
+  codemirrorMode: 'toml',
+  codemirrorMimeType: 'text/x-toml',
+  color: '#9c4221',
+};
+
+var TSPLIB_20_data = {
+  name: 'TSPLIB data',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.tsp'],
+  languageId: 89289301,
+  tmScope: 'none',
+  aliases: ['travelling salesman problem', 'traveling salesman problem'],
+};
+
+var TSQL = {
+  name: 'TSQL',
+  type: 'programming',
+  aceMode: 'sql',
+  extensions: ['.sql'],
+  languageId: 918334941,
+  tmScope: 'source.tsql',
+  color: '#e38c00',
+};
+
+var TSV = {
+  name: 'TSV',
+  type: 'data',
+  aceMode: 'tsv',
+  extensions: ['.tsv', '.vcf'],
+  languageId: 1035892117,
+  tmScope: 'source.tsv',
+  aliases: ['tab-seperated values'],
+  color: '#237346',
+};
+
+var TSX = {
+  name: 'TSX',
+  type: 'programming',
+  aceMode: 'tsx',
+  extensions: ['.tsx'],
+  languageId: 94901924,
+  tmScope: 'source.tsx',
+  aliases: ['typescriptreact'],
+  codemirrorMode: 'jsx',
+  codemirrorMimeType: 'text/typescript-jsx',
+  color: '#3178c6',
+  group: 'TypeScript',
+};
+
+var TXL = {
+  name: 'TXL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.txl'],
+  languageId: 366,
+  tmScope: 'source.txl',
+  color: '#0178b8',
+};
+
+var Tact = {
+  name: 'Tact',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.tact'],
+  languageId: 606708469,
+  tmScope: 'source.tact',
+  color: '#48b5ff',
+};
+
+var Talon = {
+  name: 'Talon',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.talon'],
+  languageId: 959889508,
+  tmScope: 'source.talon',
+  color: '#333333',
+};
+
+var Tcl = {
+  name: 'Tcl',
+  type: 'programming',
+  aceMode: 'tcl',
+  extensions: ['.tcl', '.adp', '.sdc', '.tcl.in', '.tm', '.xdc'],
+  filenames: ['owh', 'starfield'],
+  languageId: 367,
+  tmScope: 'source.tcl',
+  aliases: ['sdc', 'xdc'],
+  codemirrorMode: 'tcl',
+  codemirrorMimeType: 'text/x-tcl',
+  color: '#e4cc98',
+  interpreters: ['tclsh', 'wish'],
+};
+
+var Tcsh = {
+  name: 'Tcsh',
+  type: 'programming',
+  aceMode: 'sh',
+  extensions: ['.tcsh', '.csh'],
+  languageId: 368,
+  tmScope: 'source.shell',
+  codemirrorMode: 'shell',
+  codemirrorMimeType: 'text/x-sh',
+  group: 'Shell',
+  interpreters: ['tcsh', 'csh'],
+};
+
+var TeX = {
+  name: 'TeX',
+  type: 'markup',
+  aceMode: 'tex',
+  extensions: [
+    '.tex',
+    '.aux',
+    '.bbx',
+    '.cbx',
+    '.cls',
+    '.dtx',
+    '.ins',
+    '.lbx',
+    '.ltx',
+    '.mkii',
+    '.mkiv',
+    '.mkvi',
+    '.sty',
+    '.toc',
+  ],
+  languageId: 369,
+  tmScope: 'text.tex.latex',
+  aliases: ['latex'],
+  codemirrorMode: 'stex',
+  codemirrorMimeType: 'text/x-stex',
+  color: '#3D6117',
+  wrap: true,
+};
+
+var Tea = {
+  name: 'Tea',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.tea'],
+  languageId: 370,
+  tmScope: 'source.tea',
+};
+
+var Teal = {
+  name: 'Teal',
+  type: 'programming',
+  aceMode: 'lua',
+  extensions: ['.tl'],
+  languageId: 719038619,
+  tmScope: 'source.teal',
+  codemirrorMode: 'lua',
+  codemirrorMimeType: 'text/x-lua',
+  color: '#00B1BC',
+  interpreters: ['tl'],
+};
+
+var Terra = {
+  name: 'Terra',
+  type: 'programming',
+  aceMode: 'lua',
+  extensions: ['.t'],
+  languageId: 371,
+  tmScope: 'source.terra',
+  codemirrorMode: 'lua',
+  codemirrorMimeType: 'text/x-lua',
+  color: '#00004c',
+  interpreters: ['lua'],
+};
+
+var Terraform_20_Template = {
+  name: 'Terraform Template',
+  type: 'markup',
+  aceMode: 'ruby',
+  extensions: ['.tftpl'],
+  languageId: 856832701,
+  tmScope: 'source.hcl.terraform',
+  codemirrorMode: 'ruby',
+  codemirrorMimeType: 'text/x-ruby',
+  color: '#7b42bb',
+  group: 'HCL',
+};
+
+var Texinfo = {
+  name: 'Texinfo',
+  type: 'prose',
+  aceMode: 'text',
+  extensions: ['.texinfo', '.texi', '.txi'],
+  languageId: 988020015,
+  tmScope: 'text.texinfo',
+  interpreters: ['makeinfo'],
+  wrap: true,
+};
+
+var Text = {
+  name: 'Text',
+  type: 'prose',
+  aceMode: 'text',
+  extensions: ['.txt', '.fr', '.nb', '.ncl', '.no'],
+  filenames: [
+    'CITATION',
+    'CITATIONS',
+    'COPYING',
+    'COPYING.regex',
+    'COPYRIGHT.regex',
+    'FONTLOG',
+    'INSTALL',
+    'INSTALL.mysql',
+    'LICENSE',
+    'LICENSE.mysql',
+    'NEWS',
+    'README.me',
+    'README.mysql',
+    'README.nss',
+    'README.pc',
+    'click.me',
+    'delete.me',
+    'keep.me',
+    'package.mask',
+    'package.use.mask',
+    'package.use.stable.mask',
+    'read.me',
+    'readme.1st',
+    'test.me',
+    'use.mask',
+    'use.stable.mask',
+  ],
+  languageId: 372,
+  tmScope: 'none',
+  aliases: ['fundamental', 'plain text'],
+  wrap: true,
+};
+
+var TextGrid = {
+  name: 'TextGrid',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.TextGrid'],
+  languageId: 965696054,
+  tmScope: 'source.textgrid',
+  color: '#c8506d',
+};
+
+var TextMate_20_Properties = {
+  name: 'TextMate Properties',
+  type: 'data',
+  aceMode: 'properties',
+  filenames: ['.tm_properties'],
+  languageId: 981795023,
+  tmScope: 'source.tm-properties',
+  aliases: ['tm-properties'],
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+  color: '#df66e4',
+};
+
+var Textile = {
+  name: 'Textile',
+  type: 'prose',
+  aceMode: 'textile',
+  extensions: ['.textile'],
+  languageId: 373,
+  tmScope: 'none',
+  codemirrorMode: 'textile',
+  codemirrorMimeType: 'text/x-textile',
+  color: '#ffe7ac',
+  wrap: true,
+};
+
+var Thrift = {
+  name: 'Thrift',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.thrift'],
+  languageId: 374,
+  tmScope: 'source.thrift',
+  color: '#D12127',
+};
+
+var Toit = {
+  name: 'Toit',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.toit'],
+  languageId: 356554395,
+  tmScope: 'source.toit',
+  color: '#c2c9fb',
+};
+
+var Tor_20_Config = {
+  name: 'Tor Config',
+  type: 'data',
+  aceMode: 'apache_conf',
+  filenames: ['torrc'],
+  languageId: 1016912802,
+  tmScope: 'source.torrc',
+  aliases: ['torrc'],
+  color: '#59316b',
+};
+
+var TreeSitter_20_Query = {
+  name: 'Tree-sitter Query',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.scm'],
+  languageId: 436081647,
+  tmScope: 'source.scm',
+  aliases: ['tsq'],
+  color: '#8ea64c',
+};
+
+var Turing = {
+  name: 'Turing',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.t', '.tu'],
+  languageId: 375,
+  tmScope: 'source.turing',
+  color: '#cf142b',
+};
+
+var Turtle = {
+  name: 'Turtle',
+  type: 'data',
+  aceMode: 'turtle',
+  extensions: ['.ttl'],
+  languageId: 376,
+  tmScope: 'source.turtle',
+  codemirrorMode: 'turtle',
+  codemirrorMimeType: 'text/turtle',
+};
+
+var Twig = {
+  name: 'Twig',
+  type: 'markup',
+  aceMode: 'twig',
+  extensions: ['.twig'],
+  languageId: 377,
+  tmScope: 'text.html.twig',
+  codemirrorMode: 'twig',
+  codemirrorMimeType: 'text/x-twig',
+  color: '#c1d026',
+};
+
+var Type_20_Language = {
+  name: 'Type Language',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.tl'],
+  languageId: 632765617,
+  tmScope: 'source.tl',
+  aliases: ['tl'],
+};
+
+var TypeScript = {
+  name: 'TypeScript',
+  type: 'programming',
+  aceMode: 'typescript',
+  extensions: ['.ts', '.cts', '.mts'],
+  languageId: 378,
+  tmScope: 'source.ts',
+  aliases: ['ts'],
+  codemirrorMode: 'javascript',
+  codemirrorMimeType: 'application/typescript',
+  color: '#3178c6',
+  interpreters: ['bun', 'deno', 'ts-node', 'tsx'],
+};
+
+var TypeSpec = {
+  name: 'TypeSpec',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.tsp'],
+  languageId: 952272597,
+  tmScope: 'source.tsp',
+  aliases: ['tsp'],
+  color: '#4A3665',
+};
+
+var Typst = {
+  name: 'Typst',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.typ'],
+  languageId: 704730682,
+  tmScope: 'source.typst',
+  aliases: ['typ'],
+  color: '#239dad',
+};
+
+var Unified_20_Parallel_20_C = {
+  name: 'Unified Parallel C',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.upc'],
+  languageId: 379,
+  tmScope: 'source.c',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  color: '#4e3617',
+  group: 'C',
+};
+
+var Unity3D_20_Asset = {
+  name: 'Unity3D Asset',
+  type: 'data',
+  aceMode: 'yaml',
+  extensions: [
+    '.anim',
+    '.asset',
+    '.mask',
+    '.mat',
+    '.meta',
+    '.prefab',
+    '.unity',
+  ],
+  languageId: 380,
+  tmScope: 'source.yaml',
+  codemirrorMode: 'yaml',
+  codemirrorMimeType: 'text/x-yaml',
+  color: '#222c37',
+};
+
+var Unix_20_Assembly = {
+  name: 'Unix Assembly',
+  type: 'programming',
+  aceMode: 'assembly_x86',
+  extensions: ['.s', '.ms'],
+  languageId: 120,
+  tmScope: 'source.x86',
+  aliases: ['gas', 'gnu asm', 'unix asm'],
+  group: 'Assembly',
+};
+
+var Uno = {
+  name: 'Uno',
+  type: 'programming',
+  aceMode: 'csharp',
+  extensions: ['.uno'],
+  languageId: 381,
+  tmScope: 'source.cs',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csharp',
+  color: '#9933cc',
+};
+
+var UnrealScript = {
+  name: 'UnrealScript',
+  type: 'programming',
+  aceMode: 'java',
+  extensions: ['.uc'],
+  languageId: 382,
+  tmScope: 'source.java',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-java',
+  color: '#a54c4d',
+};
+
+var Untyped_20_Plutus_20_Core = {
+  name: 'Untyped Plutus Core',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.uplc'],
+  languageId: 1061635506,
+  tmScope: 'source.uplc',
+  color: '#36adbd',
+};
+
+var UrWeb = {
+  name: 'UrWeb',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ur', '.urs'],
+  languageId: 383,
+  tmScope: 'source.ur',
+  aliases: ['Ur/Web', 'Ur'],
+  color: '#ccccee',
+};
+
+var V = {
+  name: 'V',
+  type: 'programming',
+  aceMode: 'golang',
+  extensions: ['.v'],
+  languageId: 603371597,
+  tmScope: 'source.v',
+  aliases: ['vlang'],
+  codemirrorMode: 'go',
+  codemirrorMimeType: 'text/x-go',
+  color: '#4f87c4',
+};
+
+var VBA = {
+  name: 'VBA',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bas', '.cls', '.frm', '.vba'],
+  languageId: 399230729,
+  tmScope: 'source.vba',
+  aliases: ['visual basic for applications'],
+  codemirrorMode: 'vb',
+  codemirrorMimeType: 'text/x-vb',
+  color: '#867db1',
+};
+
+var VBScript = {
+  name: 'VBScript',
+  type: 'programming',
+  aceMode: 'vbscript',
+  extensions: ['.vbs'],
+  languageId: 408016005,
+  tmScope: 'source.vbnet',
+  codemirrorMode: 'vbscript',
+  codemirrorMimeType: 'text/vbscript',
+  color: '#15dcdc',
+};
+
+var VCL = {
+  name: 'VCL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.vcl'],
+  languageId: 384,
+  tmScope: 'source.vcl',
+  color: '#148AA8',
+};
+
+var VHDL = {
+  name: 'VHDL',
+  type: 'programming',
+  aceMode: 'vhdl',
+  extensions: ['.vhdl', '.vhd', '.vhf', '.vhi', '.vho', '.vhs', '.vht', '.vhw'],
+  languageId: 385,
+  tmScope: 'source.vhdl',
+  codemirrorMode: 'vhdl',
+  codemirrorMimeType: 'text/x-vhdl',
+  color: '#adb2cb',
+};
+
+var Vala = {
+  name: 'Vala',
+  type: 'programming',
+  aceMode: 'vala',
+  extensions: ['.vala', '.vapi'],
+  languageId: 386,
+  tmScope: 'source.vala',
+  color: '#a56de2',
+};
+
+var Valve_20_Data_20_Format = {
+  name: 'Valve Data Format',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.vdf', '.vmf'],
+  languageId: 544060961,
+  tmScope: 'source.keyvalues',
+  aliases: ['keyvalues', 'vdf'],
+  color: '#f26025',
+};
+
+var Velocity_20_Template_20_Language = {
+  name: 'Velocity Template Language',
+  type: 'markup',
+  aceMode: 'velocity',
+  extensions: ['.vtl'],
+  languageId: 292377326,
+  tmScope: 'source.velocity',
+  aliases: ['vtl', 'velocity'],
+  codemirrorMode: 'velocity',
+  codemirrorMimeType: 'text/velocity',
+  color: '#507cff',
+};
+
+var Vento = {
+  name: 'Vento',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.vto'],
+  languageId: 757053899,
+  tmScope: 'source.vento',
+  color: '#ff0080',
+};
+
+var Verilog = {
+  name: 'Verilog',
+  type: 'programming',
+  aceMode: 'verilog',
+  extensions: ['.v', '.veo'],
+  languageId: 387,
+  tmScope: 'source.verilog',
+  codemirrorMode: 'verilog',
+  codemirrorMimeType: 'text/x-verilog',
+  color: '#b2b7f8',
+};
+
+var Vim_20_Help_20_File = {
+  name: 'Vim Help File',
+  type: 'prose',
+  aceMode: 'text',
+  extensions: ['.txt'],
+  languageId: 508563686,
+  tmScope: 'text.vim-help',
+  aliases: ['help', 'vimhelp'],
+  color: '#199f4b',
+};
+
+var Vim_20_Script = {
+  name: 'Vim Script',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.vim', '.vba', '.vimrc', '.vmb'],
+  filenames: [
+    '.exrc',
+    '.gvimrc',
+    '.nvimrc',
+    '.vimrc',
+    '_vimrc',
+    'gvimrc',
+    'nvimrc',
+    'vimrc',
+  ],
+  languageId: 388,
+  tmScope: 'source.viml',
+  aliases: ['vim', 'viml', 'nvim', 'vimscript'],
+  color: '#199f4b',
+};
+
+var Vim_20_Snippet = {
+  name: 'Vim Snippet',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.snip', '.snippet', '.snippets'],
+  languageId: 81265970,
+  tmScope: 'source.vim-snippet',
+  aliases: ['SnipMate', 'UltiSnip', 'UltiSnips', 'NeoSnippet'],
+  color: '#199f4b',
+};
+
+var Visual_20_Basic_20__NET = {
+  name: 'Visual Basic .NET',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.vb', '.vbhtml'],
+  languageId: 389,
+  tmScope: 'source.vbnet',
+  aliases: ['visual basic', 'vbnet', 'vb .net', 'vb.net'],
+  codemirrorMode: 'vb',
+  codemirrorMimeType: 'text/x-vb',
+  color: '#945db7',
+};
+
+var Visual_20_Basic_20_6_0 = {
+  name: 'Visual Basic 6.0',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.bas', '.cls', '.ctl', '.Dsr', '.frm'],
+  languageId: 679594952,
+  tmScope: 'source.vba',
+  aliases: [
+    'vb6',
+    'vb 6',
+    'visual basic 6',
+    'visual basic classic',
+    'classic visual basic',
+  ],
+  codemirrorMode: 'vb',
+  codemirrorMimeType: 'text/x-vb',
+  color: '#2c6353',
+};
+
+var Volt = {
+  name: 'Volt',
+  type: 'programming',
+  aceMode: 'd',
+  extensions: ['.volt'],
+  languageId: 390,
+  tmScope: 'source.d',
+  codemirrorMode: 'd',
+  codemirrorMimeType: 'text/x-d',
+  color: '#1F1F1F',
+};
+
+var Vue = {
+  name: 'Vue',
+  type: 'markup',
+  aceMode: 'vue',
+  extensions: ['.vue'],
+  languageId: 391,
+  tmScope: 'text.html.vue',
+  codemirrorMode: 'vue',
+  codemirrorMimeType: 'text/x-vue',
+  color: '#41b883',
+};
+
+var Vyper = {
+  name: 'Vyper',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.vy'],
+  languageId: 1055641948,
+  tmScope: 'source.vyper',
+  color: '#9F4CF2',
+};
+
+var WDL = {
+  name: 'WDL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.wdl'],
+  languageId: 374521672,
+  tmScope: 'source.wdl',
+  aliases: ['Workflow Description Language'],
+  color: '#42f1f4',
+};
+
+var WGSL = {
+  name: 'WGSL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.wgsl'],
+  languageId: 836605993,
+  tmScope: 'source.wgsl',
+  color: '#1a5e9a',
+};
+
+var Wavefront_20_Material = {
+  name: 'Wavefront Material',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.mtl'],
+  languageId: 392,
+  tmScope: 'source.wavefront.mtl',
+};
+
+var Wavefront_20_Object = {
+  name: 'Wavefront Object',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.obj'],
+  languageId: 393,
+  tmScope: 'source.wavefront.obj',
+};
+
+var Web_20_Ontology_20_Language = {
+  name: 'Web Ontology Language',
+  type: 'data',
+  aceMode: 'xml',
+  extensions: ['.owl'],
+  languageId: 394,
+  tmScope: 'text.xml',
+  color: '#5b70bd',
+};
+
+var WebAssembly$1 = {
+  name: 'WebAssembly',
+  type: 'programming',
+  aceMode: 'lisp',
+  extensions: ['.wast', '.wat'],
+  languageId: 956556503,
+  tmScope: 'source.webassembly',
+  aliases: ['wast', 'wasm'],
+  codemirrorMode: 'wast',
+  codemirrorMimeType: 'text/webassembly',
+  color: '#04133b',
+};
+
+var WebAssembly_20_Interface_20_Type = {
+  name: 'WebAssembly Interface Type',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.wit'],
+  languageId: 134534086,
+  tmScope: 'source.wit',
+  aliases: ['wit'],
+  codemirrorMode: 'webidl',
+  codemirrorMimeType: 'text/x-webidl',
+  color: '#6250e7',
+};
+
+var WebIDL = {
+  name: 'WebIDL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.webidl'],
+  languageId: 395,
+  tmScope: 'source.webidl',
+  codemirrorMode: 'webidl',
+  codemirrorMimeType: 'text/x-webidl',
+};
+
+var WebVTT = {
+  name: 'WebVTT',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.vtt'],
+  languageId: 658679714,
+  tmScope: 'text.vtt',
+  aliases: ['vtt'],
+  wrap: true,
+};
+
+var Wget_20_Config = {
+  name: 'Wget Config',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['.wgetrc'],
+  languageId: 668457123,
+  tmScope: 'source.wgetrc',
+  aliases: ['wgetrc'],
+  group: 'INI',
+};
+
+var Whiley = {
+  name: 'Whiley',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.whiley'],
+  languageId: 888779559,
+  tmScope: 'source.whiley',
+  color: '#d5c397',
+};
+
+var Wikitext = {
+  name: 'Wikitext',
+  type: 'prose',
+  aceMode: 'mediawiki',
+  extensions: ['.mediawiki', '.wiki', '.wikitext'],
+  languageId: 228,
+  tmScope: 'text.html.mediawiki',
+  aliases: ['mediawiki', 'wiki'],
+  color: '#fc5757',
+  wrap: true,
+};
+
+var Win32_20_Message_20_File = {
+  name: 'Win32 Message File',
+  type: 'data',
+  aceMode: 'ini',
+  extensions: ['.mc'],
+  languageId: 950967261,
+  tmScope: 'source.win32-messages',
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+};
+
+var Windows_20_Registry_20_Entries = {
+  name: 'Windows Registry Entries',
+  type: 'data',
+  aceMode: 'ini',
+  extensions: ['.reg'],
+  languageId: 969674868,
+  tmScope: 'source.reg',
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+  color: '#52d5ff',
+};
+
+var Witcher_20_Script = {
+  name: 'Witcher Script',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ws'],
+  languageId: 686821385,
+  tmScope: 'source.witcherscript',
+  color: '#ff0000',
+};
+
+var Wolfram_20_Language = {
+  name: 'Wolfram Language',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: [
+    '.mathematica',
+    '.cdf',
+    '.m',
+    '.ma',
+    '.mt',
+    '.nb',
+    '.nbp',
+    '.wl',
+    '.wls',
+    '.wlt',
+  ],
+  languageId: 224,
+  tmScope: 'source.mathematica',
+  aliases: ['mathematica', 'mma', 'wolfram', 'wolfram lang', 'wl'],
+  codemirrorMode: 'mathematica',
+  codemirrorMimeType: 'text/x-mathematica',
+  color: '#dd1100',
+  interpreters: [
+    'wolfram',
+    'WolframKernel',
+    'wolframscript',
+    'math',
+    'MathKernel',
+    'MathematicaScript',
+    'WolframNB',
+    'Mathematica',
+  ],
+};
+
+var Wollok = {
+  name: 'Wollok',
+  type: 'programming',
+  aceMode: 'wollok',
+  extensions: ['.wlk'],
+  languageId: 632745969,
+  tmScope: 'source.wollok',
+  color: '#a23738',
+};
+
+var World_20_of_20_Warcraft_20_Addon_20_Data = {
+  name: 'World of Warcraft Addon Data',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.toc'],
+  languageId: 396,
+  tmScope: 'source.toc',
+  color: '#f7e43f',
+};
+
+var Wren = {
+  name: 'Wren',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.wren'],
+  languageId: 713580619,
+  tmScope: 'source.wren',
+  aliases: ['wrenlang'],
+  color: '#383838',
+};
+
+var X_20_BitMap = {
+  name: 'X BitMap',
+  type: 'data',
+  aceMode: 'c_cpp',
+  extensions: ['.xbm'],
+  languageId: 782911107,
+  tmScope: 'source.c',
+  aliases: ['xbm'],
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  group: 'C',
+};
+
+var X_20_Font_20_Directory_20_Index = {
+  name: 'X Font Directory Index',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['encodings.dir', 'fonts.alias', 'fonts.dir', 'fonts.scale'],
+  languageId: 208700028,
+  tmScope: 'source.fontdir',
+};
+
+var X_20_PixMap = {
+  name: 'X PixMap',
+  type: 'data',
+  aceMode: 'c_cpp',
+  extensions: ['.xpm', '.pm'],
+  languageId: 781846279,
+  tmScope: 'source.c',
+  aliases: ['xpm'],
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  group: 'C',
+};
+
+var X10 = {
+  name: 'X10',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.x10'],
+  languageId: 397,
+  tmScope: 'source.x10',
+  aliases: ['xten'],
+  color: '#4B6BEF',
+};
+
+var XC = {
+  name: 'XC',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.xc'],
+  languageId: 398,
+  tmScope: 'source.xc',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+  color: '#99DA07',
+};
+
+var XCompose = {
+  name: 'XCompose',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['.XCompose', 'XCompose', 'xcompose'],
+  languageId: 225167241,
+  tmScope: 'config.xcompose',
+};
+
+var XML = {
+  name: 'XML',
+  type: 'data',
+  aceMode: 'xml',
+  extensions: [
+    '.xml',
+    '.adml',
+    '.admx',
+    '.ant',
+    '.axaml',
+    '.axml',
+    '.builds',
+    '.ccproj',
+    '.ccxml',
+    '.clixml',
+    '.cproject',
+    '.cscfg',
+    '.csdef',
+    '.csl',
+    '.csproj',
+    '.ct',
+    '.depproj',
+    '.dita',
+    '.ditamap',
+    '.ditaval',
+    '.dll.config',
+    '.dotsettings',
+    '.filters',
+    '.fsproj',
+    '.fxml',
+    '.glade',
+    '.gml',
+    '.gmx',
+    '.gpx',
+    '.grxml',
+    '.gst',
+    '.hzp',
+    '.icls',
+    '.iml',
+    '.ivy',
+    '.jelly',
+    '.jsproj',
+    '.kml',
+    '.launch',
+    '.mdpolicy',
+    '.mjml',
+    '.mm',
+    '.mod',
+    '.mojo',
+    '.mxml',
+    '.natvis',
+    '.ncl',
+    '.ndproj',
+    '.nproj',
+    '.nuspec',
+    '.odd',
+    '.osm',
+    '.pkgproj',
+    '.pluginspec',
+    '.proj',
+    '.props',
+    '.ps1xml',
+    '.psc1',
+    '.pt',
+    '.pubxml',
+    '.qhelp',
+    '.rdf',
+    '.res',
+    '.resx',
+    '.rs',
+    '.rss',
+    '.sch',
+    '.scxml',
+    '.sfproj',
+    '.shproj',
+    '.slnx',
+    '.srdf',
+    '.storyboard',
+    '.sublime-snippet',
+    '.sw',
+    '.targets',
+    '.tml',
+    '.ts',
+    '.tsx',
+    '.typ',
+    '.ui',
+    '.urdf',
+    '.ux',
+    '.vbproj',
+    '.vcxproj',
+    '.vsixmanifest',
+    '.vssettings',
+    '.vstemplate',
+    '.vxml',
+    '.wixproj',
+    '.workflow',
+    '.wsdl',
+    '.wsf',
+    '.wxi',
+    '.wxl',
+    '.wxs',
+    '.x3d',
+    '.xacro',
+    '.xaml',
+    '.xib',
+    '.xlf',
+    '.xliff',
+    '.xmi',
+    '.xml.dist',
+    '.xmp',
+    '.xproj',
+    '.xsd',
+    '.xspec',
+    '.xul',
+    '.zcml',
+  ],
+  filenames: [
+    '.classpath',
+    '.cproject',
+    '.project',
+    'App.config',
+    'NuGet.config',
+    'Settings.StyleCop',
+    'Web.Debug.config',
+    'Web.Release.config',
+    'Web.config',
+    'packages.config',
+  ],
+  languageId: 399,
+  tmScope: 'text.xml',
+  aliases: ['rss', 'xsd', 'wsdl'],
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'text/xml',
+  color: '#0060ac',
+};
+
+var XML_20_Property_20_List = {
+  name: 'XML Property List',
+  type: 'data',
+  aceMode: 'xml',
+  extensions: [
+    '.plist',
+    '.stTheme',
+    '.tmCommand',
+    '.tmLanguage',
+    '.tmPreferences',
+    '.tmSnippet',
+    '.tmTheme',
+  ],
+  languageId: 75622871,
+  tmScope: 'text.xml.plist',
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'text/xml',
+  color: '#0060ac',
+  group: 'XML',
+};
+
+var XPages = {
+  name: 'XPages',
+  type: 'data',
+  aceMode: 'xml',
+  extensions: ['.xsp-config', '.xsp.metadata'],
+  languageId: 400,
+  tmScope: 'text.xml',
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'text/xml',
+};
+
+var XProc = {
+  name: 'XProc',
+  type: 'programming',
+  aceMode: 'xml',
+  extensions: ['.xpl', '.xproc'],
+  languageId: 401,
+  tmScope: 'text.xml',
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'text/xml',
+};
+
+var XQuery = {
+  name: 'XQuery',
+  type: 'programming',
+  aceMode: 'xquery',
+  extensions: ['.xquery', '.xq', '.xql', '.xqm', '.xqy'],
+  languageId: 402,
+  tmScope: 'source.xq',
+  codemirrorMode: 'xquery',
+  codemirrorMimeType: 'application/xquery',
+  color: '#5232e7',
+};
+
+var XS = {
+  name: 'XS',
+  type: 'programming',
+  aceMode: 'c_cpp',
+  extensions: ['.xs'],
+  languageId: 403,
+  tmScope: 'source.c',
+  codemirrorMode: 'clike',
+  codemirrorMimeType: 'text/x-csrc',
+};
+
+var XSLT = {
+  name: 'XSLT',
+  type: 'programming',
+  aceMode: 'xml',
+  extensions: ['.xslt', '.xsl'],
+  languageId: 404,
+  tmScope: 'text.xml.xsl',
+  aliases: ['xsl'],
+  codemirrorMode: 'xml',
+  codemirrorMimeType: 'text/xml',
+  color: '#EB8CEB',
+};
+
+var Xmake = {
+  name: 'Xmake',
+  type: 'programming',
+  aceMode: 'text',
+  filenames: ['xmake.lua'],
+  languageId: 225223071,
+  tmScope: 'source.xmake',
+  color: '#22a079',
+};
+
+var Xojo = {
+  name: 'Xojo',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: [
+    '.xojo_code',
+    '.xojo_menu',
+    '.xojo_report',
+    '.xojo_script',
+    '.xojo_toolbar',
+    '.xojo_window',
+  ],
+  languageId: 405,
+  tmScope: 'source.xojo',
+  color: '#81bd41',
+};
+
+var Xonsh = {
+  name: 'Xonsh',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.xsh'],
+  languageId: 614078284,
+  tmScope: 'source.python',
+  codemirrorMode: 'python',
+  codemirrorMimeType: 'text/x-python',
+  color: '#285EEF',
+};
+
+var Xtend = {
+  name: 'Xtend',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.xtend'],
+  languageId: 406,
+  tmScope: 'source.xtend',
+  color: '#24255d',
+};
+
+var YAML = {
+  name: 'YAML',
+  type: 'data',
+  aceMode: 'yaml',
+  extensions: [
+    '.yml',
+    '.mir',
+    '.reek',
+    '.rviz',
+    '.sublime-syntax',
+    '.syntax',
+    '.yaml',
+    '.yaml-tmlanguage',
+    '.yaml.sed',
+    '.yml.mysql',
+  ],
+  filenames: [
+    '.clang-format',
+    '.clang-tidy',
+    '.clangd',
+    '.gemrc',
+    'CITATION.cff',
+    'glide.lock',
+    'pixi.lock',
+    'yarn.lock',
+  ],
+  languageId: 407,
+  tmScope: 'source.yaml',
+  aliases: ['yml'],
+  codemirrorMode: 'yaml',
+  codemirrorMimeType: 'text/x-yaml',
+  color: '#cb171e',
+};
+
+var YANG = {
+  name: 'YANG',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.yang'],
+  languageId: 408,
+  tmScope: 'source.yang',
+};
+
+var YARA = {
+  name: 'YARA',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.yar', '.yara'],
+  languageId: 805122868,
+  tmScope: 'source.yara',
+  color: '#220000',
+};
+
+var YASnippet = {
+  name: 'YASnippet',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.yasnippet'],
+  languageId: 378760102,
+  tmScope: 'source.yasnippet',
+  aliases: ['snippet', 'yas'],
+  color: '#32AB90',
+};
+
+var Yacc = {
+  name: 'Yacc',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.y', '.yacc', '.yy'],
+  languageId: 409,
+  tmScope: 'source.yacc',
+  color: '#4B6C4B',
+};
+
+var Yul = {
+  name: 'Yul',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.yul'],
+  languageId: 237469033,
+  tmScope: 'source.yul',
+  color: '#794932',
+};
+
+var ZAP = {
+  name: 'ZAP',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.zap', '.xzap'],
+  languageId: 952972794,
+  tmScope: 'source.zap',
+  color: '#0d665e',
+};
+
+var ZIL = {
+  name: 'ZIL',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.zil', '.mud'],
+  languageId: 973483626,
+  tmScope: 'source.zil',
+  color: '#dc75e5',
+};
+
+var Zeek = {
+  name: 'Zeek',
+  type: 'programming',
+  aceMode: 'zeek',
+  extensions: ['.zeek', '.bro'],
+  languageId: 40,
+  tmScope: 'source.zeek',
+  aliases: ['bro'],
+};
+
+var ZenScript = {
+  name: 'ZenScript',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.zs'],
+  languageId: 494938890,
+  tmScope: 'source.zenscript',
+  color: '#00BCD1',
+};
+
+var Zephir = {
+  name: 'Zephir',
+  type: 'programming',
+  aceMode: 'php',
+  extensions: ['.zep'],
+  languageId: 410,
+  tmScope: 'source.php.zephir',
+  color: '#118f9e',
+};
+
+var Zig = {
+  name: 'Zig',
+  type: 'programming',
+  aceMode: 'zig',
+  extensions: ['.zig', '.zig.zon'],
+  languageId: 646424281,
+  tmScope: 'source.zig',
+  color: '#ec915c',
+};
+
+var Zimpl = {
+  name: 'Zimpl',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.zimpl', '.zmpl', '.zpl'],
+  languageId: 411,
+  tmScope: 'none',
+  color: '#d67711',
+};
+
+var Zmodel = {
+  name: 'Zmodel',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.zmodel'],
+  languageId: 803760908,
+  tmScope: 'source.zmodel',
+  color: '#ff7100',
+};
+
+var cURL_20_Config = {
+  name: 'cURL Config',
+  type: 'data',
+  aceMode: 'text',
+  filenames: ['.curlrc', '_curlrc'],
+  languageId: 992375436,
+  tmScope: 'source.curlrc',
+  aliases: ['curlrc'],
+  group: 'INI',
+};
+
+var crontab = {
+  name: 'crontab',
+  type: 'data',
+  aceMode: 'tcl',
+  filenames: ['crontab'],
+  languageId: 705203557,
+  tmScope: 'text.crontab',
+  aliases: ['cron', 'cron table'],
+  color: '#ead7ac',
+};
+
+var desktop = {
+  name: 'desktop',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.desktop', '.desktop.in'],
+  languageId: 412,
+  tmScope: 'source.desktop',
+  group: 'INI',
+};
+
+var dircolors = {
+  name: 'dircolors',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.dircolors'],
+  filenames: [
+    '.dir_colors',
+    '.dircolors',
+    'DIR_COLORS',
+    '_dir_colors',
+    '_dircolors',
+    'dir_colors',
+  ],
+  languageId: 691605112,
+  tmScope: 'source.dircolors',
+};
+
+var eC = {
+  name: 'eC',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ec', '.eh'],
+  languageId: 413,
+  tmScope: 'source.c.ec',
+  color: '#913960',
+};
+
+var edn = {
+  name: 'edn',
+  type: 'data',
+  aceMode: 'clojure',
+  extensions: ['.edn'],
+  languageId: 414,
+  tmScope: 'source.clojure',
+  codemirrorMode: 'clojure',
+  codemirrorMimeType: 'application/edn',
+};
+
+var fish = {
+  name: 'fish',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.fish'],
+  languageId: 415,
+  tmScope: 'source.fish',
+  color: '#4aae47',
+  group: 'Shell',
+  interpreters: ['fish'],
+};
+
+var hoon = {
+  name: 'hoon',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.hoon'],
+  languageId: 560883276,
+  tmScope: 'source.hoon',
+  color: '#00b171',
+};
+
+var iCalendar = {
+  name: 'iCalendar',
+  type: 'data',
+  aceMode: 'properties',
+  extensions: ['.ics', '.ical'],
+  languageId: 98384424,
+  tmScope: 'source.iCalendar',
+  aliases: ['iCal'],
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+  color: '#ec564c',
+};
+
+var jq = {
+  name: 'jq',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.jq'],
+  languageId: 905371884,
+  tmScope: 'source.jq',
+  color: '#c7254e',
+  interpreters: ['gojq', 'jaq', 'jq', 'jqjq', 'jqq', 'query-json'],
+};
+
+var kvlang = {
+  name: 'kvlang',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.kv'],
+  languageId: 970675279,
+  tmScope: 'source.python.kivy',
+  color: '#1da6e0',
+};
+
+var mIRC_20_Script = {
+  name: 'mIRC Script',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mrc'],
+  languageId: 517654727,
+  tmScope: 'source.msl',
+  color: '#3d57c3',
+};
+
+var mcfunction = {
+  name: 'mcfunction',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mcfunction'],
+  languageId: 462488745,
+  tmScope: 'source.mcfunction',
+  color: '#E22837',
+};
+
+var mdsvex = {
+  name: 'mdsvex',
+  type: 'markup',
+  aceMode: 'markdown',
+  extensions: ['.svx'],
+  languageId: 566198445,
+  tmScope: 'none',
+  codemirrorMode: 'gfm',
+  codemirrorMimeType: 'text/x-gfm',
+  color: '#5f9ea0',
+  wrap: true,
+};
+
+var mupad = {
+  name: 'mupad',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.mu'],
+  languageId: 416,
+  tmScope: 'source.mupad',
+  color: '#244963',
+};
+
+var nanorc = {
+  name: 'nanorc',
+  type: 'data',
+  aceMode: 'text',
+  extensions: ['.nanorc'],
+  filenames: ['.nanorc', 'nanorc'],
+  languageId: 775996197,
+  tmScope: 'source.nanorc',
+  color: '#2d004d',
+  group: 'INI',
+};
+
+var nesC = {
+  name: 'nesC',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.nc'],
+  languageId: 417,
+  tmScope: 'source.nesc',
+  color: '#94B0C7',
+};
+
+var ooc = {
+  name: 'ooc',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.ooc'],
+  languageId: 418,
+  tmScope: 'source.ooc',
+  color: '#b0b77e',
+};
+
+var pkgConfig = {
+  name: 'pkg-config',
+  type: 'data',
+  aceMode: 'properties',
+  extensions: ['.pc', '.pc.in'],
+  languageId: 925023573,
+  tmScope: 'source.pkgconf',
+  aliases: ['pkgconf'],
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+  color: '#2b5e82',
+};
+
+var q = {
+  name: 'q',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.q'],
+  languageId: 970539067,
+  tmScope: 'source.q',
+  codemirrorMode: 'q',
+  codemirrorMimeType: 'text/x-q',
+  color: '#0040cd',
+};
+
+var reStructuredText = {
+  name: 'reStructuredText',
+  type: 'prose',
+  aceMode: 'rst',
+  extensions: ['.rst', '.rest', '.rest.txt', '.rst.txt'],
+  languageId: 419,
+  tmScope: 'text.restructuredtext',
+  aliases: ['rst'],
+  codemirrorMode: 'rst',
+  codemirrorMimeType: 'text/x-rst',
+  color: '#141414',
+  wrap: true,
+};
+
+var sed = {
+  name: 'sed',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.sed'],
+  languageId: 847830017,
+  tmScope: 'source.sed',
+  color: '#64b970',
+  interpreters: ['gsed', 'minised', 'sed', 'ssed'],
+};
+
+var templ = {
+  name: 'templ',
+  type: 'markup',
+  aceMode: 'text',
+  extensions: ['.templ'],
+  languageId: 795579337,
+  tmScope: 'source.templ',
+  color: '#66D0DD',
+};
+
+var vCard = {
+  name: 'vCard',
+  type: 'data',
+  aceMode: 'properties',
+  extensions: ['.vcf'],
+  languageId: 851476558,
+  tmScope: 'source.vcard',
+  aliases: ['virtual contact file', 'electronic business card'],
+  codemirrorMode: 'properties',
+  codemirrorMimeType: 'text/x-properties',
+  color: '#ee2647',
+};
+
+var wisp = {
+  name: 'wisp',
+  type: 'programming',
+  aceMode: 'clojure',
+  extensions: ['.wisp'],
+  languageId: 420,
+  tmScope: 'source.clojure',
+  codemirrorMode: 'clojure',
+  codemirrorMimeType: 'text/x-clojure',
+  color: '#7582D1',
+};
+
+var xBase = {
+  name: 'xBase',
+  type: 'programming',
+  aceMode: 'text',
+  extensions: ['.prg', '.ch', '.prw'],
+  languageId: 421,
+  tmScope: 'source.harbour',
+  aliases: ['advpl', 'clipper', 'foxpro'],
+  color: '#403a40',
+};
+
+var linguistLanguages = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    "1C Enterprise": _1C_20_Enterprise,
+    "2-Dimensional Array": _2Dimensional_20_Array,
+    "4D": _4D,
+    ABAP: ABAP,
+    "ABAP CDS": ABAP_20_CDS,
+    ABNF: ABNF,
+    "AGS Script": AGS_20_Script,
+    AIDL: AIDL,
+    AL: AL,
+    ALGOL: ALGOL,
+    AMPL: AMPL,
+    ANTLR: ANTLR,
+    "API Blueprint": API_20_Blueprint,
+    APL: APL,
+    ASL: ASL,
+    "ASN.1": ASN_1,
+    "ASP.NET": ASP_NET,
+    ATS: ATS,
+    ActionScript: ActionScript,
+    Ada: Ada,
+    "Adblock Filter List": Adblock_20_Filter_20_List,
+    "Adobe Font Metrics": Adobe_20_Font_20_Metrics,
+    Agda: Agda,
+    Aiken: Aiken,
+    Alloy: Alloy,
+    "Alpine Abuild": Alpine_20_Abuild,
+    "Altium Designer": Altium_20_Designer,
+    AngelScript: AngelScript,
+    "Answer Set Programming": Answer_20_Set_20_Programming,
+    "Ant Build System": Ant_20_Build_20_System,
+    Antlers: Antlers,
+    ApacheConf: ApacheConf,
+    Apex: Apex,
+    "Apollo Guidance Computer": Apollo_20_Guidance_20_Computer,
+    AppleScript: AppleScript,
+    Arc: Arc,
+    AsciiDoc: AsciiDoc,
+    AspectJ: AspectJ,
+    Assembly: Assembly,
+    Astro: Astro,
+    Asymptote: Asymptote,
+    Augeas: Augeas,
+    AutoHotkey: AutoHotkey,
+    AutoIt: AutoIt,
+    "Avro IDL": Avro_20_IDL,
+    Awk: Awk,
+    "B (Formal Method)": B_20__28_Formal_20_Method_29_,
+    B4X: B4X,
+    BAML: BAML,
+    BASIC: BASIC,
+    BQN: BQN,
+    Ballerina: Ballerina,
+    Batchfile: Batchfile,
+    Beef: Beef,
+    Befunge: Befunge,
+    Berry: Berry,
+    BibTeX: BibTeX,
+    "BibTeX Style": BibTeX_20_Style,
+    Bicep: Bicep,
+    Bikeshed: Bikeshed,
+    Bison: Bison,
+    BitBake: BitBake,
+    Blade: Blade,
+    BlitzBasic: BlitzBasic,
+    BlitzMax: BlitzMax,
+    Bluespec: Bluespec,
+    "Bluespec BH": Bluespec_20_BH,
+    Boo: Boo,
+    Boogie: Boogie,
+    Brainfuck: Brainfuck,
+    BrighterScript: BrighterScript,
+    Brightscript: Brightscript,
+    Browserslist: Browserslist,
+    Bru: Bru,
+    BuildStream: BuildStream,
+    C: C,
+    "C#": C_23_,
+    "C++": C_2b__2b_,
+    "C-ObjDump": CObjDump,
+    "C2hs Haskell": C2hs_20_Haskell,
+    C3: C3,
+    "CAP CDS": CAP_20_CDS,
+    CIL: CIL,
+    CLIPS: CLIPS,
+    CMake: CMake,
+    COBOL: COBOL,
+    CODEOWNERS: CODEOWNERS,
+    COLLADA: COLLADA,
+    CQL: CQL,
+    CSON: CSON,
+    CSS: CSS,
+    CSV: CSV,
+    CUE: CUE,
+    CWeb: CWeb,
+    "Cabal Config": Cabal_20_Config,
+    Caddyfile: Caddyfile,
+    Cadence: Cadence,
+    Cairo: Cairo,
+    "Cairo Zero": Cairo_20_Zero,
+    CameLIGO: CameLIGO,
+    Cangjie: Cangjie,
+    "Cap'n Proto": Cap_27_n_20_Proto,
+    Carbon: Carbon,
+    CartoCSS: CartoCSS,
+    Ceylon: Ceylon,
+    Chapel: Chapel,
+    Charity: Charity,
+    Checksums: Checksums,
+    ChucK: ChucK,
+    Circom: Circom,
+    Cirru: Cirru,
+    Clarion: Clarion,
+    Clarity: Clarity,
+    "Classic ASP": Classic_20_ASP,
+    Clean: Clean,
+    Click: Click,
+    Clojure: Clojure,
+    "Closure Templates": Closure_20_Templates,
+    "Cloud Firestore Security Rules": Cloud_20_Firestore_20_Security_20_Rules,
+    Clue: Clue,
+    "CoNLL-U": CoNLLU,
+    CodeQL: CodeQL,
+    CoffeeScript: CoffeeScript,
+    ColdFusion: ColdFusion,
+    "ColdFusion CFC": ColdFusion_20_CFC,
+    "Common Lisp": Common_20_Lisp,
+    "Common Workflow Language": Common_20_Workflow_20_Language,
+    "Component Pascal": Component_20_Pascal,
+    Cooklang: Cooklang,
+    Cool: Cool,
+    "Cpp-ObjDump": CppObjDump,
+    Creole: Creole,
+    Crystal: Crystal,
+    Csound: Csound,
+    "Csound Document": Csound_20_Document,
+    "Csound Score": Csound_20_Score,
+    Cuda: Cuda,
+    "Cue Sheet": Cue_20_Sheet,
+    Curry: Curry,
+    Cycript: Cycript,
+    Cylc: Cylc,
+    Cypher: Cypher,
+    Cython: Cython,
+    D: D,
+    "D-ObjDump": DObjDump,
+    D2: D2,
+    "DIGITAL Command Language": DIGITAL_20_Command_20_Language,
+    DM: DM,
+    "DNS Zone": DNS_20_Zone,
+    DTrace: DTrace,
+    Dafny: Dafny,
+    "Darcs Patch": Darcs_20_Patch,
+    Dart: Dart,
+    Daslang: Daslang,
+    DataWeave: DataWeave,
+    "Debian Package Control File": Debian_20_Package_20_Control_20_File,
+    DenizenScript: DenizenScript,
+    Dhall: Dhall,
+    Diff: Diff,
+    "DirectX 3D File": DirectX_20_3D_20_File,
+    Dockerfile: Dockerfile,
+    Dogescript: Dogescript,
+    Dotenv: Dotenv,
+    Dune: Dune,
+    Dylan: Dylan,
+    E: E,
+    "E-mail": EMail,
+    EBNF: EBNF,
+    ECL: ECL,
+    ECLiPSe: ECLiPSe,
+    EJS: EJS,
+    EQ: EQ,
+    Eagle: Eagle,
+    Earthly: Earthly,
+    Easybuild: Easybuild,
+    "Ecere Projects": Ecere_20_Projects,
+    Ecmarkup: Ecmarkup,
+    Edge: Edge,
+    EdgeQL: EdgeQL,
+    EditorConfig: EditorConfig,
+    "Edje Data Collection": Edje_20_Data_20_Collection,
+    Eiffel: Eiffel,
+    Elixir: Elixir,
+    Elm: Elm,
+    Elvish: Elvish,
+    "Elvish Transcript": Elvish_20_Transcript,
+    "Emacs Lisp": Emacs_20_Lisp,
+    EmberScript: EmberScript,
+    Erlang: Erlang,
+    Euphoria: Euphoria,
+    "F#": F_23_,
+    "F*": F_2a_,
+    "FIGlet Font": FIGlet_20_Font,
+    FIRRTL: FIRRTL,
+    FLUX: FLUX,
+    Factor: Factor,
+    Fancy: Fancy,
+    Fantom: Fantom,
+    Faust: Faust,
+    Fennel: Fennel,
+    "Filebench WML": Filebench_20_WML,
+    Filterscript: Filterscript,
+    FlatBuffers: FlatBuffers,
+    Flix: Flix,
+    Fluent: Fluent,
+    Formatted: Formatted,
+    Forth: Forth,
+    Fortran: Fortran,
+    "Fortran Free Form": Fortran_20_Free_20_Form,
+    FreeBASIC: FreeBASIC,
+    FreeMarker: FreeMarker,
+    Frege: Frege,
+    Futhark: Futhark,
+    "G-code": GCode,
+    GAML: GAML,
+    GAMS: GAMS,
+    GAP: GAP,
+    "GCC Machine Description": GCC_20_Machine_20_Description,
+    GDB: GDB,
+    GDScript: GDScript,
+    GDShader: GDShader,
+    GEDCOM: GEDCOM,
+    GLSL: GLSL,
+    GN: GN,
+    GSC: GSC,
+    "Game Maker Language": Game_20_Maker_20_Language,
+    "Gemfile.lock": Gemfile_lock,
+    Gemini: Gemini,
+    "Genero 4gl": Genero_20_4gl,
+    "Genero per": Genero_20_per,
+    Genie: Genie,
+    Genshi: Genshi,
+    "Gentoo Ebuild": Gentoo_20_Ebuild,
+    "Gentoo Eclass": Gentoo_20_Eclass,
+    "Gerber Image": Gerber_20_Image,
+    "Gettext Catalog": Gettext_20_Catalog,
+    Gherkin: Gherkin,
+    "Git Attributes": Git_20_Attributes,
+    "Git Commit": Git_20_Commit,
+    "Git Config": Git_20_Config,
+    "Git Revision List": Git_20_Revision_20_List,
+    Gleam: Gleam,
+    "Glimmer JS": Glimmer_20_JS,
+    "Glimmer TS": Glimmer_20_TS,
+    Glyph: Glyph,
+    "Glyph Bitmap Distribution Format": Glyph_20_Bitmap_20_Distribution_20_Format,
+    Gnuplot: Gnuplot,
+    Go: Go,
+    "Go Checksums": Go_20_Checksums,
+    "Go Module": Go_20_Module,
+    "Go Template": Go_20_Template,
+    "Go Workspace": Go_20_Workspace,
+    "Godot Resource": Godot_20_Resource,
+    Golo: Golo,
+    Gosu: Gosu,
+    Grace: Grace,
+    Gradle: Gradle,
+    "Gradle Kotlin DSL": Gradle_20_Kotlin_20_DSL,
+    "Grammatical Framework": Grammatical_20_Framework,
+    "Graph Modeling Language": Graph_20_Modeling_20_Language,
+    GraphQL: GraphQL,
+    "Graphviz (DOT)": Graphviz_20__28_DOT_29_,
+    Groovy: Groovy,
+    "Groovy Server Pages": Groovy_20_Server_20_Pages,
+    GtkRC: GtkRC,
+    HAProxy: HAProxy,
+    HCL: HCL,
+    HIP: HIP,
+    HLSL: HLSL,
+    HOCON: HOCON,
+    HTML: HTML,
+    "HTML+ECR": HTML_2b_ECR,
+    "HTML+EEX": HTML_2b_EEX,
+    "HTML+ERB": HTML_2b_ERB,
+    "HTML+PHP": HTML_2b_PHP,
+    "HTML+Razor": HTML_2b_Razor,
+    HTTP: HTTP,
+    HXML: HXML,
+    Hack: Hack,
+    Haml: Haml,
+    Handlebars: Handlebars,
+    Harbour: Harbour,
+    Hare: Hare,
+    Haskell: Haskell,
+    Haxe: Haxe,
+    HiveQL: HiveQL,
+    HolyC: HolyC,
+    "Hosts File": Hosts_20_File,
+    Hurl: Hurl,
+    Hy: Hy,
+    HyPhy: HyPhy,
+    IDL: IDL,
+    "IGOR Pro": IGOR_20_Pro,
+    "IL Assembly": IL_20_Assembly,
+    INI: INI,
+    "IRC log": IRC_20_log,
+    ISPC: ISPC,
+    Idris: Idris,
+    "Ignore List": Ignore_20_List,
+    "ImageJ Macro": ImageJ_20_Macro,
+    Imba: Imba,
+    "Inform 7": Inform_20_7,
+    Ink: Ink,
+    "Inno Setup": Inno_20_Setup,
+    Io: Io,
+    Ioke: Ioke,
+    Isabelle: Isabelle,
+    "Isabelle ROOT": Isabelle_20_ROOT,
+    J: J,
+    "JAR Manifest": JAR_20_Manifest,
+    JCL: JCL,
+    JFlex: JFlex,
+    JSON: JSON$1,
+    "JSON with Comments": JSON_20_with_20_Comments,
+    JSON5: JSON5,
+    JSONLD: JSONLD,
+    JSONiq: JSONiq,
+    Jac: Jac,
+    Jai: Jai,
+    Janet: Janet,
+    Jasmin: Jasmin,
+    Java: Java,
+    "Java Properties": Java_20_Properties,
+    "Java Server Pages": Java_20_Server_20_Pages,
+    "Java Template Engine": Java_20_Template_20_Engine,
+    JavaScript: JavaScript,
+    "JavaScript+ERB": JavaScript_2b_ERB,
+    "Jest Snapshot": Jest_20_Snapshot,
+    "JetBrains MPS": JetBrains_20_MPS,
+    Jinja: Jinja,
+    Jison: Jison,
+    "Jison Lex": Jison_20_Lex,
+    Jolie: Jolie,
+    Jsonnet: Jsonnet,
+    Julia: Julia,
+    "Julia REPL": Julia_20_REPL,
+    "Jupyter Notebook": Jupyter_20_Notebook,
+    Just: Just,
+    KCL: KCL,
+    KDL: KDL,
+    KFramework: KFramework,
+    KRL: KRL,
+    "Kaitai Struct": Kaitai_20_Struct,
+    KakouneScript: KakouneScript,
+    KerboScript: KerboScript,
+    "KiCad Layout": KiCad_20_Layout,
+    "KiCad Legacy Layout": KiCad_20_Legacy_20_Layout,
+    "KiCad Schematic": KiCad_20_Schematic,
+    Kickstart: Kickstart,
+    Kit: Kit,
+    "KoLmafia ASH": KoLmafia_20_ASH,
+    Koka: Koka,
+    Kotlin: Kotlin,
+    Kusto: Kusto,
+    LFE: LFE,
+    LLVM: LLVM,
+    LOLCODE: LOLCODE,
+    LSL: LSL,
+    "LTspice Symbol": LTspice_20_Symbol,
+    LabVIEW: LabVIEW,
+    Lambdapi: Lambdapi,
+    Langium: Langium,
+    Lark: Lark,
+    Lasso: Lasso,
+    Latte: Latte,
+    Lean: Lean,
+    "Lean 4": Lean_20_4,
+    Leo: Leo,
+    Less: Less,
+    Lex: Lex,
+    LigoLANG: LigoLANG,
+    LilyPond: LilyPond,
+    Limbo: Limbo,
+    "Linear Programming": Linear_20_Programming,
+    "Linker Script": Linker_20_Script,
+    "Linux Kernel Module": Linux_20_Kernel_20_Module,
+    Liquid: Liquid,
+    Liquidsoap: Liquidsoap,
+    "Literate Agda": Literate_20_Agda,
+    "Literate CoffeeScript": Literate_20_CoffeeScript,
+    "Literate Haskell": Literate_20_Haskell,
+    "LiveCode Script": LiveCode_20_Script,
+    LiveScript: LiveScript,
+    Logos: Logos,
+    Logtalk: Logtalk,
+    LookML: LookML,
+    LoomScript: LoomScript,
+    Lua: Lua,
+    Luau: Luau,
+    M: M,
+    M3U: M3U,
+    M4: M4,
+    M4Sugar: M4Sugar,
+    MATLAB: MATLAB,
+    MAXScript: MAXScript,
+    MDX: MDX,
+    MLIR: MLIR,
+    MQL4: MQL4,
+    MQL5: MQL5,
+    MTML: MTML,
+    MUF: MUF,
+    Macaulay2: Macaulay2,
+    Makefile: Makefile,
+    Mako: Mako,
+    Markdown: Markdown,
+    Marko: Marko,
+    Mask: Mask,
+    "Mathematical Programming System": Mathematical_20_Programming_20_System,
+    "Maven POM": Maven_20_POM,
+    Max: Max,
+    MeTTa: MeTTa,
+    Mercury: Mercury,
+    Mermaid: Mermaid,
+    Meson: Meson,
+    Metal: Metal,
+    "Microsoft Developer Studio Project": Microsoft_20_Developer_20_Studio_20_Project,
+    "Microsoft Visual Studio Solution": Microsoft_20_Visual_20_Studio_20_Solution,
+    MiniD: MiniD,
+    MiniYAML: MiniYAML,
+    MiniZinc: MiniZinc,
+    "MiniZinc Data": MiniZinc_20_Data,
+    Mint: Mint,
+    Mirah: Mirah,
+    Modelica: Modelica,
+    "Modula-2": Modula2,
+    "Modula-3": Modula3,
+    "Module Management System": Module_20_Management_20_System,
+    Mojo: Mojo,
+    Monkey: Monkey,
+    "Monkey C": Monkey_20_C,
+    Moocode: Moocode,
+    MoonBit: MoonBit,
+    MoonScript: MoonScript,
+    Motoko: Motoko,
+    "Motorola 68K Assembly": Motorola_20_68K_20_Assembly,
+    Move: Move,
+    Muse: Muse,
+    Mustache: Mustache,
+    Myghty: Myghty,
+    NASL: NASL,
+    NCL: NCL,
+    NEON: NEON,
+    NL: NL,
+    NMODL: NMODL,
+    "NPM Config": NPM_20_Config,
+    NSIS: NSIS,
+    NWScript: NWScript,
+    Nasal: Nasal,
+    Nearley: Nearley,
+    Nemerle: Nemerle,
+    NetLinx: NetLinx,
+    "NetLinx+ERB": NetLinx_2b_ERB,
+    NetLogo: NetLogo,
+    NewLisp: NewLisp,
+    Nextflow: Nextflow,
+    Nginx: Nginx,
+    Nickel: Nickel,
+    Nim: Nim,
+    Ninja: Ninja,
+    Nit: Nit,
+    Nix: Nix,
+    Noir: Noir,
+    Nu: Nu,
+    NumPy: NumPy,
+    Nunjucks: Nunjucks,
+    Nushell: Nushell,
+    "OASv2-json": OASv2Json,
+    "OASv2-yaml": OASv2Yaml,
+    "OASv3-json": OASv3Json,
+    "OASv3-yaml": OASv3Yaml,
+    OCaml: OCaml,
+    "OMNeT++ MSG": OMNeT_2b__2b__20_MSG,
+    "OMNeT++ NED": OMNeT_2b__2b__20_NED,
+    Oberon: Oberon,
+    ObjDump: ObjDump,
+    "Object Data Instance Notation": Object_20_Data_20_Instance_20_Notation,
+    ObjectScript: ObjectScript,
+    "Objective-C": ObjectiveC,
+    "Objective-C++": ObjectiveC_2b__2b_,
+    "Objective-J": ObjectiveJ,
+    Odin: Odin,
+    Omgrofl: Omgrofl,
+    Opa: Opa,
+    Opal: Opal,
+    "Open Policy Agent": Open_20_Policy_20_Agent,
+    "OpenAPI Specification v2": OpenAPI_20_Specification_20_v2,
+    "OpenAPI Specification v3": OpenAPI_20_Specification_20_v3,
+    OpenCL: OpenCL,
+    "OpenEdge ABL": OpenEdge_20_ABL,
+    OpenQASM: OpenQASM,
+    "OpenRC runscript": OpenRC_20_runscript,
+    OpenSCAD: OpenSCAD,
+    "OpenStep Property List": OpenStep_20_Property_20_List,
+    "OpenType Feature File": OpenType_20_Feature_20_File,
+    "Option List": Option_20_List,
+    Org: Org,
+    OverPy: OverPy,
+    OverpassQL: OverpassQL,
+    Ox: Ox,
+    Oxygene: Oxygene,
+    Oz: Oz,
+    P4: P4,
+    PDDL: PDDL,
+    "PEG.js": PEG_js,
+    PHP: PHP,
+    PLSQL: PLSQL,
+    PLpgSQL: PLpgSQL,
+    "POV-Ray SDL": POVRay_20_SDL,
+    Pact: Pact,
+    Pan: Pan,
+    Papyrus: Papyrus,
+    Parrot: Parrot,
+    "Parrot Assembly": Parrot_20_Assembly,
+    "Parrot Internal Representation": Parrot_20_Internal_20_Representation,
+    Pascal: Pascal,
+    Pawn: Pawn,
+    Pep8: Pep8,
+    Perl: Perl,
+    Pic: Pic,
+    Pickle: Pickle,
+    PicoLisp: PicoLisp,
+    PigLatin: PigLatin,
+    Pike: Pike,
+    "Pip Requirements": Pip_20_Requirements,
+    Pkl: Pkl,
+    PlantUML: PlantUML,
+    Pod: Pod,
+    "Pod 6": Pod_20_6,
+    PogoScript: PogoScript,
+    Polar: Polar,
+    Pony: Pony,
+    Portugol: Portugol,
+    PostCSS: PostCSS,
+    PostScript: PostScript,
+    "Power Query": Power_20_Query,
+    PowerBuilder: PowerBuilder,
+    PowerShell: PowerShell,
+    Praat: Praat,
+    Prisma: Prisma,
+    "Pro*C": Pro_2a_C,
+    Processing: Processing,
+    Procfile: Procfile,
+    Proguard: Proguard,
+    Prolog: Prolog,
+    Promela: Promela,
+    "Propeller Spin": Propeller_20_Spin,
+    "Protocol Buffer": Protocol_20_Buffer,
+    "Protocol Buffer Text Format": Protocol_20_Buffer_20_Text_20_Format,
+    "Public Key": Public_20_Key,
+    Pug: Pug,
+    Puppet: Puppet,
+    "Pure Data": Pure_20_Data,
+    PureBasic: PureBasic,
+    PureScript: PureScript,
+    Pyret: Pyret,
+    Python: Python,
+    "Python console": Python_20_console,
+    "Python traceback": Python_20_traceback,
+    "Q#": Q_23_,
+    QML: QML,
+    QMake: QMake,
+    "Qt Script": Qt_20_Script,
+    Quake: Quake,
+    QuakeC: QuakeC,
+    QuickBASIC: QuickBASIC,
+    Quint: Quint,
+    R: R,
+    RAML: RAML,
+    RAScript: RAScript,
+    RBS: RBS,
+    RDoc: RDoc,
+    REALbasic: REALbasic,
+    REXX: REXX,
+    RMarkdown: RMarkdown,
+    RON: RON,
+    "ROS Interface": ROS_20_Interface,
+    RPC: RPC,
+    RPGLE: RPGLE,
+    "RPM Spec": RPM_20_Spec,
+    RUNOFF: RUNOFF,
+    Racket: Racket,
+    Ragel: Ragel,
+    Raku: Raku,
+    Rascal: Rascal,
+    "Raw token data": Raw_20_token_20_data,
+    ReScript: ReScript,
+    "Readline Config": Readline_20_Config,
+    Reason: Reason,
+    ReasonLIGO: ReasonLIGO,
+    Rebol: Rebol,
+    "Record Jar": Record_20_Jar,
+    Red: Red,
+    Redcode: Redcode,
+    "Redirect Rules": Redirect_20_Rules,
+    Redscript: Redscript,
+    "Regular Expression": Regular_20_Expression,
+    "Ren'Py": Ren_27_Py,
+    RenderScript: RenderScript,
+    Rez: Rez,
+    "Rich Text Format": Rich_20_Text_20_Format,
+    Ring: Ring,
+    Riot: Riot,
+    RobotFramework: RobotFramework,
+    "Robots Exclusion Rules": Robots_20_Exclusion_20_Rules,
+    Roc: Roc,
+    "Rocq Prover": Rocq_20_Prover,
+    Roff: Roff,
+    "Roff Manpage": Roff_20_Manpage,
+    Rouge: Rouge,
+    "RouterOS Script": RouterOS_20_Script,
+    Ruby: Ruby,
+    Rust: Rust,
+    SAS: SAS,
+    SCSS: SCSS,
+    "SELinux Policy": SELinux_20_Policy,
+    SMT: SMT,
+    SPARQL: SPARQL,
+    SQF: SQF,
+    SQL: SQL,
+    SQLPL: SQLPL,
+    "SRecode Template": SRecode_20_Template,
+    "SSH Config": SSH_20_Config,
+    STAR: STAR,
+    STL: STL,
+    STON: STON,
+    SVG: SVG,
+    SWIG: SWIG,
+    Sage: Sage,
+    Sail: Sail,
+    SaltStack: SaltStack,
+    Sass: Sass,
+    Scala: Scala,
+    Scaml: Scaml,
+    Scenic: Scenic,
+    Scheme: Scheme,
+    Scilab: Scilab,
+    Self: Self,
+    ShaderLab: ShaderLab,
+    Shell: Shell,
+    "ShellCheck Config": ShellCheck_20_Config,
+    ShellSession: ShellSession,
+    Shen: Shen,
+    Sieve: Sieve,
+    "Simple File Verification": Simple_20_File_20_Verification,
+    Singularity: Singularity,
+    Slang: Slang,
+    Slash: Slash,
+    Slice: Slice,
+    Slim: Slim,
+    Slint: Slint,
+    SmPL: SmPL,
+    Smali: Smali,
+    Smalltalk: Smalltalk,
+    Smarty: Smarty,
+    Smithy: Smithy,
+    Snakemake: Snakemake,
+    Solidity: Solidity,
+    Soong: Soong,
+    SourcePawn: SourcePawn,
+    "SpiceDB Schema": SpiceDB_20_Schema,
+    "Spline Font Database": Spline_20_Font_20_Database,
+    Squirrel: Squirrel,
+    Stan: Stan,
+    "Standard ML": Standard_20_ML,
+    Starlark: Starlark,
+    Stata: Stata,
+    StringTemplate: StringTemplate,
+    Stylus: Stylus,
+    "SubRip Text": SubRip_20_Text,
+    SugarSS: SugarSS,
+    SuperCollider: SuperCollider,
+    SurrealQL: SurrealQL,
+    "Survex data": Survex_20_data,
+    Svelte: Svelte,
+    Sway: Sway,
+    Sweave: Sweave,
+    Swift: Swift,
+    SystemVerilog: SystemVerilog,
+    "TI Program": TI_20_Program,
+    "TL-Verilog": TLVerilog,
+    TLA: TLA,
+    TMDL: TMDL,
+    TOML: TOML,
+    "TSPLIB data": TSPLIB_20_data,
+    TSQL: TSQL,
+    TSV: TSV,
+    TSX: TSX,
+    TXL: TXL,
+    Tact: Tact,
+    Talon: Talon,
+    Tcl: Tcl,
+    Tcsh: Tcsh,
+    TeX: TeX,
+    Tea: Tea,
+    Teal: Teal,
+    Terra: Terra,
+    "Terraform Template": Terraform_20_Template,
+    Texinfo: Texinfo,
+    Text: Text,
+    TextGrid: TextGrid,
+    "TextMate Properties": TextMate_20_Properties,
+    Textile: Textile,
+    Thrift: Thrift,
+    Toit: Toit,
+    "Tor Config": Tor_20_Config,
+    "Tree-sitter Query": TreeSitter_20_Query,
+    Turing: Turing,
+    Turtle: Turtle,
+    Twig: Twig,
+    "Type Language": Type_20_Language,
+    TypeScript: TypeScript,
+    TypeSpec: TypeSpec,
+    Typst: Typst,
+    "Unified Parallel C": Unified_20_Parallel_20_C,
+    "Unity3D Asset": Unity3D_20_Asset,
+    "Unix Assembly": Unix_20_Assembly,
+    Uno: Uno,
+    UnrealScript: UnrealScript,
+    "Untyped Plutus Core": Untyped_20_Plutus_20_Core,
+    UrWeb: UrWeb,
+    V: V,
+    VBA: VBA,
+    VBScript: VBScript,
+    VCL: VCL,
+    VHDL: VHDL,
+    Vala: Vala,
+    "Valve Data Format": Valve_20_Data_20_Format,
+    "Velocity Template Language": Velocity_20_Template_20_Language,
+    Vento: Vento,
+    Verilog: Verilog,
+    "Vim Help File": Vim_20_Help_20_File,
+    "Vim Script": Vim_20_Script,
+    "Vim Snippet": Vim_20_Snippet,
+    "Visual Basic .NET": Visual_20_Basic_20__NET,
+    "Visual Basic 6.0": Visual_20_Basic_20_6_0,
+    Volt: Volt,
+    Vue: Vue,
+    Vyper: Vyper,
+    WDL: WDL,
+    WGSL: WGSL,
+    "Wavefront Material": Wavefront_20_Material,
+    "Wavefront Object": Wavefront_20_Object,
+    "Web Ontology Language": Web_20_Ontology_20_Language,
+    WebAssembly: WebAssembly$1,
+    "WebAssembly Interface Type": WebAssembly_20_Interface_20_Type,
+    WebIDL: WebIDL,
+    WebVTT: WebVTT,
+    "Wget Config": Wget_20_Config,
+    Whiley: Whiley,
+    Wikitext: Wikitext,
+    "Win32 Message File": Win32_20_Message_20_File,
+    "Windows Registry Entries": Windows_20_Registry_20_Entries,
+    "Witcher Script": Witcher_20_Script,
+    "Wolfram Language": Wolfram_20_Language,
+    Wollok: Wollok,
+    "World of Warcraft Addon Data": World_20_of_20_Warcraft_20_Addon_20_Data,
+    Wren: Wren,
+    "X BitMap": X_20_BitMap,
+    "X Font Directory Index": X_20_Font_20_Directory_20_Index,
+    "X PixMap": X_20_PixMap,
+    X10: X10,
+    XC: XC,
+    XCompose: XCompose,
+    XML: XML,
+    "XML Property List": XML_20_Property_20_List,
+    XPages: XPages,
+    XProc: XProc,
+    XQuery: XQuery,
+    XS: XS,
+    XSLT: XSLT,
+    Xmake: Xmake,
+    Xojo: Xojo,
+    Xonsh: Xonsh,
+    Xtend: Xtend,
+    YAML: YAML,
+    YANG: YANG,
+    YARA: YARA,
+    YASnippet: YASnippet,
+    Yacc: Yacc,
+    Yul: Yul,
+    ZAP: ZAP,
+    ZIL: ZIL,
+    Zeek: Zeek,
+    ZenScript: ZenScript,
+    Zephir: Zephir,
+    Zig: Zig,
+    Zimpl: Zimpl,
+    Zmodel: Zmodel,
+    "cURL Config": cURL_20_Config,
+    crontab: crontab,
+    desktop: desktop,
+    dircolors: dircolors,
+    eC: eC,
+    edn: edn,
+    fish: fish,
+    hoon: hoon,
+    iCalendar: iCalendar,
+    jq: jq,
+    kvlang: kvlang,
+    "mIRC Script": mIRC_20_Script,
+    mcfunction: mcfunction,
+    mdsvex: mdsvex,
+    mupad: mupad,
+    nanorc: nanorc,
+    nesC: nesC,
+    ooc: ooc,
+    "pkg-config": pkgConfig,
+    q: q,
+    reStructuredText: reStructuredText,
+    sed: sed,
+    templ: templ,
+    vCard: vCard,
+    wisp: wisp,
+    xBase: xBase
+});
+
 function sumOf(array, selector) {
     let sum = 0;
     for (const i of array) {
@@ -35606,32 +46448,75 @@ function groupBy(array, selector) {
     return ret;
 }
 
-const execAsync = promisify(exec);
-async function installEnry(os) {
-    const prefix = os.toLowerCase().replace('macos', 'darwin');
-    const url = `https://github.com/go-enry/enry/releases/download/v1.2.0/enry-v1.2.0-${prefix}-amd64.tar.gz`;
-    await execAsync(`curl -L ${url} | tar -xz -C /tmp/`);
+const UNKNOWN_LABEL = 'Unknown';
+// Manual overrides for extensions shared by multiple languages. Detection is by
+// extension only (no file contents), so for ambiguous extensions we pin the
+// language GitHub conventionally reports instead of relying on languageId order.
+const EXTENSION_OVERRIDES = {
+    '.ts': 'TypeScript',
+    '.h': 'C',
+    '.m': 'Objective-C',
+    '.r': 'R',
+    '.pl': 'Perl'
+};
+const TYPE_RANK = {
+    programming: 0,
+    markup: 1,
+    prose: 2,
+    data: 3
+};
+// A language wins an extension/filename if it has a higher-priority `type`,
+// then the smaller `languageId` (always unique, so the result is deterministic).
+function isHigherPriority(candidate, current) {
+    if (TYPE_RANK[candidate.type] !== TYPE_RANK[current.type]) {
+        return TYPE_RANK[candidate.type] < TYPE_RANK[current.type];
+    }
+    return candidate.languageId < current.languageId;
 }
-async function detectLanguage(filename) {
-    try {
-        const { stdout } = await execAsync(`/tmp/enry -json ${filename}`);
-        const json = JSON.parse(stdout.toString());
-        return json.language;
+function buildMaps() {
+    // Track both the winning language (for tie-breaking) and its name in one map.
+    const extWinner = new Map();
+    const filenameWinner = new Map();
+    const claim = (map, key, lang) => {
+        const current = map.get(key);
+        if (current === undefined || isHigherPriority(lang, current)) {
+            map.set(key, lang);
+        }
+    };
+    for (const lang of Object.values(linguistLanguages)) {
+        for (const ext of lang.extensions ?? [])
+            claim(extWinner, ext.toLowerCase(), lang);
+        for (const filename of lang.filenames ?? [])
+            claim(filenameWinner, filename, lang);
     }
-    catch (error) {
-        if (error instanceof Error)
-            debug(error.message);
+    const toNameMap = (winners) => new Map([...winners].map(([key, lang]) => [key, lang.name]));
+    const extensionMap = toNameMap(extWinner);
+    for (const [ext, name] of Object.entries(EXTENSION_OVERRIDES)) {
+        extensionMap.set(ext, name);
     }
+    return { extensionMap, filenameMap: toNameMap(filenameWinner) };
+}
+const { extensionMap, filenameMap } = buildMaps();
+function detectLanguageByName(filename) {
+    const basename = filename.split('/').pop() ?? filename;
+    const byFilename = filenameMap.get(basename);
+    if (byFilename)
+        return byFilename;
+    // Try each extension candidate, longest (compound, e.g. `.html.erb`) first,
+    // lowercased to match the map keys. Scanned inline to avoid allocating a
+    // candidate array per file.
+    for (let index = basename.indexOf('.'); index !== -1; index = basename.indexOf('.', index + 1)) {
+        const byExtension = extensionMap.get(basename.slice(index).toLowerCase());
+        if (byExtension)
+            return byExtension;
+    }
+    return undefined;
 }
 async function analyzeLanguage(files) {
-    const promises = files.map(async (file) => {
-        const language = await detectLanguage(file.filename);
-        return {
-            ...file,
-            language: language ?? 'Unknown (Deleted)'
-        };
-    });
-    const results = await Promise.all(promises);
+    const results = files.map(file => ({
+        ...file,
+        language: detectLanguageByName(file.filename) ?? UNKNOWN_LABEL
+    }));
     const totalLines = sumOf(files, ({ additions, deletions }) => additions + deletions);
     return Object.entries(groupBy(results, ({ language }) => language))
         .map(([language, groupedFiles = []]) => {
@@ -36107,7 +46992,6 @@ async function run() {
         debug(`Filtered ${filteredFiles.length} files: ${filteredFiles
             .map(f => f.filename)
             .join(', ')}`);
-        await installEnry(process.env.RUNNER_OS || 'linux');
         const languages = await analyzeLanguage(filteredFiles);
         await report(languages);
     }

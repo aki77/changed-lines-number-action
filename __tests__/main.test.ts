@@ -1,6 +1,10 @@
 import {expect, test} from '@jest/globals'
 import {filterFiles} from '../src/filter.js'
-import {analyzeLanguage, installEnry} from '../src/language.js'
+import {
+  analyzeLanguage,
+  detectLanguageByName,
+  UNKNOWN_LABEL
+} from '../src/language.js'
 
 // shows how the runner will run a javascript action with env / stdout protocol
 test('test runs', async () => {
@@ -18,7 +22,6 @@ doc/** linguist-documentation
 })
 
 test('analyze', async () => {
-  await installEnry(process.env.RUNNER_OS || 'macOS')
   const result = await analyzeLanguage([
     {filename: 'src/main.ts', additions: 1, deletions: 1},
     {filename: 'src/utils.ts', additions: 3, deletions: 1},
@@ -34,4 +37,34 @@ test('analyze', async () => {
       lineRatio: 13
     }
   ])
-}, 20000)
+})
+
+test('detectLanguageByName', () => {
+  // extension based
+  expect(detectLanguageByName('src/main.ts')).toEqual('TypeScript')
+  expect(detectLanguageByName('package.json')).toEqual('JSON')
+  expect(detectLanguageByName('app/models/user.rb')).toEqual('Ruby')
+  // ambiguous extension resolved by override
+  expect(detectLanguageByName('src/foo.h')).toEqual('C')
+  // filename without extension
+  expect(detectLanguageByName('Dockerfile')).toEqual('Dockerfile')
+  // deleted files are still detected by extension
+  expect(detectLanguageByName('old/removed.rb')).toEqual('Ruby')
+  // unknown extension
+  expect(detectLanguageByName('foo.zzzunknown')).toBeUndefined()
+})
+
+test('analyze treats unknown files as Unknown', async () => {
+  const result = await analyzeLanguage([
+    {filename: 'mystery.zzzunknown', additions: 1, deletions: 1}
+  ])
+  expect(result).toEqual([
+    {
+      additions: 1,
+      deletions: 1,
+      files: 1,
+      language: UNKNOWN_LABEL,
+      lineRatio: 100
+    }
+  ])
+})

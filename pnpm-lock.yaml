@@ -14,6 +14,9 @@ importers:
       '@actions/github':
         specifier: ^9.1.1
         version: 9.1.1
+      linguist-languages:
+        specifier: ^9.4.0
+        version: 9.4.0
       markdown-table:
         specifier: ^3.0.4
         version: 3.0.4
@@ -1619,6 +1622,9 @@ packages:
 
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
+
+  linguist-languages@9.4.0:
+    resolution: {integrity: sha512-mYnFVrsWg5Bex0Kl5EDcXhrjXZ5DqMlBDXo7EUWLMTLDpxbuHvgBb2aOvGWC5ZmMJ2HXEKJiuFie9NEs8NUMXg==}
 
   locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
@@ -3891,6 +3897,8 @@ snapshots:
   leven@3.1.0: {}
 
   lines-and-columns@1.2.4: {}
+
+  linguist-languages@9.4.0: {}
 
   locate-path@5.0.0:
     dependencies:
