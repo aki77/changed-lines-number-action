@@ -46457,7 +46457,8 @@ const EXTENSION_OVERRIDES = {
     '.h': 'C',
     '.m': 'Objective-C',
     '.r': 'R',
-    '.pl': 'Perl'
+    '.pl': 'Perl',
+    '.md': 'Markdown'
 };
 const TYPE_RANK = {
     programming: 0,

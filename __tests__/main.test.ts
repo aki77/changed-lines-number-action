@@ -46,6 +46,9 @@ test('detectLanguageByName', () => {
   expect(detectLanguageByName('app/models/user.rb')).toEqual('Ruby')
   // ambiguous extension resolved by override
   expect(detectLanguageByName('src/foo.h')).toEqual('C')
+  // .md is shared with GCC Machine Description; override pins it to Markdown
+  expect(detectLanguageByName('README.md')).toEqual('Markdown')
+  expect(detectLanguageByName('docs/guide.md')).toEqual('Markdown')
   // filename without extension
   expect(detectLanguageByName('Dockerfile')).toEqual('Dockerfile')
   // deleted files are still detected by extension
