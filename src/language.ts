@@ -19,7 +19,8 @@ const EXTENSION_OVERRIDES: Record<string, string> = {
   '.h': 'C',
   '.m': 'Objective-C',
   '.r': 'R',
-  '.pl': 'Perl'
+  '.pl': 'Perl',
+  '.md': 'Markdown'
 }
 
 const TYPE_RANK: Record<LinguistLanguage['type'], number> = {
