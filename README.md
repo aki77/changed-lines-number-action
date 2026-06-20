@@ -4,6 +4,10 @@ Summarize a pull request's changed lines **per language** and post the table to 
 
 ![Demo](https://i.gyazo.com/ce3ac6b9c10507a08f6798f5ffa0e88d.png)
 
+## Why
+
+A pull request's raw changed-line count also includes auto-generated files (build output, lock files, generated code) and documentation, so reviewers can't tell how much code actually needs reviewing. This action excludes those files via `.gitattributes` and breaks the count down by language, so reviewers can grasp the real size of a review at a glance.
+
 ## What it does
 
 - Classifies changed files by language and appends a table (Line Ratio / Files / Additions / Deletions) to the PR body.
