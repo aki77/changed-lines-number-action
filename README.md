@@ -1,56 +1,57 @@
 # changed-lines-number-action
 
-Add the number of changed lines to the PR body, considering `.gitattributes`.
+Summarize a pull request's changed lines **per language** and post the table to the PR body, considering `.gitattributes`.
 
 ![Demo](https://i.gyazo.com/ce3ac6b9c10507a08f6798f5ffa0e88d.png)
 
-## Usage
+## What it does
 
-Files with the following attributes are excluded from the count.
+- Classifies changed files by language and appends a table (Line Ratio / Files / Additions / Deletions) to the PR body.
+- Updates the same section on re-runs instead of appending duplicates.
+- Excludes files marked with linguist attributes in `.gitattributes`.
+- Detects languages by filename and extension — no external binary, works on any runner and architecture.
+
+## Excluding files
+
+Files with any of the following attributes are excluded from the count:
 
 - `linguist-documentation`
 - `linguist-generated`
 - `linguist-vendored`
 
-`.gitattributes` example
+`.gitattributes` example:
+
 ```
-# Apply override to all files in the directory
-project-docs/* linguist-documentation
-# Apply override to a specific file
-docs/formatter.rb -linguist-documentation
-# Apply override to all files and directories in the directory
-ano-dir/** linguist-documentation
-
-Api.elm linguist-generated
-
-# Apply override to all files in the directory
-special-vendored-path/* linguist-vendored
-# Apply override to a specific file
+docs/** linguist-documentation
+dist/** linguist-generated
+vendor/** linguist-vendored
 jquery.js -linguist-vendored
-# Apply override to all files and directories in the directory
-ano-dir/** linguist-vendored
 ```
 
-**Related Documents**
-
-[Change Linguist's behaviour with overrides](https://github.com/github/linguist/blob/master/docs/overrides.md)
+See [Change Linguist's behaviour with overrides](https://github.com/github/linguist/blob/master/docs/overrides.md) for details.
 
 ## Inputs
 
-- `token` - The GITHUB_TOKEN secret.
-- `hideLink` - Hide the link. (default: `false`)
+| Name       | Description               | Required | Default |
+| ---------- | ------------------------- | -------- | ------- |
+| `token`    | The `GITHUB_TOKEN` secret | Yes      | -       |
+| `hideLink` | Hide the link in the heading | No    | `false` |
 
 ## Example
 
 ```yaml
-name: Tests
+name: Changed lines
 on:
   pull_request:
 
+permissions:
+  pull-requests: write
+
 jobs:
-  build:
+  changed-lines:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
 
       - uses: aki77/changed-lines-number-action@v4
         with:
