@@ -19,6 +19,11 @@ jobs:
       - run: pnpm run all
   test: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      # Dependabot PRs get a read-only GITHUB_TOKEN by default; this action
+      # updates the PR body, so pull-requests: write must be granted explicitly.
+      pull-requests: write
     steps:
       - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
       - uses: ./
